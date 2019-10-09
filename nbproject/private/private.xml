@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/editar_usuario.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/listar_usuario.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/index.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/bean/UsuarioBean.java</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/dao/UsuarioDAO.java</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/model/Usuario.java</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/model/JPAUtil.java</file>
+        </group>
+    </open-files>
+</project-private>
