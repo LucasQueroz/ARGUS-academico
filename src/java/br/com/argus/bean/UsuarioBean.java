@@ -2,11 +2,9 @@ package br.com.argus.bean;
 
 import br.com.argus.dao.UsuarioDAO;
 import br.com.argus.model.JPAUtil;
-import java.time.Clock;
 import java.util.Map;
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -31,19 +29,19 @@ import javax.swing.JOptionPane;
 public class UsuarioBean implements Serializable {
     
     private Usuario usuario;
-    private List<Usuario> usuarios;
+    //private List<Usuario> usuarios;
     
     @PostConstruct
     private void init(){
         usuario= new Usuario();
     }
     
-    public String novo(){
+    /*public String novo(){
         Usuario u = new Usuario();
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
 	sessionMap.put("usuario", u);
         return "/faces/register_usuario.xhtml";
-    }
+    }*/
     
     public void gravar(){
         //novo();
@@ -59,6 +57,14 @@ public class UsuarioBean implements Serializable {
         }catch(Exception e){
             e.printStackTrace();
         }
+        
+        /*try {
+            JOptionPane.showMessageDialog(null, "Pasei no gravar de aluno 2");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_usuario.jsf");
+            JOptionPane.showMessageDialog(null, "Pasei no gravar de aluno 3");
+        } catch (IOException ex) {
+            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
+        }*/
     }
     
     public List<Usuario> obterUsuarios(){
@@ -83,8 +89,6 @@ public class UsuarioBean implements Serializable {
     }*/
     
     public void editar(int id){
-        //JOptionPane.showMessageDialog(null, "Passei no editar com id:" + id);
-        
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         Usuario u = new Usuario();
         u = usuarioDAO.buscar(id);

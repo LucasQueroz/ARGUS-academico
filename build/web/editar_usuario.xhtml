@@ -7,7 +7,7 @@
       xmlns:ui="http://java.sun.com/jsf/facelets">
 
 <h:head>
-  <title>Registro de alunos</title>
+  <title>Editar usuário</title>
   <meta charset="utf-8"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
 
@@ -73,7 +73,7 @@
           </div>
           <div class="mr-auto">
               <a href="index.jsf" class="nav-link text-left">Home</a>
-              <a href="register_usuario.jsf" class="nav-link text-left">Cadastrar Usuário</a>
+              <a href="register_usuario.jsf" class="nav-link text-left">Editar Usuário</a>
               
               
             <!--<nav class="site-navigation position-relative text-right" role="navigation">
@@ -144,27 +144,27 @@
                           <div class="row">
                               <div class="col-md-12 form-group">
                                   <label for="nome">Nome</label>
-                                  <p:inputText value="#{usuario.nome}" id="nome" class="form-control form-control-lg"/>
+                                  <p:inputText value="#{usuario.nome}" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
                                   <label for="senha">Senha</label>
-                                  <p:inputText value="#{usuario.senha}" id="senha" class="form-control form-control-lg"/>
+                                  <p:inputText value="#{usuario.senha}" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
                                   <label for="data_nascimento">Data de Nascimento</label>
-                                  <p:inputText value="#{usuario.data_nascimento}" id="data_nascimento" class="form-control form-control-lg"/>
+                                  <p:inputText value="#{usuario.data_nascimento}" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
                                   <label for="naturalidade">Naturalidade</label>
-                                  <p:inputText value="#{usuario.naturalidade}"  id="naturalidade" class="form-control form-control-lg"/>
+                                  <p:inputText value="#{usuario.naturalidade}" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
                                   <label for="tipo_usuario">Tipo de Usuário</label>
-                                  <p:inputText value="#{usuario.tipo_usuario}"  id="tipo_usuario" class="form-control form-control-lg"/>
+                                  <p:inputText value="#{usuario.tipo_usuario}" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
                                   <label for="endereco">Endereço</label>
-                                  <p:inputText value="#{usuario.endereco}" id="endereco" class="form-control form-control-lg"/>
+                                  <p:inputText value="#{usuario.endereco}" class="form-control form-control-lg"/>
                               </div>
                           </div>
                           <div class="row">

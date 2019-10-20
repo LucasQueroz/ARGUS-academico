@@ -74,8 +74,44 @@
           </div>
           <div class="mr-auto">
               <a href="index.jsf" class="nav-link text-left">Home</a>
-              <a href="register_usuario.jsf" class="nav-link text-left">Cadastrar Usuário</a>
-              <a href="listar_usuario.jsf" class="nav-link text-left">Listar Usuário</a>
+              
+              <h:form>  
+                    <p:growl id="messages"/>
+
+                    <p:menubar>
+                        <p:submenu label="Cadastrar" icon="pi pi-file">
+                            <p:menuitem value="Usuário" url="register_usuario.jsf" />
+                            <p:menuitem value="Aluno" url="register_aluno.jsf" />
+                            <p:menuitem value="Responsável" url="register_responsavel.jsf" />
+                            <p:menuitem value="Professor" url="register_professor.jsf" />
+                            <p:menuitem value="Pedagogo" url="register_pedagogo.jsf" />
+                            <p:menuitem value="Disciplina" url="register_disciplina.jsf" />
+                        </p:submenu>
+
+                        <p:submenu label="Editar" icon="pi pi-pencil">
+                            <p:menuitem value="Usuário" url="listar_usuario.jsf" />
+                        </p:submenu>
+
+                        <p:submenu label="Visualizar" icon="pi pi-pencil">
+                            <p:menuitem value="Usuário" url="listar_usuario.jsf" />
+                            <p:menuitem value="Aluno" url="listar_alunos.jsf" />
+                        </p:submenu>
+
+                        <p:submenu label="Deletar" icon="pi pi-cog">
+                            <p:submenu label="Ajax" icon="pi pi-refresh">
+                                <p:menuitem value="Save" action="#{menuView.save}" icon="pi pi-save" update="messages"/>
+                                <p:menuitem value="Update" action="#{menuView.update}" icon="pi pi-refresh" update="messages"/>
+                            </p:submenu>
+                            <p:submenu label="Non-Ajax" icon="pi pi-clone">
+                                <p:menuitem value="Delete" action="#{menuView.delete}" icon="pi pi-times" update="messages" ajax="false"/>
+                            </p:submenu>
+                        </p:submenu>
+
+                        
+                        
+                    </p:menubar>
+                </h:form>
+              
               
             <!--<nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
