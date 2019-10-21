@@ -1,6 +1,7 @@
 package br.com.argus.dao;
 
 import br.com.argus.model.Aluno;
+import br.com.argus.model.Curriculo;
 import br.com.argus.model.JPAUtil;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -10,36 +11,30 @@ import javax.persistence.Persistence;
  *
  * @author lucas queroz
  */
-public class AlunoDAO {
+public class CurriculoDAO {
     
     EntityManager entity = JPAUtil.getEntityManagerFactory().createEntityManager();
     
-    public void gravar(Aluno aluno){
+    public void gravar(Curriculo curriculo) {
         EntityManagerFactory f = Persistence.createEntityManagerFactory("teste");
         EntityManager e = f.createEntityManager();
         e.getTransaction().begin();
-        e.persist(aluno);
+        e.persist(curriculo);
         e.getTransaction().commit();
     }
-
+    
     public void eliminar(int id) {
-        Aluno a = new Aluno();
-        a = entity.find(Aluno.class, id);
+        Curriculo c = new Curriculo();
+        c = entity.find(Curriculo.class, id);
         entity.getTransaction().begin();
-        entity.remove(a);
+        entity.remove(c);
         entity.getTransaction().commit();
     }
 
-    public Aluno buscar(int id) {
-        Aluno a = new Aluno();
-        a = entity.find(Aluno.class, id);
-        return a;
-    }
-
-    public void editar(Aluno aluno) {
-        entity.getTransaction().begin();
-        entity.merge(aluno);
-        entity.getTransaction().commit();
+    public Curriculo buscar(int id) {
+        Curriculo c = new Curriculo();
+        c = entity.find(Curriculo.class, id);
+        return c;
     }
     
 }

@@ -3,7 +3,6 @@ package br.com.argus.bean;
 import br.com.argus.dao.AlunoDAO;
 import br.com.argus.model.Aluno;
 import br.com.argus.model.JPAUtil;
-import br.com.argus.model.Usuario;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -16,10 +15,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import javax.persistence.Query;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -41,21 +37,8 @@ public class AlunoBean implements Serializable {
         AlunoDAO alunoDAO = new AlunoDAO();
         alunoDAO.gravar(aluno);
         
-        /*EntityManagerFactory f = Persistence.createEntityManagerFactory("teste");
-        try{
-            EntityManager e = f.createEntityManager();
-            e.getTransaction().begin();
-            e.persist(aluno);
-            e.getTransaction().commit();
-        }catch(Exception e){
-            e.printStackTrace();
-        }*/
-        
-        //JOptionPane.showMessageDialog(null, "Pasei no gravar de aluno 1");
         try {
-            //JOptionPane.showMessageDialog(null, "Pasei no gravar de aluno 2");
             FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_alunos.jsf");
-            //JOptionPane.showMessageDialog(null, "Pasei no gravar de aluno 3");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
