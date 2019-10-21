@@ -38,10 +38,10 @@ public class AlunoBean implements Serializable {
     }
     
     public void gravar(){
-        //AlunoDAO alunoDAO = new AlunoDAO();
-        //alunoDAO.gravar(aluno);
+        AlunoDAO alunoDAO = new AlunoDAO();
+        alunoDAO.gravar(aluno);
         
-        EntityManagerFactory f = Persistence.createEntityManagerFactory("teste");
+        /*EntityManagerFactory f = Persistence.createEntityManagerFactory("teste");
         try{
             EntityManager e = f.createEntityManager();
             e.getTransaction().begin();
@@ -49,7 +49,7 @@ public class AlunoBean implements Serializable {
             e.getTransaction().commit();
         }catch(Exception e){
             e.printStackTrace();
-        }
+        }*/
         
         //JOptionPane.showMessageDialog(null, "Pasei no gravar de aluno 1");
         try {

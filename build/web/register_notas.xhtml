@@ -134,7 +134,7 @@
         <span class="current">Editar</span>
       </div>
     </div>
-
+      
         <h:form>
             <div class="site-section">
               <div class="container">
@@ -142,40 +142,44 @@
                       <div class="col-md-5">
                           <div class="row">
                               <div class="col-md-12 form-group">
-                                  <label for="nome">Nome do aluno</label>
-                                  <p:inputText value="#{aluno.nome}" class="form-control form-control-lg"/>
+                                  <label for="nome">Aluno: </label>
+                                  <p:outputLabel value="#{aluno.nome}"/>
                               </div>
                               <div class="col-md-12 form-group">
-                                  <label for="senha">Nome do pai</label>
-                                  <p:inputText value="#{aluno.pai}" class="form-control form-control-lg"/>
+                                  <label for="nome">ID da discplina</label>
+                                  <p:inputText value="#{notaBean.nota.id_diciplina}" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
-                                  <label for="data_nascimento">Nome da mãe</label>
-                                  <p:inputText value="#{aluno.mae}" class="form-control form-control-lg"/>
+                                  <label for="senha">Nota 1</label>
+                                  <p:inputText value="#{notaBean.nota.nota1}" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
-                                  <label for="naturalidade">Endereço</label>
-                                  <p:inputText value="#{aluno.endereco}"  class="form-control form-control-lg"/>
+                                  <label for="senha">Nota 2</label>
+                                  <p:inputText value="#{notaBean.nota.nota2}" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
-                                  <label for="tipo_usuario">Data de nascimento</label>
-                                  <p:inputText value="#{aluno.data_nascimento}" class="form-control form-control-lg"/>
+                                  <label for="senha">Nota 3</label>
+                                  <p:inputText value="#{notaBean.nota.nota3}" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
-                                  <label for="endereco">Natuaralidade</label>
-                                  <p:inputText value="#{aluno.naturaliadade}" class="form-control form-control-lg"/>
+                                  <label for="senha">Nota 4</label>
+                                  <p:inputText value="#{notaBean.nota.nota4}" class="form-control form-control-lg"/>
+                              </div>
+                              <div class="col-md-12 form-group">
+                                  <label for="senha">Nota na final</label>
+                                  <p:inputText value="#{notaBean.nota.nota_na_final}" class="form-control form-control-lg"/>
                               </div>
                           </div>
                           <div class="row">
                               <div class="col-12">
-                                  <p:commandButton action="#{alunoBean.atualizar(aluno)}" update="@form" value="Atualizar" class="btn btn-primary btn-lg px-5"/>                            
+                                  <p:commandButton action="#{notaBean.gravar(aluno.id)}" update="@form" value="Cadastrar" class="btn btn-primary btn-lg px-5"/>                            
                               </div>
                           </div>
                       </div>
                   </div>
                 </div>
             </div>
-      </h:form>
+        </h:form>
 
     <div class="footer">
       <div class="container">

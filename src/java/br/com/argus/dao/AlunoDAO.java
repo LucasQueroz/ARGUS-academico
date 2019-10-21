@@ -16,8 +16,7 @@ public class AlunoDAO {
     EntityManager entity = JPAUtil.getEntityManagerFactory().createEntityManager();
     
     public void gravar(Aluno aluno){
-        //JOptionPane.showMessageDialog(null, "Pasei no gravar de alunoDAO 1");
-        EntityManagerFactory f = Persistence.createEntityManagerFactory("aluno");
+        EntityManagerFactory f = Persistence.createEntityManagerFactory("teste");
         EntityManager e = f.createEntityManager();
         e.getTransaction().begin();
         e.persist(aluno);

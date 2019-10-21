@@ -3,6 +3,8 @@ package br.com.argus.dao;
 import br.com.argus.model.JPAUtil;
 import br.com.argus.model.Usuario;
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 
 public class UsuarioDAO {
     
@@ -37,16 +39,13 @@ public class UsuarioDAO {
     
         // Gravar cliente
 
-//	public void gravar(Usuario usuario) {
-//            try {
-//                entity.getTransaction().begin();
-//                entity.persist(usuario);
-//                entity.getTransaction().commit();
-//            //JPAUtil.shutdown();
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
+	public void gravar(Usuario usuario) {
+            EntityManagerFactory f = Persistence.createEntityManagerFactory("teste");
+            EntityManager e = f.createEntityManager();
+            e.getTransaction().begin();
+            e.persist(usuario);
+            e.getTransaction().commit();
 //            
-//	}
+	}
     
 }

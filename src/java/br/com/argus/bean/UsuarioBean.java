@@ -44,11 +44,12 @@ public class UsuarioBean implements Serializable {
     }*/
     
     public void gravar(){
-        //novo();
         
-        //UsuarioDAO usuarioDAO = new UsuarioDAO();
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        usuarioDAO.gravar(usuario);
+        
         //System.out.println(usuario.getNome());
-        EntityManagerFactory f = Persistence.createEntityManagerFactory("teste"); //teste
+        /*EntityManagerFactory f = Persistence.createEntityManagerFactory("teste"); //teste
         try{
             EntityManager e = f.createEntityManager();
             e.getTransaction().begin();
@@ -56,15 +57,13 @@ public class UsuarioBean implements Serializable {
             e.getTransaction().commit();
         }catch(Exception e){
             e.printStackTrace();
-        }
+        }*/
         
-        /*try {
-            JOptionPane.showMessageDialog(null, "Pasei no gravar de aluno 2");
+        try {
             FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_usuario.jsf");
-            JOptionPane.showMessageDialog(null, "Pasei no gravar de aluno 3");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
-        }*/
+        }
     }
     
     public List<Usuario> obterUsuarios(){

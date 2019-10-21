@@ -20,6 +20,7 @@ public class Nota implements Serializable{
     private float nota2;
     private float nota3;
     private float nota4;
+    private float nota_na_final;
     private int id_aluno;
     private int id_diciplina;
 
@@ -119,6 +120,20 @@ public class Nota implements Serializable{
      */
     public void setId_diciplina(int id_diciplina) {
         this.id_diciplina = id_diciplina;
+    }
+
+    /**
+     * @return the nota_na_final
+     */
+    public float getNota_na_final() {
+        return nota_na_final;
+    }
+
+    /**
+     * @param nota_na_final the nota_na_final to set
+     */
+    public void setNota_na_final(float nota_na_final) {
+        this.nota_na_final = nota_na_final;
     }
     
 }

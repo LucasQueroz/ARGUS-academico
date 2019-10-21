@@ -41,9 +41,7 @@ public class DisciplinaBean implements Serializable {
         }
         
         try {
-            //JOptionPane.showMessageDialog(null, "Pasei no gravar de Professor 1");
             FacesContext.getCurrentInstance().getExternalContext().redirect("/index.jsf");
-            //JOptionPane.showMessageDialog(null, "Pasei no gravar de aluno 3");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
