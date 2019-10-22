@@ -11,11 +11,6 @@ public class UsuarioDAO {
     EntityManager entity = JPAUtil.getEntityManagerFactory().createEntityManager();
 
     public Usuario buscar(int id) {
-        /*Cliente c = new Cliente();
-	c = entity.find(Cliente.class, id);
-	// JPAUtil.shutdown();
-	return c;*/
-        
         Usuario u = new Usuario();
         u = entity.find(Usuario.class, id);
         return u;
@@ -35,17 +30,12 @@ public class UsuarioDAO {
         entity.getTransaction().commit();
     }
     
-//    EntityManager entity = JPAUtil.getEntityManagerFactory().createEntityManager();
-    
-        // Gravar cliente
-
-	public void gravar(Usuario usuario) {
-            EntityManagerFactory f = Persistence.createEntityManagerFactory("teste");
-            EntityManager e = f.createEntityManager();
-            e.getTransaction().begin();
-            e.persist(usuario);
-            e.getTransaction().commit();
-//            
-	}
+    public void gravar(Usuario usuario) {
+        EntityManagerFactory f = Persistence.createEntityManagerFactory("teste");
+        EntityManager e = f.createEntityManager();
+        e.getTransaction().begin();
+        e.persist(usuario);
+        e.getTransaction().commit();           
+    }
     
 }

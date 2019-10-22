@@ -3,7 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/register_usuario.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/dao/CurriculoDAO.java</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/listar_curriculo.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/bean/AlunoBean.java</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/bean/CurriculoBean.java</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/bean/DisciplinaBean.java</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/dao/AlunoDAO.java</file>
         </group>
     </open-files>
 </project-private>

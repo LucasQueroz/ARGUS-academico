@@ -7,8 +7,6 @@ import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import br.com.argus.model.Usuario;
 import java.io.IOException;
 import java.io.Serializable;
@@ -18,7 +16,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.faces.bean.ViewScoped;
 import javax.persistence.Query;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -29,7 +26,6 @@ import javax.swing.JOptionPane;
 public class UsuarioBean implements Serializable {
     
     private Usuario usuario;
-    //private List<Usuario> usuarios;
     
     @PostConstruct
     private void init(){
@@ -83,10 +79,6 @@ public class UsuarioBean implements Serializable {
         System.out.println("Usuario:"  + usuario.getNome());
     }*/
     
-    /*public static void main(String[] args) {
-        editar();
-    }*/
-    
     public void editar(int id){
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         Usuario u = new Usuario();
@@ -101,7 +93,6 @@ public class UsuarioBean implements Serializable {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        //return "/editar_usuario.jsf";
     }
     
     public void atualizar(Usuario usuario){
@@ -116,13 +107,6 @@ public class UsuarioBean implements Serializable {
     }
     
     public void eliminar(int id){
-        //JOptionPane.showMessageDialog(null, "Passei no eliminar com id: " + id);
-        /*Usuario usuario = new Usuario();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        usuario = e.find(Usuario.class, id);*/
-        //JPAUtil.shutdown();
-        //System.out.println("Usuario:"  + usuario.getNome());
-        
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         usuarioDAO.eliminar(id);
     }

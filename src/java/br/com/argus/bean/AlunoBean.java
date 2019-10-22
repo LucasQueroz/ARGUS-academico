@@ -21,7 +21,6 @@ import javax.persistence.Query;
  *
  * @author lucas queroz
  */
-
 @ManagedBean(name = "alunoBean")
 @ViewScoped
 public class AlunoBean implements Serializable {

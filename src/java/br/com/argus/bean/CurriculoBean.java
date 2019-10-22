@@ -1,6 +1,8 @@
 package br.com.argus.bean;
 
+import br.com.argus.dao.AlunoDAO;
 import br.com.argus.dao.CurriculoDAO;
+import br.com.argus.model.Aluno;
 import br.com.argus.model.Curriculo;
 import java.io.IOException;
 import java.io.Serializable;
@@ -53,6 +55,17 @@ public class CurriculoBean implements Serializable {
         
         try {
             FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_curriculo.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void atualizar(Curriculo curriculo){
+        CurriculoDAO curriculoDAO = new CurriculoDAO();
+        curriculoDAO.editar(curriculo);
+        
+        try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_curriculo.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }

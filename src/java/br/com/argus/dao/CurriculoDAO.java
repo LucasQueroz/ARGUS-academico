@@ -37,4 +37,10 @@ public class CurriculoDAO {
         return c;
     }
     
+    public void editar(Curriculo curriculo) {
+        entity.getTransaction().begin();
+        entity.merge(curriculo);
+        entity.getTransaction().commit();
+    }
+    
 }
