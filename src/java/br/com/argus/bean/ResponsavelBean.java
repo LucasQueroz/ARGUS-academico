@@ -1,5 +1,6 @@
 package br.com.argus.bean;
 
+import br.com.argus.dao.ResponsavelDAO;
 import br.com.argus.dao.UsuarioDAO;
 import br.com.argus.model.JPAUtil;
 import br.com.argus.model.Responsavel;
@@ -16,10 +17,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import javax.persistence.Query;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -41,20 +39,12 @@ public class ResponsavelBean implements Serializable {
         
         //UsuarioDAO usuarioDAO = new UsuarioDAO();
         //System.out.println(usuario.getNome());
-        EntityManagerFactory f = Persistence.createEntityManagerFactory("teste"); //teste
-        try{
-            EntityManager e = f.createEntityManager();
-            e.getTransaction().begin();
-            e.persist(getResponsavel());
-            e.getTransaction().commit();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
+        
+        ResponsavelDAO responsavelDAO = new ResponsavelDAO();
+        responsavelDAO.gravar(responsavel);
         
         try {
-            //JOptionPane.showMessageDialog(null, "Pasei no gravar de responsavel 1");
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_alunos.jsf");
-            //JOptionPane.showMessageDialog(null, "Pasei no gravar de aluno 3");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_responsavel.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -82,43 +72,34 @@ public class ResponsavelBean implements Serializable {
     }*/
     
     public void editar(int id){
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        Usuario u = new Usuario();
-        u = usuarioDAO.buscar(id);
+        ResponsavelDAO responsavelDAO = new ResponsavelDAO();
+        Responsavel r = new Responsavel();
+        r = responsavelDAO.buscar(id);
         
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
-        sessionMap.put("usuario", u);
+        sessionMap.put("responsavel", r);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_responsavel.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        //return "/editar_usuario.jsf";
     }
     
-    public void atualizar(Usuario usuario){
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.editar(usuario);
+    public void atualizar(Responsavel responsavel){
+        ResponsavelDAO responsavelDAO = new ResponsavelDAO();
+        responsavelDAO.editar(responsavel);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_responsavel.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
     public void eliminar(int id){
-        //JOptionPane.showMessageDialog(null, "Passei no eliminar com id: " + id);
-        /*Usuario usuario = new Usuario();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        usuario = e.find(Usuario.class, id);*/
-        //JPAUtil.shutdown();
-        //System.out.println("Usuario:"  + usuario.getNome());
-        
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.eliminar(id);
+        ResponsavelDAO responsavelDAO = new ResponsavelDAO();
+        responsavelDAO.eliminar(id);
     }
 
     /**

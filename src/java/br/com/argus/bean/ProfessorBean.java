@@ -1,5 +1,6 @@
 package br.com.argus.bean;
 
+import br.com.argus.dao.ProfessorDAO;
 import br.com.argus.dao.UsuarioDAO;
 import br.com.argus.model.JPAUtil;
 import br.com.argus.model.Professor;
@@ -37,27 +38,11 @@ public class ProfessorBean implements Serializable {
     }
     
     public void gravar(){
-        //novo();
-        
-        //JOptionPane.showMessageDialog(null, "Pasei no gravar de Professor");
-            
-        
-        //UsuarioDAO usuarioDAO = new UsuarioDAO();
-        //System.out.println(usuario.getNome());
-        EntityManagerFactory f = Persistence.createEntityManagerFactory("teste"); //teste
-        try{
-            EntityManager e = f.createEntityManager();
-            e.getTransaction().begin();
-            e.persist(getProfessor());
-            e.getTransaction().commit();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
+        ProfessorDAO professorDao = new ProfessorDAO();
+        professorDao.gravar(professor);
         
         try {
-            //JOptionPane.showMessageDialog(null, "Pasei no gravar de Professor 1");
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/index.jsf");
-            //JOptionPane.showMessageDialog(null, "Pasei no gravar de aluno 3");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_professor.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -85,15 +70,15 @@ public class ProfessorBean implements Serializable {
     }*/
     
     public void editar(int id){
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        Usuario u = new Usuario();
-        u = usuarioDAO.buscar(id);
+        ProfessorDAO professorDAO = new ProfessorDAO();
+        Professor p = new Professor();
+        p = professorDAO.buscar(id);
         
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
-        sessionMap.put("usuario", u);
+        sessionMap.put("professor", p);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_professor.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -101,27 +86,20 @@ public class ProfessorBean implements Serializable {
         //return "/editar_usuario.jsf";
     }
     
-    public void atualizar(Usuario usuario){
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.editar(usuario);
+    public void atualizar(Professor professor){
+        ProfessorDAO professorDAO = new ProfessorDAO();
+        professorDAO.editar(professor);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_professor.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
     public void eliminar(int id){
-        //JOptionPane.showMessageDialog(null, "Passei no eliminar com id: " + id);
-        /*Usuario usuario = new Usuario();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        usuario = e.find(Usuario.class, id);*/
-        //JPAUtil.shutdown();
-        //System.out.println("Usuario:"  + usuario.getNome());
-        
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.eliminar(id);
+        ProfessorDAO professorDAO = new ProfessorDAO();
+        professorDAO.eliminar(id);
     }
 
     /**

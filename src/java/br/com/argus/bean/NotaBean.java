@@ -4,7 +4,6 @@ import br.com.argus.dao.AlunoDAO;
 import br.com.argus.dao.NotaDAO;
 import br.com.argus.dao.UsuarioDAO;
 import br.com.argus.model.Aluno;
-import br.com.argus.model.Disciplina;
 import br.com.argus.model.JPAUtil;
 import br.com.argus.model.Nota;
 import br.com.argus.model.Usuario;
@@ -65,7 +64,6 @@ public class NotaBean implements Serializable{
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
     
     public List<Usuario> obterUsuarios(){

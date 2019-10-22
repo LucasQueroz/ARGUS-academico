@@ -1,6 +1,7 @@
 package br.com.argus.dao;
 
 import br.com.argus.model.JPAUtil;
+import br.com.argus.model.Pedagogo;
 import br.com.argus.model.Usuario;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -24,9 +25,9 @@ public class UsuarioDAO {
         entity.getTransaction().commit();
     }
     
-    public void editar(Usuario usuario){
+    public void editar(Pedagogo pedagogo){
         entity.getTransaction().begin();
-        entity.merge(usuario);
+        entity.merge(pedagogo);
         entity.getTransaction().commit();
     }
     

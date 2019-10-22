@@ -1,5 +1,6 @@
 package br.com.argus.bean;
 
+import br.com.argus.dao.PedagogoDAO;
 import br.com.argus.dao.UsuarioDAO;
 import br.com.argus.model.JPAUtil;
 import br.com.argus.model.Pedagogo;
@@ -37,18 +38,11 @@ public class PedagogoBean implements Serializable {
     
     public void gravar(){
         
-        EntityManagerFactory f = Persistence.createEntityManagerFactory("teste"); //teste
-        try{
-            EntityManager e = f.createEntityManager();
-            e.getTransaction().begin();
-            e.persist(getPedagogo());
-            e.getTransaction().commit();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
+        PedagogoDAO pedagogoDAO = new PedagogoDAO();
+        pedagogoDAO.gravar(pedagogo);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/index.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_pedagogo.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -56,8 +50,8 @@ public class PedagogoBean implements Serializable {
     
     public List<Usuario> obterUsuarios(){
         List<Usuario> usuarios = new ArrayList<>();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager(); //Persistence.createEntityManagerFactory("teste");
-        Query q = e.createQuery("FROM Usuario");
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Pedagogo");
         usuarios = q.getResultList();
         return usuarios;
      
@@ -71,48 +65,35 @@ public class PedagogoBean implements Serializable {
         System.out.println("Usuario:"  + usuario.getNome());
     }*/
     
-    /*public static void main(String[] args) {
-        editar();
-    }*/
-    
     public void editar(int id){
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        Usuario u = new Usuario();
-        u = usuarioDAO.buscar(id);
+        PedagogoDAO pedagogoDAO = new PedagogoDAO();
+        Pedagogo p = new Pedagogo();
+        p = pedagogoDAO.buscar(id);
         
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
-        sessionMap.put("usuario", u);
+        sessionMap.put("pedagogo", p);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_pedagogo.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        //return "/editar_usuario.jsf";
     }
     
-    public void atualizar(Usuario usuario){
+    public void atualizar(Pedagogo pedagogo){
         UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.editar(usuario);
+        usuarioDAO.editar(pedagogo);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_pedagogo.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
     public void eliminar(int id){
-        //JOptionPane.showMessageDialog(null, "Passei no eliminar com id: " + id);
-        /*Usuario usuario = new Usuario();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        usuario = e.find(Usuario.class, id);*/
-        //JPAUtil.shutdown();
-        //System.out.println("Usuario:"  + usuario.getNome());
-        
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.eliminar(id);
+        PedagogoDAO pedagogoDAO = new PedagogoDAO();
+        pedagogoDAO.eliminar(id);
     }
 
     /**
