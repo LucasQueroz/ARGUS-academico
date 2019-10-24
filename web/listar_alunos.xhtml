@@ -128,7 +128,7 @@
 
     <div class="custom-breadcrumns border-bottom">
       <div class="container">
-        <a href="index.html">Home</a>
+        <a href="index.jsf">Home</a>
         <span class="mx-3 icon-keyboard_arrow_right"></span>
         <span class="current">Courses</span>
       </div>
@@ -184,11 +184,18 @@
                         <f:facet name="header">Cadastrar nota</f:facet>
                         <h:form>
                             <h:commandLink actionListener="#{notaBean.novo(aluno.id)}">
-                            <h:outputText value="Cadastrar"/>
+                            <h:outputText value="Cadastrar nota"/>
                         </h:commandLink>
                         </h:form>
                     </h:column>
-                    
+                    <h:column>
+                        <f:facet name="header">Listar nota</f:facet>
+                        <h:form>
+                            <h:commandLink actionListener="#{notaBean.novo(aluno.id)}">
+                            <h:outputText value="Listar nota"/>
+                        </h:commandLink>
+                        </h:form>
+                    </h:column>
 		</h:dataTable>
             </div>
         </div>

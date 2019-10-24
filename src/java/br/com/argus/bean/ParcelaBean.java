@@ -11,6 +11,8 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
@@ -19,7 +21,7 @@ import javax.persistence.Query;
  *
  * @author lucas queroz
  */
-@ManagedBean(name = "usuarioBean")
+@ManagedBean(name = "parcelaBean")
 @ViewScoped
 public class ParcelaBean implements Serializable {
     

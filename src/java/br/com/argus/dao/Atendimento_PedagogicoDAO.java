@@ -40,17 +40,12 @@ public class Atendimento_PedagogicoDAO {
         entity.getTransaction().commit();
     }
     
-//    EntityManager entity = JPAUtil.getEntityManagerFactory().createEntityManager();
-    
-        // Gravar cliente
-
 	public void gravar(Atendimento_Pedagogico atendimento_Pedagogico) {
             EntityManagerFactory f = Persistence.createEntityManagerFactory("teste");
             EntityManager e = f.createEntityManager();
             e.getTransaction().begin();
             e.persist(atendimento_Pedagogico);
-            e.getTransaction().commit();
-//            
+            e.getTransaction().commit();            
 	}
 
 }

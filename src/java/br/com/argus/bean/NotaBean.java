@@ -1,9 +1,11 @@
 package br.com.argus.bean;
 
 import br.com.argus.dao.AlunoDAO;
+import br.com.argus.dao.DisciplinaDAO;
 import br.com.argus.dao.NotaDAO;
 import br.com.argus.dao.UsuarioDAO;
 import br.com.argus.model.Aluno;
+import br.com.argus.model.Disciplina;
 import br.com.argus.model.JPAUtil;
 import br.com.argus.model.Nota;
 import br.com.argus.model.Usuario;
@@ -38,7 +40,6 @@ public class NotaBean implements Serializable{
     }
     
     public void novo(int id){
-        
         AlunoDAO alunoDAO = new AlunoDAO();
         Aluno a = new Aluno();
         a = alunoDAO.buscar(id);
@@ -60,18 +61,18 @@ public class NotaBean implements Serializable{
         notaDAO.gravar(nota);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_alunos.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_notas.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
-    public List<Usuario> obterUsuarios(){
-        List<Usuario> usuarios = new ArrayList<>();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager(); //Persistence.createEntityManagerFactory("teste");
-        Query q = e.createQuery("FROM Usuario");
-        usuarios = q.getResultList();
-        return usuarios;
+    public List<Nota> obter(){
+        List<Nota> notas = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Nota");
+        notas = q.getResultList();
+        return notas;
      
     }
     
@@ -83,48 +84,39 @@ public class NotaBean implements Serializable{
         System.out.println("Usuario:"  + usuario.getNome());
     }*/
     
-    /*public static void main(String[] args) {
-        editar();
-    }*/
-    
-    public void editar(int id){
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        Usuario u = new Usuario();
-        u = usuarioDAO.buscar(id);
+    public void editar(int id_aluno, int id_diciplina){
+        NotaDAO notaDAO = new NotaDAO();
+        Nota n = new Nota();
+        n = notaDAO.buscar(id_aluno);
+        
+        DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
+        Disciplina d = new Disciplina();
+        d = disciplinaDAO.buscar(id_diciplina);
         
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
-        sessionMap.put("usuario", u);
+        sessionMap.put("nota", n);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_notas.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        //return "/editar_usuario.jsf";
     }
     
-    public void atualizar(Usuario usuario){
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.editar(usuario);
+    public void atualizar(Nota nota){
+        NotaDAO notaDAO= new NotaDAO();
+        notaDAO.editar(nota);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_notas.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
     public void eliminar(int id){
-        //JOptionPane.showMessageDialog(null, "Passei no eliminar com id: " + id);
-        /*Usuario usuario = new Usuario();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        usuario = e.find(Usuario.class, id);*/
-        //JPAUtil.shutdown();
-        //System.out.println("Usuario:"  + usuario.getNome());
-        
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.eliminar(id);
+        NotaDAO notaDAO = new NotaDAO();
+        notaDAO.eliminar(id);
     }
 
     /**

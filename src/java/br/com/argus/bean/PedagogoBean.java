@@ -48,12 +48,12 @@ public class PedagogoBean implements Serializable {
         }
     }
     
-    public List<Usuario> obterUsuarios(){
-        List<Usuario> usuarios = new ArrayList<>();
+    public List<Pedagogo> obter(){
+        List<Pedagogo> pedagogos = new ArrayList<>();
         EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
         Query q = e.createQuery("FROM Pedagogo");
-        usuarios = q.getResultList();
-        return usuarios;
+        pedagogos = q.getResultList();
+        return pedagogos;
      
     }
     

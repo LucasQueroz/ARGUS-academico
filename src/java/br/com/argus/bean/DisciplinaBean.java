@@ -1,10 +1,8 @@
 package br.com.argus.bean;
 
 import br.com.argus.dao.DisciplinaDAO;
-import br.com.argus.dao.UsuarioDAO;
 import br.com.argus.model.Disciplina;
 import br.com.argus.model.JPAUtil;
-import br.com.argus.model.Usuario;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -38,16 +36,6 @@ public class DisciplinaBean implements Serializable {
         DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
         disciplinaDAO.gravar(disciplina);
         
-        /*EntityManagerFactory f = Persistence.createEntityManagerFactory("teste"); //teste
-        try{
-            EntityManager e = f.createEntityManager();
-            e.getTransaction().begin();
-            e.persist(getDisciplina());
-            e.getTransaction().commit();
-        }catch(Exception e){
-            e.printStackTrace();
-        }*/
-        
         try {
             FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_disciplina.jsf");
         } catch (IOException ex) {
@@ -58,7 +46,7 @@ public class DisciplinaBean implements Serializable {
     public List<Disciplina> obter(){
         List<Disciplina> diciplinas = new ArrayList<>();
         EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        Query q = e.createQuery("FROM Discplina");
+        Query q = e.createQuery("FROM Disciplina");
         diciplinas = q.getResultList();
         return diciplinas;
      

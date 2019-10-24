@@ -1,19 +1,35 @@
 package br.com.argus.bean;
 
+import br.com.argus.dao.TurmaDAO;
+import br.com.argus.model.JPAUtil;
+import br.com.argus.model.Turma;
+import java.io.IOException;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.annotation.PostConstruct;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+import javax.faces.context.FacesContext;
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
+
 /**
  *
  * @author lucas queroz
  */
-@ManagedBean(name = "usuarioBean")
+@ManagedBean(name = "turmaBean")
 @ViewScoped
 public class TurmaBean implements Serializable {
     
-    private Usuario usuario;
-    //private List<Usuario> usuarios;
+    private Turma turma;
     
     @PostConstruct
     private void init(){
-        usuario= new Usuario();
+        turma = new Turma();
     }
     
     /*public String novo(){
@@ -25,33 +41,22 @@ public class TurmaBean implements Serializable {
     
     public void gravar(){
         
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.gravar(usuario);
-        
-        //System.out.println(usuario.getNome());
-        /*EntityManagerFactory f = Persistence.createEntityManagerFactory("teste"); //teste
-        try{
-            EntityManager e = f.createEntityManager();
-            e.getTransaction().begin();
-            e.persist(usuario);
-            e.getTransaction().commit();
-        }catch(Exception e){
-            e.printStackTrace();
-        }*/
+        TurmaDAO turmaDAO = new TurmaDAO();
+        turmaDAO.gravar(getTurma());
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_turma.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
-    public List<Usuario> obterUsuarios(){
-        List<Usuario> usuarios = new ArrayList<>();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager(); //Persistence.createEntityManagerFactory("teste");
-        Query q = e.createQuery("FROM Usuario");
-        usuarios = q.getResultList();
-        return usuarios;
+    public List<Turma> obter(){
+        List<Turma> turmas = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Turma");
+        turmas = q.getResultList();
+        return turmas;
      
     }
     
@@ -68,43 +73,41 @@ public class TurmaBean implements Serializable {
     }*/
     
     public void editar(int id){
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        Usuario u = new Usuario();
-        u = usuarioDAO.buscar(id);
+        TurmaDAO turamDAO = new TurmaDAO();
+        Turma t = new Turma();
+        t = turamDAO.buscar(id);
         
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
-        sessionMap.put("usuario", u);
+        sessionMap.put("turma", t);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_turma.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        //return "/editar_usuario.jsf";
     }
     
-    public void atualizar(Usuario usuario){
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.editar(usuario);
+    public void atualizar(Turma turma){
+        TurmaDAO turmaDAO = new TurmaDAO();
+        turmaDAO.editar(turma);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_turma.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
     public void eliminar(int id){
-        //JOptionPane.showMessageDialog(null, "Passei no eliminar com id: " + id);
-        /*Usuario usuario = new Usuario();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        usuario = e.find(Usuario.class, id);*/
-        //JPAUtil.shutdown();
-        //System.out.println("Usuario:"  + usuario.getNome());
-        
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.eliminar(id);
+        TurmaDAO turmaDAO = new TurmaDAO();
+        turmaDAO.eliminar(id);
+    }
+
+    /**
+     * @return the turma
+     */
+    public Turma getTurma() {
+        return turma;
     }
     
 }

@@ -25,9 +25,9 @@ public class UsuarioDAO {
         entity.getTransaction().commit();
     }
     
-    public void editar(Pedagogo pedagogo){
+    public void editar(Usuario usuario){
         entity.getTransaction().begin();
-        entity.merge(pedagogo);
+        entity.merge(usuario);
         entity.getTransaction().commit();
     }
     

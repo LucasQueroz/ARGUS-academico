@@ -7,7 +7,7 @@
       xmlns:ui="http://java.sun.com/jsf/facelets">
 
 <h:head>
-  <title>Editar Disciplina</title>
+  <title>Lista de Turmas</title>
   <meta charset="utf-8"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
 
@@ -68,17 +68,13 @@
         <div class="d-flex align-items-center">
           <div class="site-logo">
             <a href="index.html" class="d-block">
-              <img src="images/logo.jpg" alt="Image" class="img-fluid"></img>
+              <img src="images/logo.jpg" alt="Image" class="img-fluid"/>
             </a>
           </div>
           <div class="mr-auto">
-              <a href="index.jsf" class="nav-link text-left">Home</a>
-              <a href="register_usuario.jsf" class="nav-link text-left">Editar Usuário</a>
-              
-              
             <!--<nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li class="active">
+                <li>
                   <a href="index.html" class="nav-link text-left">Home</a>
                 </li>
                 <li class="has-children">
@@ -91,7 +87,7 @@
                 <li>
                   <a href="admissions.html" class="nav-link text-left">Admissions</a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="courses.html" class="nav-link text-left">Courses</a>
                 </li>
                 <li>
@@ -99,8 +95,8 @@
                   </li>
               </ul>                                                                                                                                                                                                                                                                                          </ul>
             </nav>-->
+
           </div>
-            
           <div class="ml-auto">
             <div class="social-wrap">
               <a href="#"><span class="icon-facebook"></span></a>
@@ -116,63 +112,98 @@
       </div>
 
     </header>
+
     
     <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('images/bg_1.jpg')">
         <div class="container">
-          <div class="row align-items-end justify-content-center text-center">
+          <div class="row align-items-end">
             <div class="col-lg-7">
-              <h2 class="mb-0">Editar</h2>
-              <p>Disciplina</p>
+              <h2 class="mb-0">Lista de Turma</h2>
+              <p>Veja todos os Turmas cadastrados no sistema</p>
             </div>
           </div>
         </div>
       </div> 
     
+
     <div class="custom-breadcrumns border-bottom">
       <div class="container">
         <a href="index.html">Home</a>
         <span class="mx-3 icon-keyboard_arrow_right"></span>
-        <span class="current">Editar</span>
+        <span class="current">Courses</span>
       </div>
     </div>
 
-        <h:form>
-            <div class="site-section">
-              <div class="container">
-                  <div class="row justify-content-center">
-                      <div class="col-md-5">
-                          <div class="row">
-                              <div class="col-md-12 form-group">
-                                  <label for="nome">Noma da Disciplina</label>
-                                  <p:inputText value="#{disciplina.nome}" class="form-control form-control-lg"/>
-                              </div>
-                              <div class="col-md-12 form-group">
-                                  <label for="senha">Carga Horária</label>
-                                  <p:inputText value="#{disciplina.carga_horaria}" class="form-control form-control-lg"/>
-                              </div>
-                              <div class="col-md-12 form-group">
-                                  <label for="senha">Código</label>
-                                  <p:inputText value="#{disciplina.codigo}" class="form-control form-control-lg"/>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-12">
-                                  <p:commandButton action="#{disciplinaBean.atualizar(disciplina)}" update="@form" value="Atualizar" class="btn btn-primary btn-lg px-5"/>                            
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
+    <div class="site-section">
+        <div class="container">
+            <div class="row">
+                <h:dataTable value="#{turmaBean.obter()}" var="turma"
+			border="1">
+                    
+                    <h:column>
+			<f:facet name="header">Turma</f:facet>
+                        <h:outputText value="#{turma.nome}"></h:outputText>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Excluir</f:facet>
+                        <h:form>
+                            <h:commandLink actionListener="#{turmaBean.eliminar(turma.id)}">
+                            <h:outputText value="Deletar"/>
+                        </h:commandLink>
+                        </h:form>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Editar</f:facet>
+                        <h:form>
+                            <h:commandLink actionListener="#{turmaBean.editar(turma.id)}">
+                            <h:outputText value="Editar"/>
+                        </h:commandLink>
+                        </h:form>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Cadastrar Matéria</f:facet>
+                        <h:form>
+                            <h:commandLink actionListener="#{notaBean.novo(aluno.id)}">
+                            <h:outputText value="Cadastrar"/>
+                        </h:commandLink>
+                        </h:form>
+                    </h:column>
+                    
+		</h:dataTable>
             </div>
-      </h:form>
+        </div>
+    </div>
 
-    
+    <div class="section-bg style-1" style="background-image: url('images/hero_1.jpg');">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+              <span class="icon flaticon-mortarboard"></span>
+              <h3>Our Philosphy</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea? Dolore, amet reprehenderit.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+              <span class="icon flaticon-school-material"></span>
+              <h3>Academics Principle</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea?
+                Dolore, amet reprehenderit.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+              <span class="icon flaticon-library"></span>
+              <h3>Key of Success</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea?
+                Dolore, amet reprehenderit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
     <div class="footer">
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
-            <p class="mb-4"><img src="images/logo.png" alt="Image" class="img-fluid"></img></p>
+            <p class="mb-4"><img src="images/logo.png" alt="Image" class="img-fluid"/></p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>  
             <p><a href="#">Learn More</a></p>
           </div>
@@ -191,9 +222,9 @@
               <h3 class="footer-heading"><span>Our Courses</span></h3>
               <ul class="list-unstyled">
                   <li><a href="#">Math</a></li>
-                  <li><a href="#">Science Engineering</a></li>
-                  <li><a href="#">Arts Humanities</a></li>
-                  <li><a href="#">Economics Finance</a></li>
+                  <li><a href="#">Science &amp; Engineering</a></li>
+                  <li><a href="#">Arts &amp; Humanities</a></li>
+                  <li><a href="#">Economics &amp; Finance</a></li>
                   <li><a href="#">Business Administration</a></li>
                   <li><a href="#">Computer Science</a></li>
               </ul>
@@ -245,6 +276,9 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+
+
 
   <script src="js/main.js"></script>
 
