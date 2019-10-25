@@ -54,7 +54,6 @@ public class PedagogoBean implements Serializable {
         Query q = e.createQuery("FROM Pedagogo");
         pedagogos = q.getResultList();
         return pedagogos;
-     
     }
     
     /*public void editar(Long id){
@@ -81,8 +80,8 @@ public class PedagogoBean implements Serializable {
     }
     
     public void atualizar(Pedagogo pedagogo){
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.editar(pedagogo);
+        PedagogoDAO pedagogoDAO = new PedagogoDAO();
+        pedagogoDAO.editar(pedagogo);
         
         try {
             FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_pedagogo.jsf");

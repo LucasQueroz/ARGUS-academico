@@ -35,11 +35,6 @@ public class ResponsavelBean implements Serializable {
     }
     
     public void gravar(){
-        //novo();
-        
-        //UsuarioDAO usuarioDAO = new UsuarioDAO();
-        //System.out.println(usuario.getNome());
-        
         ResponsavelDAO responsavelDAO = new ResponsavelDAO();
         responsavelDAO.gravar(responsavel);
         
@@ -50,12 +45,12 @@ public class ResponsavelBean implements Serializable {
         }
     }
     
-    public List<Usuario> obterUsuarios(){
-        List<Usuario> usuarios = new ArrayList<>();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager(); //Persistence.createEntityManagerFactory("teste");
-        Query q = e.createQuery("FROM Usuario");
-        usuarios = q.getResultList();
-        return usuarios;
+    public List<Responsavel> obter(){
+        List<Responsavel> responsavels = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Responsavel");
+        responsavels = q.getResultList();
+        return responsavels;
      
     }
     

@@ -1,6 +1,7 @@
 package br.com.argus.dao;
 
 import br.com.argus.model.JPAUtil;
+import br.com.argus.model.Parcela;
 import br.com.argus.model.Usuario;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -11,45 +12,36 @@ import javax.persistence.Persistence;
  * @author lucas queroz
  */
 public class ParcelaDAO {
-    
+
     EntityManager entity = JPAUtil.getEntityManagerFactory().createEntityManager();
 
-    public Usuario buscar(int id) {
-        /*Cliente c = new Cliente();
-	c = entity.find(Cliente.class, id);
-	// JPAUtil.shutdown();
-	return c;*/
-        
-        Usuario u = new Usuario();
-        u = entity.find(Usuario.class, id);
-        return u;
+    public Parcela buscar(int id) {
+        Parcela p = new Parcela();
+        p = entity.find(Parcela.class, id);
+        return p;
     }
-    
-    public void eliminar(int id){
-        Usuario u = new Usuario();
-        u = entity.find(Usuario.class, id);
-        entity.getTransaction().begin();
-        entity.remove(u);
-        entity.getTransaction().commit();
-    }
-    
-    public void editar(Usuario usuario){
-        entity.getTransaction().begin();
-        entity.merge(usuario);
-        entity.getTransaction().commit();
-    }
-    
-//    EntityManager entity = JPAUtil.getEntityManagerFactory().createEntityManager();
-    
-        // Gravar cliente
 
-	public void gravar(Usuario usuario) {
-            EntityManagerFactory f = Persistence.createEntityManagerFactory("teste");
-            EntityManager e = f.createEntityManager();
-            e.getTransaction().begin();
-            e.persist(usuario);
-            e.getTransaction().commit();
-//            
-	}
-    
+    public void eliminar(int id) {
+        Parcela p = new Parcela();
+        p = entity.find(Parcela.class, id);
+        entity.getTransaction().begin();
+        entity.remove(p);
+        entity.getTransaction().commit();
+    }
+
+    public void editar(Parcela parcela) {
+        entity.getTransaction().begin();
+        entity.merge(parcela);
+        entity.getTransaction().commit();
+    }
+
+    public void gravar(Parcela parcela) {
+        EntityManagerFactory f = Persistence.createEntityManagerFactory("teste");
+        EntityManager e = f.createEntityManager();
+        e.getTransaction().begin();
+        e.persist(parcela);
+        e.getTransaction().commit();
+
+    }
+
 }

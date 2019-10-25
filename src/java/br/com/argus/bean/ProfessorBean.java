@@ -48,10 +48,10 @@ public class ProfessorBean implements Serializable {
         }
     }
     
-    public List<Usuario> obterUsuarios(){
-        List<Usuario> usuarios = new ArrayList<>();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager(); //Persistence.createEntityManagerFactory("teste");
-        Query q = e.createQuery("FROM Usuario");
+    public List<Professor> obter(){
+        List<Professor> usuarios = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Professor");
         usuarios = q.getResultList();
         return usuarios;
      

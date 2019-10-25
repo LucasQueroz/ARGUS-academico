@@ -7,7 +7,7 @@
       xmlns:ui="http://java.sun.com/jsf/facelets">
 
 <h:head>
-  <title>Lista de Professor</title>
+  <title>Lista de Parcelas do Responsável</title>
   <meta charset="utf-8"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
 
@@ -118,8 +118,8 @@
         <div class="container">
           <div class="row align-items-end">
             <div class="col-lg-7">
-              <h2 class="mb-0">Lista de Professor</h2>
-              <p>Veja todos os Professores cadastrados no sistema</p>
+              <h2 class="mb-0">Lista de Parcelas do Responsavel</h2>
+              <p>Veja todos as Parcelas do Responsavel cadastrados no sistema</p>
             </div>
           </div>
         </div>
@@ -128,38 +128,34 @@
 
     <div class="custom-breadcrumns border-bottom">
       <div class="container">
-        <a href="index.html">Home</a>
+        <a href="index.jsf">Home</a>
         <span class="mx-3 icon-keyboard_arrow_right"></span>
-        <span class="current">Lista</span>
+        <span class="current">Courses</span>
       </div>
     </div>
 
     <div class="site-section">
         <div class="container">
             <div class="row">
-                <h:dataTable value="#{professorBean.obter()}" var="professor"
+                <h:dataTable value="#{parcelaBean.obter()}" var="parcela"
 			border="1">
                     
                     <h:column>
-			<f:facet name="header">Nome</f:facet>
-                        <h:outputText value="#{professor.nome}"></h:outputText>
+			<f:facet name="header">Valor da Parcela</f:facet>
+                        <h:outputText value="#{parcela.valor}"></h:outputText>
                     </h:column>
                     <h:column>
-			<f:facet name="header">Data de nascimento</f:facet>
-                        <h:outputText value="#{professor.data_nascimento}"></h:outputText>
+			<f:facet name="header">Número Pago</f:facet>
+                        <h:outputText value="#{parcela.numero_pago}"></h:outputText>
                     </h:column>
                     <h:column>
-			<f:facet name="header">Endereço</f:facet>
-			<h:outputText value="#{professor.endereco}"></h:outputText>
-                    </h:column>
-                    <h:column>
-			<f:facet name="header">Naturalidade</f:facet>
-			<h:outputText value="#{professor.naturalidade}"></h:outputText>
+			<f:facet name="header">ID Responsável</f:facet>
+                        <h:outputText value="#{parcela.id_responsavel}"></h:outputText>
                     </h:column>
                     <h:column>
                         <f:facet name="header">Excluir</f:facet>
                         <h:form>
-                            <h:commandLink actionListener="#{professorBean.eliminar(professor.id)}">
+                            <h:commandLink actionListener="#{parcelaBean.eliminar(parcela.id)}">
                             <h:outputText value="Deletar"/>
                         </h:commandLink>
                         </h:form>
@@ -167,7 +163,7 @@
                     <h:column>
                         <f:facet name="header">Editar</f:facet>
                         <h:form>
-                            <h:commandLink actionListener="#{professorBean.editar(professor.id)}">
+                            <h:commandLink actionListener="#{parcelaBean.editar(parcela.id)}">
                             <h:outputText value="Editar"/>
                         </h:commandLink>
                         </h:form>

@@ -3,12 +3,10 @@ package br.com.argus.bean;
 import br.com.argus.dao.AlunoDAO;
 import br.com.argus.dao.DisciplinaDAO;
 import br.com.argus.dao.NotaDAO;
-import br.com.argus.dao.UsuarioDAO;
 import br.com.argus.model.Aluno;
 import br.com.argus.model.Disciplina;
 import br.com.argus.model.JPAUtil;
 import br.com.argus.model.Nota;
-import br.com.argus.model.Usuario;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -54,6 +52,15 @@ public class NotaBean implements Serializable{
         }
     }
     
+    public void listar(int id_aluno){
+        nota.setId_aluno(id_aluno);
+         try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_notas.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
     public void gravar(int id_aluno){
         nota.setId_aluno(id_aluno);
         
@@ -89,9 +96,9 @@ public class NotaBean implements Serializable{
         Nota n = new Nota();
         n = notaDAO.buscar(id_aluno);
         
-        DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
+        /*DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
         Disciplina d = new Disciplina();
-        d = disciplinaDAO.buscar(id_diciplina);
+        d = disciplinaDAO.buscar(id_diciplina);*/
         
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
         sessionMap.put("nota", n);

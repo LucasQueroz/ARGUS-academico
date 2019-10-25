@@ -1,8 +1,12 @@
 package br.com.argus.bean;
 
+import br.com.argus.dao.AlunoDAO;
+import br.com.argus.dao.ParcelaDAO;
+import br.com.argus.dao.ResponsavelDAO;
 import br.com.argus.dao.UsuarioDAO;
 import br.com.argus.model.JPAUtil;
-import br.com.argus.model.Usuario;
+import br.com.argus.model.Parcela;
+import br.com.argus.model.Responsavel;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -25,50 +29,56 @@ import javax.persistence.Query;
 @ViewScoped
 public class ParcelaBean implements Serializable {
     
-    private Usuario usuario;
-    //private List<Usuario> usuarios;
+    private Parcela parcela;
     
     @PostConstruct
     private void init(){
-        usuario= new Usuario();
+        parcela= new Parcela();
     }
     
-    /*public String novo(){
-        Usuario u = new Usuario();
-        Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
-	sessionMap.put("usuario", u);
-        return "/faces/register_usuario.xhtml";
-    }*/
-    
-    public void gravar(){
-        
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.gravar(usuario);
-        
-        //System.out.println(usuario.getNome());
-        /*EntityManagerFactory f = Persistence.createEntityManagerFactory("teste"); //teste
-        try{
-            EntityManager e = f.createEntityManager();
-            e.getTransaction().begin();
-            e.persist(usuario);
-            e.getTransaction().commit();
-        }catch(Exception e){
-            e.printStackTrace();
-        }*/
-        
-        try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_usuario.jsf");
+    public void listar(int id_responsavel){
+        parcela.setId_responsavel(id_responsavel);
+         try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_parcela.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
-    public List<Usuario> obterUsuarios(){
-        List<Usuario> usuarios = new ArrayList<>();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager(); //Persistence.createEntityManagerFactory("teste");
-        Query q = e.createQuery("FROM Usuario");
-        usuarios = q.getResultList();
-        return usuarios;
+    public void novo(int id){
+        ResponsavelDAO parcelaDAO = new ResponsavelDAO();
+        Responsavel r = new Responsavel();
+        r = parcelaDAO.buscar(id);
+        
+        Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
+        sessionMap.put("responsavel", r);
+        
+        try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/register_parcela.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void gravar(int id_responsavel){
+        parcela.setId(id_responsavel);
+        
+        ParcelaDAO parcelaDAO = new ParcelaDAO();
+        parcelaDAO.gravar(parcela);
+        
+        try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_parcela.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public List<Parcela> obter(){
+        List<Parcela> parcelas = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Parcela");
+        parcelas = q.getResultList();
+        return parcelas;
      
     }
     
@@ -80,47 +90,41 @@ public class ParcelaBean implements Serializable {
         System.out.println("Usuario:"  + usuario.getNome());
     }*/
     
-    /*public static void main(String[] args) {
-        editar();
-    }*/
-    
     public void editar(int id){
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        Usuario u = new Usuario();
-        u = usuarioDAO.buscar(id);
+        ParcelaDAO parcelaDAO = new ParcelaDAO();
+        Parcela p = new Parcela();
+        p = parcelaDAO.buscar(id);
         
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
-        sessionMap.put("usuario", u);
+        sessionMap.put("parcela", p);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_parcela.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        //return "/editar_usuario.jsf";
     }
     
-    public void atualizar(Usuario usuario){
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.editar(usuario);
+    public void atualizar(Parcela parcela){
+        ParcelaDAO parcelaDAO= new ParcelaDAO();
+        parcelaDAO.editar(parcela);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_parcela.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
     public void eliminar(int id){
-        //JOptionPane.showMessageDialog(null, "Passei no eliminar com id: " + id);
-        /*Usuario usuario = new Usuario();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        usuario = e.find(Usuario.class, id);*/
-        //JPAUtil.shutdown();
-        //System.out.println("Usuario:"  + usuario.getNome());
-        
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.eliminar(id);
+        ParcelaDAO parcelaDAO = new ParcelaDAO();
+        parcelaDAO.eliminar(id);
+    }
+
+    /**
+     * @return the parcela
+     */
+    public Parcela getParcela() {
+        return parcela;
     }
 }
