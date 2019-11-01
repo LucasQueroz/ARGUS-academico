@@ -1,0 +1,498 @@
+28-Oct-2019 00:00:27.700 INFORMA합ES [http-apr-8080-exec-135] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 00:00:27.700 INFORMA합ES [http-apr-8080-exec-135] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 00:00:46.872 INFORMA합ES [http-apr-8080-exec-150] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 00:00:46.872 INFORMA합ES [http-apr-8080-exec-150] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 14:43:19.613 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 14:43:19.613 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 14:43:21.347 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+28-Oct-2019 14:43:21.363 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+28-Oct-2019 14:43:21.363 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4ddcf581')
+28-Oct-2019 14:43:48.018 INFORMA합ES [http-apr-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 14:43:48.033 INFORMA합ES [http-apr-8080-exec-11] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 14:44:59.549 INFORMA합ES [http-apr-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 14:44:59.553 INFORMA합ES [http-apr-8080-exec-14] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 14:48:35.655 INFORMA합ES [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 14:48:35.655 INFORMA합ES [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 14:48:58.074 INFORMA합ES [http-apr-8080-exec-27] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 14:48:58.074 INFORMA합ES [http-apr-8080-exec-27] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 14:51:21.596 INFORMA합ES [http-apr-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 14:51:21.596 INFORMA합ES [http-apr-8080-exec-39] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 14:58:40.559 INFORMA합ES [http-apr-8080-exec-50] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 14:58:40.559 INFORMA합ES [http-apr-8080-exec-50] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 14:58:59.736 GRAVE [http-apr-8080-exec-45] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax/servlet/jsp/jstl/core/Config] with root cause
+ java.lang.ClassNotFoundException: javax.servlet.jsp.jstl.core.Config
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1352)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1180)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:344)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:153)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 15:03:11.374 INFORMA합ES [http-apr-8080-exec-53] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 15:03:11.374 INFORMA합ES [http-apr-8080-exec-53] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 15:03:49.087 GRAVE [http-apr-8080-exec-52] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax/servlet/jsp/jstl/core/Config] with root cause
+ java.lang.ClassNotFoundException: javax.servlet.jsp.jstl.core.Config
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1352)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1180)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:344)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:153)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 15:03:58.493 GRAVE [http-apr-8080-exec-63] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax/servlet/jsp/jstl/core/Config] with root cause
+ java.lang.NoClassDefFoundError: javax/servlet/jsp/jstl/core/Config
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:344)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:153)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 15:04:14.159 GRAVE [http-apr-8080-exec-64] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax/servlet/jsp/jstl/core/Config] with root cause
+ java.lang.NoClassDefFoundError: javax/servlet/jsp/jstl/core/Config
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:344)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:153)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 15:08:23.835 GRAVE [http-apr-8080-exec-62] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax/servlet/jsp/jstl/core/Config] with root cause
+ java.lang.NoClassDefFoundError: javax/servlet/jsp/jstl/core/Config
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:344)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:153)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 15:09:33.363 INFORMA합ES [http-apr-8080-exec-62] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 15:09:33.363 INFORMA합ES [http-apr-8080-exec-62] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 15:09:33.982 GRAVE [http-apr-8080-exec-69] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax/servlet/jsp/jstl/core/Config] with root cause
+ java.lang.ClassNotFoundException: javax.servlet.jsp.jstl.core.Config
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1352)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1180)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:344)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:153)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 15:14:44.307 INFORMA합ES [http-apr-8080-exec-72] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 15:14:44.307 INFORMA합ES [http-apr-8080-exec-72] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 15:15:31.427 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 15:15:31.431 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 15:29:52.555 GRAVE [http-apr-8080-exec-86] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax/servlet/jsp/jstl/core/Config] with root cause
+ java.lang.ClassNotFoundException: javax.servlet.jsp.jstl.core.Config
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1352)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1180)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:344)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:153)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 16:39:33.052 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 16:39:33.052 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 16:39:34.489 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+28-Oct-2019 16:39:34.489 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+28-Oct-2019 16:39:34.505 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@5ce210d0')
+28-Oct-2019 16:40:03.831 INFORMA합ES [http-apr-8080-exec-10] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 16:40:03.831 INFORMA합ES [http-apr-8080-exec-10] org.apache.catalina.core.ApplicationContext.log LoginAuth:Initializing filter
+28-Oct-2019 17:59:40.053 INFORMA합ES [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+28-Oct-2019 17:59:40.053 INFORMA합ES [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+28-Oct-2019 19:56:33.965 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 19:56:33.966 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 19:56:36.250 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+28-Oct-2019 19:56:36.251 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+28-Oct-2019 19:56:36.256 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@358b9b27')
+28-Oct-2019 19:57:00.939 INFORMA합ES [http-apr-8080-exec-4] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 19:57:00.940 INFORMA합ES [http-apr-8080-exec-4] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 19:58:30.783 INFORMA합ES [http-apr-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 19:58:30.785 INFORMA합ES [http-apr-8080-exec-5] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 19:59:10.301 GRAVE [http-apr-8080-exec-16] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax/servlet/jsp/jstl/core/Config] with root cause
+ java.lang.ClassNotFoundException: javax.servlet.jsp.jstl.core.Config
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1352)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1180)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:344)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:153)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 20:00:13.126 GRAVE [http-apr-8080-exec-17] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax/servlet/jsp/jstl/core/Config] with root cause
+ java.lang.NoClassDefFoundError: javax/servlet/jsp/jstl/core/Config
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:344)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:153)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 20:01:02.354 GRAVE [http-apr-8080-exec-16] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax/servlet/jsp/jstl/core/Config] with root cause
+ java.lang.NoClassDefFoundError: javax/servlet/jsp/jstl/core/Config
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:344)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:153)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 20:01:12.399 GRAVE [http-apr-8080-exec-16] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax/servlet/jsp/jstl/core/Config] with root cause
+ java.lang.NoClassDefFoundError: javax/servlet/jsp/jstl/core/Config
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:344)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:153)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 20:08:34.712 INFORMA합ES [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+28-Oct-2019 20:08:34.713 INFORMA합ES [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+28-Oct-2019 21:50:42.759 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 21:50:44.759 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+28-Oct-2019 21:50:44.759 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+28-Oct-2019 21:50:44.790 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@59828962')
+28-Oct-2019 21:51:20.806 INFORMA합ES [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 21:54:12.272 INFORMA합ES [http-apr-8080-exec-19] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 21:57:51.681 INFORMA합ES [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:00:26.193 INFORMA합ES [http-apr-8080-exec-32] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:04:29.356 INFORMA합ES [http-apr-8080-exec-43] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:08:16.568 INFORMA합ES [http-apr-8080-exec-47] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 22:08:16.568 INFORMA합ES [http-apr-8080-exec-47] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:08:38.286 INFORMA합ES [http-apr-8080-exec-55] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 22:08:38.286 INFORMA합ES [http-apr-8080-exec-55] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:14:12.268 INFORMA합ES [http-apr-8080-exec-62] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 22:14:12.268 INFORMA합ES [http-apr-8080-exec-62] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:14:39.729 GRAVE [http-apr-8080-exec-57] org.apache.catalina.core.StandardHostValve.invoke Exception Processing /login.jsf
+ java.lang.NullPointerException
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:250)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 22:14:40.604 GRAVE [http-apr-8080-exec-50] org.apache.catalina.core.StandardHostValve.invoke Exception Processing /login.jsf
+ java.lang.NullPointerException
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:250)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 22:14:41.041 GRAVE [79] org.apache.catalina.core.StandardHostValve.invoke Exception Processing /login.jsf
+ java.lang.NullPointerException
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:250)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 22:14:41.619 GRAVE [http-apr-8080-exec-35] org.apache.catalina.core.StandardHostValve.invoke Exception Processing /login.jsf
+ java.lang.NullPointerException
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:250)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-Oct-2019 22:14:45.764 INFORMA합ES [http-apr-8080-exec-58] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 22:14:45.764 INFORMA합ES [http-apr-8080-exec-58] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:16:10.092 INFORMA합ES [http-apr-8080-exec-70] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 22:16:10.140 INFORMA합ES [http-apr-8080-exec-70] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:16:40.340 INFORMA합ES [http-apr-8080-exec-71] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 22:16:40.344 INFORMA합ES [http-apr-8080-exec-71] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:16:59.712 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 22:16:59.712 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:17:56.992 INFORMA합ES [http-apr-8080-exec-66] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 22:17:56.992 INFORMA합ES [http-apr-8080-exec-66] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:19:09.088 INFORMA합ES [http-apr-8080-exec-69] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 22:19:09.088 INFORMA합ES [http-apr-8080-exec-69] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:19:27.407 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 22:19:27.407 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:20:28.515 INFORMA합ES [http-apr-8080-exec-67] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 22:20:28.515 INFORMA합ES [http-apr-8080-exec-67] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+28-Oct-2019 22:21:38.361 INFORMA합ES [http-apr-8080-exec-83] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+28-Oct-2019 22:21:38.361 INFORMA합ES [http-apr-8080-exec-83] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter

@@ -46,7 +46,7 @@ public class NotaBean implements Serializable{
         sessionMap.put("aluno", a);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/register_notas.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("register_notas.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -55,7 +55,7 @@ public class NotaBean implements Serializable{
     public void listar(int id_aluno){
         nota.setId_aluno(id_aluno);
          try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_notas.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_notas.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -68,7 +68,7 @@ public class NotaBean implements Serializable{
         notaDAO.gravar(nota);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_notas.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_notas.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -104,7 +104,7 @@ public class NotaBean implements Serializable{
         sessionMap.put("nota", n);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_notas.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("editar_notas.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -115,7 +115,7 @@ public class NotaBean implements Serializable{
         notaDAO.editar(nota);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_notas.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_notas.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }

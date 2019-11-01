@@ -16,6 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.faces.bean.ViewScoped;
 import javax.persistence.Query;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -40,23 +41,13 @@ public class UsuarioBean implements Serializable {
     }*/
     
     public void gravar(){
+        usuario.setSenha("senha");
         
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         usuarioDAO.gravar(usuario);
         
-        //System.out.println(usuario.getNome());
-        /*EntityManagerFactory f = Persistence.createEntityManagerFactory("teste"); //teste
-        try{
-            EntityManager e = f.createEntityManager();
-            e.getTransaction().begin();
-            e.persist(usuario);
-            e.getTransaction().commit();
-        }catch(Exception e){
-            e.printStackTrace();
-        }*/
-        
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_usuario.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -64,7 +55,7 @@ public class UsuarioBean implements Serializable {
     
     public List<Usuario> obterUsuarios(){
         List<Usuario> usuarios = new ArrayList<>();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager(); //Persistence.createEntityManagerFactory("teste");
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
         Query q = e.createQuery("FROM Usuario");
         usuarios = q.getResultList();
         return usuarios;

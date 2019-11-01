@@ -81,7 +81,7 @@ public class Atendimento_PedagogicoBean implements Serializable {
         sessionMap.put("atendimento_pedagogico", a);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_atendimento_pedagogico.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("editar_atendimento_pedagogico.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -93,7 +93,7 @@ public class Atendimento_PedagogicoBean implements Serializable {
         atendimento_PedagogicoDAO.editar(atendimento_Pedagogico);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_atendimento_pedagogico.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_atendimento_pedagogico.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }

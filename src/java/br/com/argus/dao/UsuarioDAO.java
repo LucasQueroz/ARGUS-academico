@@ -6,6 +6,7 @@ import br.com.argus.model.Usuario;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.swing.JOptionPane;
 
 public class UsuarioDAO {
     
@@ -36,7 +37,8 @@ public class UsuarioDAO {
         EntityManager e = f.createEntityManager();
         e.getTransaction().begin();
         e.persist(usuario);
-        e.getTransaction().commit();           
+        e.getTransaction().commit();   
+        
     }
     
 }
