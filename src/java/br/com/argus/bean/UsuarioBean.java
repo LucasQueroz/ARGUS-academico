@@ -1,7 +1,9 @@
 package br.com.argus.bean;
 
+import br.com.argus.bussiness.Criptografia;
 import br.com.argus.dao.UsuarioDAO;
 import br.com.argus.model.JPAUtil;
+import br.com.argus.model.LoginEntity;
 import java.util.Map;
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
@@ -41,7 +43,7 @@ public class UsuarioBean implements Serializable {
     }*/
     
     public void gravar(){
-        usuario.setSenha("senha");
+        usuario.setSenha(Criptografia.criptografar("senha123"));
         
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         usuarioDAO.gravar(usuario);
@@ -79,7 +81,7 @@ public class UsuarioBean implements Serializable {
         sessionMap.put("usuario", u);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("editar_usuario.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -91,7 +93,21 @@ public class UsuarioBean implements Serializable {
         usuarioDAO.editar(usuario);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_usuario.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_usuario.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void atualizarSenha(LoginEntity login){
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        Usuario usuario = usuarioDAO.buscar(login.getNome());
+        usuario.setSenha(Criptografia.criptografar(login.getSenha()));
+        
+        usuarioDAO.editar(usuario);
+        
+        try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("index.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }

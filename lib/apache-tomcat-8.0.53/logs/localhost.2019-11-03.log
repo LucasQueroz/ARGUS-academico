@@ -1,0 +1,758 @@
+03-Nov-2019 10:53:24.313 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 10:53:24.317 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 10:53:24.317 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 10:53:24.317 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 10:53:24.321 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 10:53:30.372 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-Nov-2019 10:53:30.394 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-Nov-2019 10:53:30.402 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@559fa0ba')
+03-Nov-2019 10:54:30.219 INFORMA합ES [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 10:54:30.223 INFORMA합ES [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 10:54:30.223 INFORMA합ES [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 10:54:30.223 INFORMA합ES [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 10:54:30.227 INFORMA합ES [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:19:58.286 INFORMA합ES [http-apr-8080-exec-19] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:19:58.287 INFORMA합ES [http-apr-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:19:58.288 INFORMA합ES [http-apr-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:19:58.288 INFORMA합ES [http-apr-8080-exec-19] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:19:58.289 INFORMA합ES [http-apr-8080-exec-19] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:23:26.625 INFORMA합ES [http-apr-8080-exec-22] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:23:26.625 INFORMA합ES [http-apr-8080-exec-22] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:23:26.626 INFORMA합ES [http-apr-8080-exec-22] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:23:26.628 INFORMA합ES [http-apr-8080-exec-22] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:23:26.629 INFORMA합ES [http-apr-8080-exec-22] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:23:50.131 INFORMA합ES [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:23:50.131 INFORMA합ES [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:23:50.132 INFORMA합ES [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:23:50.133 INFORMA합ES [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:23:50.133 INFORMA합ES [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:24:28.202 INFORMA합ES [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:24:28.203 INFORMA합ES [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:24:28.205 INFORMA합ES [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:24:28.211 INFORMA합ES [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:24:28.229 INFORMA합ES [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:24:48.340 INFORMA합ES [http-apr-8080-exec-32] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:24:48.341 INFORMA합ES [http-apr-8080-exec-32] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:24:48.344 INFORMA합ES [http-apr-8080-exec-32] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:24:48.347 INFORMA합ES [http-apr-8080-exec-32] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:24:48.349 INFORMA합ES [http-apr-8080-exec-32] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:25:11.366 INFORMA합ES [http-apr-8080-exec-25] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:25:11.366 INFORMA합ES [http-apr-8080-exec-25] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:25:11.367 INFORMA합ES [http-apr-8080-exec-25] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:25:11.369 INFORMA합ES [http-apr-8080-exec-25] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:25:11.369 INFORMA합ES [http-apr-8080-exec-25] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:25:43.074 INFORMA합ES [http-apr-8080-exec-41] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:25:43.075 INFORMA합ES [http-apr-8080-exec-41] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:25:43.082 INFORMA합ES [http-apr-8080-exec-41] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:25:43.085 INFORMA합ES [http-apr-8080-exec-41] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:25:43.086 INFORMA합ES [http-apr-8080-exec-41] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:26:02.270 INFORMA합ES [http-apr-8080-exec-37] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:26:02.273 INFORMA합ES [http-apr-8080-exec-37] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:26:02.277 INFORMA합ES [http-apr-8080-exec-37] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:26:02.280 INFORMA합ES [http-apr-8080-exec-37] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:26:02.281 INFORMA합ES [http-apr-8080-exec-37] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:27:10.566 INFORMA합ES [http-apr-8080-exec-45] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:27:10.567 INFORMA합ES [http-apr-8080-exec-45] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:27:10.567 INFORMA합ES [http-apr-8080-exec-45] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:27:10.568 INFORMA합ES [http-apr-8080-exec-45] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:27:10.570 INFORMA합ES [http-apr-8080-exec-45] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:27:27.971 INFORMA합ES [http-apr-8080-exec-43] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:27:27.971 INFORMA합ES [http-apr-8080-exec-43] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:27:27.972 INFORMA합ES [http-apr-8080-exec-43] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:27:27.973 INFORMA합ES [http-apr-8080-exec-43] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:27:27.973 INFORMA합ES [http-apr-8080-exec-43] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:27:44.430 INFORMA합ES [http-apr-8080-exec-57] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:27:44.430 INFORMA합ES [http-apr-8080-exec-57] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:27:44.431 INFORMA합ES [http-apr-8080-exec-57] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:27:44.431 INFORMA합ES [http-apr-8080-exec-57] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:27:44.432 INFORMA합ES [http-apr-8080-exec-57] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:28:58.535 INFORMA합ES [http-apr-8080-exec-58] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:28:58.540 INFORMA합ES [http-apr-8080-exec-58] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:28:58.541 INFORMA합ES [http-apr-8080-exec-58] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:28:58.542 INFORMA합ES [http-apr-8080-exec-58] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:28:58.543 INFORMA합ES [http-apr-8080-exec-58] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:29:13.011 INFORMA합ES [http-apr-8080-exec-59] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:29:13.012 INFORMA합ES [http-apr-8080-exec-59] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:29:13.013 INFORMA합ES [http-apr-8080-exec-59] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:29:13.013 INFORMA합ES [http-apr-8080-exec-59] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:29:13.014 INFORMA합ES [http-apr-8080-exec-59] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:31:19.475 INFORMA합ES [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:31:19.475 INFORMA합ES [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:31:19.476 INFORMA합ES [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:31:19.476 INFORMA합ES [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:31:19.477 INFORMA합ES [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:31:33.922 INFORMA합ES [http-apr-8080-exec-50] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:31:33.923 INFORMA합ES [http-apr-8080-exec-50] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:31:33.924 INFORMA합ES [http-apr-8080-exec-50] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:31:33.924 INFORMA합ES [http-apr-8080-exec-50] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:31:33.925 INFORMA합ES [http-apr-8080-exec-50] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:38:59.954 INFORMA합ES [http-apr-8080-exec-79] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:38:59.954 INFORMA합ES [http-apr-8080-exec-79] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:38:59.955 INFORMA합ES [http-apr-8080-exec-79] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:38:59.956 INFORMA합ES [http-apr-8080-exec-79] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:38:59.957 INFORMA합ES [http-apr-8080-exec-79] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:39:14.729 INFORMA합ES [http-apr-8080-exec-80] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:39:14.730 INFORMA합ES [http-apr-8080-exec-80] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:39:14.731 INFORMA합ES [http-apr-8080-exec-80] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:39:14.732 INFORMA합ES [http-apr-8080-exec-80] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:39:14.745 INFORMA합ES [http-apr-8080-exec-80] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:41:00.643 INFORMA합ES [http-apr-8080-exec-84] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:41:00.644 INFORMA합ES [http-apr-8080-exec-84] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:41:00.644 INFORMA합ES [http-apr-8080-exec-84] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:41:00.645 INFORMA합ES [http-apr-8080-exec-84] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:41:00.645 INFORMA합ES [http-apr-8080-exec-84] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:41:15.568 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:41:15.573 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:41:15.574 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:41:15.576 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:41:15.577 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:42:41.247 INFORMA합ES [http-apr-8080-exec-89] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:42:41.248 INFORMA합ES [http-apr-8080-exec-89] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:42:41.249 INFORMA합ES [http-apr-8080-exec-89] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:42:41.249 INFORMA합ES [http-apr-8080-exec-89] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:42:41.251 INFORMA합ES [http-apr-8080-exec-89] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:42:56.883 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:42:56.884 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:42:56.885 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:42:56.887 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:42:56.888 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:44:53.234 INFORMA합ES [http-apr-8080-exec-83] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:44:53.235 INFORMA합ES [http-apr-8080-exec-83] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:44:53.235 INFORMA합ES [http-apr-8080-exec-83] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:44:53.236 INFORMA합ES [http-apr-8080-exec-83] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:44:53.237 INFORMA합ES [http-apr-8080-exec-83] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:45:06.152 INFORMA합ES [http-apr-8080-exec-86] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:45:06.152 INFORMA합ES [http-apr-8080-exec-86] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:45:06.153 INFORMA합ES [http-apr-8080-exec-86] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:45:06.154 INFORMA합ES [http-apr-8080-exec-86] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:45:06.155 INFORMA합ES [http-apr-8080-exec-86] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:47:25.840 INFORMA합ES [http-apr-8080-exec-93] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:47:25.840 INFORMA합ES [http-apr-8080-exec-93] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:47:25.841 INFORMA합ES [http-apr-8080-exec-93] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:47:25.845 INFORMA합ES [http-apr-8080-exec-93] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:47:25.846 INFORMA합ES [http-apr-8080-exec-93] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:47:40.175 INFORMA합ES [http-apr-8080-exec-101] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:47:40.177 INFORMA합ES [http-apr-8080-exec-101] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:47:40.180 INFORMA합ES [http-apr-8080-exec-101] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:47:40.182 INFORMA합ES [http-apr-8080-exec-101] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:47:40.182 INFORMA합ES [http-apr-8080-exec-101] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 11:47:53.642 INFORMA합ES [http-apr-8080-exec-100] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 11:47:53.642 INFORMA합ES [http-apr-8080-exec-100] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 11:47:53.643 INFORMA합ES [http-apr-8080-exec-100] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 11:47:53.643 INFORMA합ES [http-apr-8080-exec-100] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 11:47:53.644 INFORMA합ES [http-apr-8080-exec-100] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 12:03:26.960 INFORMA합ES [http-apr-8080-exec-112] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 12:03:26.962 INFORMA합ES [http-apr-8080-exec-112] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 12:03:26.964 INFORMA합ES [http-apr-8080-exec-112] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 12:03:26.965 INFORMA합ES [http-apr-8080-exec-112] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 12:03:26.967 INFORMA합ES [http-apr-8080-exec-112] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 12:03:43.872 INFORMA합ES [http-apr-8080-exec-107] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 12:03:43.873 INFORMA합ES [http-apr-8080-exec-107] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 12:03:43.874 INFORMA합ES [http-apr-8080-exec-107] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 12:03:43.875 INFORMA합ES [http-apr-8080-exec-107] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 12:03:43.876 INFORMA합ES [http-apr-8080-exec-107] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 12:04:42.349 INFORMA합ES [http-apr-8080-exec-110] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 12:04:42.350 INFORMA합ES [http-apr-8080-exec-110] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 12:04:42.351 INFORMA합ES [http-apr-8080-exec-110] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 12:04:42.352 INFORMA합ES [http-apr-8080-exec-110] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 12:04:42.354 INFORMA합ES [http-apr-8080-exec-110] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 12:04:55.544 INFORMA합ES [http-apr-8080-exec-108] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 12:04:55.545 INFORMA합ES [http-apr-8080-exec-108] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 12:04:55.546 INFORMA합ES [http-apr-8080-exec-108] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 12:04:55.546 INFORMA합ES [http-apr-8080-exec-108] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 12:04:55.547 INFORMA합ES [http-apr-8080-exec-108] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 12:22:47.180 INFORMA합ES [http-apr-8080-exec-119] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 12:22:47.181 INFORMA합ES [http-apr-8080-exec-119] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 12:22:47.182 INFORMA합ES [http-apr-8080-exec-119] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 12:22:47.183 INFORMA합ES [http-apr-8080-exec-119] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 12:22:47.184 INFORMA합ES [http-apr-8080-exec-119] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 12:24:11.937 INFORMA합ES [http-apr-8080-exec-124] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 12:24:11.939 INFORMA합ES [http-apr-8080-exec-124] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 12:24:11.939 INFORMA합ES [http-apr-8080-exec-124] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 12:24:11.939 INFORMA합ES [http-apr-8080-exec-124] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 12:24:11.941 INFORMA합ES [http-apr-8080-exec-124] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 12:36:10.125 GRAVE [http-apr-8080-exec-134] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [java.lang.NullPointerException] with root cause
+ java.lang.NullPointerException
+	at br.com.argus.bean.UsuarioBean.atualizarSenha(UsuarioBean.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at br.com.argus.filtros.AdminstradorAuth.doFilter(AdminstradorAuth.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Nov-2019 12:37:51.301 INFORMA합ES [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+03-Nov-2019 12:37:51.301 INFORMA합ES [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+03-Nov-2019 14:44:13.250 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 14:44:13.254 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 14:44:13.254 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 14:44:13.254 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 14:44:13.254 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 14:44:17.045 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-Nov-2019 14:44:17.049 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-Nov-2019 14:44:17.053 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@2c10bea8')
+03-Nov-2019 14:44:57.563 INFORMA합ES [http-apr-8080-exec-1] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 14:44:57.563 INFORMA합ES [http-apr-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 14:44:57.567 INFORMA합ES [http-apr-8080-exec-1] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 14:44:57.567 INFORMA합ES [http-apr-8080-exec-1] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 14:44:57.571 INFORMA합ES [http-apr-8080-exec-1] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 14:46:46.334 GRAVE [http-apr-8080-exec-14] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax.persistence.NoResultException: No entity found for query] with root cause
+ javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:23)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Nov-2019 14:47:03.526 GRAVE [http-apr-8080-exec-18] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax.persistence.NoResultException: No entity found for query] with root cause
+ javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:23)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Nov-2019 14:53:40.574 INFORMA합ES [http-apr-8080-exec-20] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 14:53:40.574 INFORMA합ES [http-apr-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 14:53:40.578 INFORMA합ES [http-apr-8080-exec-20] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 14:53:40.578 INFORMA합ES [http-apr-8080-exec-20] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 14:53:40.578 INFORMA합ES [http-apr-8080-exec-20] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 14:54:26.339 GRAVE [http-apr-8080-exec-23] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [null] with root cause
+ java.lang.NullPointerException
+	at com.sun.faces.renderkit.ServerSideStateHelper.getState(ServerSideStateHelper.java:315)
+	at com.sun.faces.renderkit.ServerSideStateHelper.isStateless(ServerSideStateHelper.java:489)
+	at com.sun.faces.renderkit.ResponseStateManagerImpl.isStateless(ResponseStateManagerImpl.java:168)
+	at com.sun.faces.application.view.FaceletViewHandlingStrategy.restoreView(FaceletViewHandlingStrategy.java:549)
+	at com.sun.faces.application.view.MultiViewHandler.restoreView(MultiViewHandler.java:150)
+	at javax.faces.application.ViewHandlerWrapper.restoreView(ViewHandlerWrapper.java:353)
+	at org.omnifaces.viewhandler.RestorableViewHandler.restoreView(RestorableViewHandler.java:65)
+	at com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:197)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:121)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Nov-2019 14:55:47.072 GRAVE [http-apr-8080-exec-27] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [java.lang.NullPointerException] with root cause
+ java.lang.NullPointerException
+	at br.com.argus.bean.UsuarioBean.atualizarSenha(UsuarioBean.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at br.com.argus.filtros.AdminstradorAuth.doFilter(AdminstradorAuth.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Nov-2019 14:56:47.288 GRAVE [http-apr-8080-exec-28] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax.persistence.NoResultException: No entity found for query] with root cause
+ javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bean.UsuarioBean.atualizarSenha(UsuarioBean.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at br.com.argus.filtros.AdminstradorAuth.doFilter(AdminstradorAuth.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Nov-2019 14:58:02.876 INFORMA합ES [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 14:58:02.876 INFORMA합ES [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 14:58:02.876 INFORMA합ES [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 14:58:02.876 INFORMA합ES [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 14:58:02.876 INFORMA합ES [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 14:58:48.746 INFORMA합ES [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 14:58:48.754 INFORMA합ES [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 14:58:48.754 INFORMA합ES [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 14:58:48.758 INFORMA합ES [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 14:58:48.758 INFORMA합ES [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 14:59:16.769 INFORMA합ES [http-apr-8080-exec-30] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 14:59:16.773 INFORMA합ES [http-apr-8080-exec-30] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 14:59:16.773 INFORMA합ES [http-apr-8080-exec-30] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 14:59:16.773 INFORMA합ES [http-apr-8080-exec-30] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 14:59:16.773 INFORMA합ES [http-apr-8080-exec-30] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 14:59:41.843 INFORMA합ES [http-apr-8080-exec-33] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 14:59:41.843 INFORMA합ES [http-apr-8080-exec-33] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 14:59:41.847 INFORMA합ES [http-apr-8080-exec-33] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 14:59:41.847 INFORMA합ES [http-apr-8080-exec-33] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 14:59:41.847 INFORMA합ES [http-apr-8080-exec-33] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 15:15:30.164 GRAVE [http-apr-8080-exec-45] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax.persistence.NoResultException: No entity found for query] with root cause
+ javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:23)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Nov-2019 15:23:14.772 INFORMA합ES [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 15:23:14.776 INFORMA합ES [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 15:23:14.776 INFORMA합ES [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 15:23:14.776 INFORMA합ES [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 15:23:14.776 INFORMA합ES [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 15:23:50.011 INFORMA합ES [http-apr-8080-exec-46] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 15:23:50.015 INFORMA합ES [http-apr-8080-exec-46] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 15:23:50.019 INFORMA합ES [http-apr-8080-exec-46] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 15:23:50.019 INFORMA합ES [http-apr-8080-exec-46] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 15:23:50.019 INFORMA합ES [http-apr-8080-exec-46] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 15:41:02.983 GRAVE [http-apr-8080-exec-58] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax/servlet/jsp/jstl/core/Config] with root cause
+ java.lang.ClassNotFoundException: javax.servlet.jsp.jstl.core.Config
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1352)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1180)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.executePageToBuildView(JspViewHandlingStrategy.java:344)
+	at com.sun.faces.application.view.JspViewHandlingStrategy.buildView(JspViewHandlingStrategy.java:153)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Nov-2019 16:03:42.818 INFORMA합ES [http-apr-8080-exec-57] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 16:03:42.819 INFORMA합ES [http-apr-8080-exec-57] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 16:03:42.819 INFORMA합ES [http-apr-8080-exec-57] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 16:03:42.820 INFORMA합ES [http-apr-8080-exec-57] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 16:03:42.820 INFORMA합ES [http-apr-8080-exec-57] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 16:04:58.973 INFORMA합ES [http-apr-8080-exec-54] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 16:04:58.974 INFORMA합ES [http-apr-8080-exec-54] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 16:04:58.979 INFORMA합ES [http-apr-8080-exec-54] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 16:04:58.984 INFORMA합ES [http-apr-8080-exec-54] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 16:04:58.985 INFORMA합ES [http-apr-8080-exec-54] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 16:05:33.146 INFORMA합ES [148] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 16:05:33.148 INFORMA합ES [148] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 16:05:33.149 INFORMA합ES [148] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 16:05:33.150 INFORMA합ES [148] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 16:05:33.150 INFORMA합ES [148] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 16:09:02.235 INFORMA합ES [http-apr-8080-exec-60] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 16:09:02.236 INFORMA합ES [http-apr-8080-exec-60] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 16:09:02.237 INFORMA합ES [http-apr-8080-exec-60] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 16:09:02.238 INFORMA합ES [http-apr-8080-exec-60] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 16:09:02.239 INFORMA합ES [http-apr-8080-exec-60] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 16:13:27.988 INFORMA합ES [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 16:13:27.988 INFORMA합ES [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 16:13:27.989 INFORMA합ES [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 16:13:27.990 INFORMA합ES [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 16:13:27.990 INFORMA합ES [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 16:14:02.963 INFORMA합ES [http-apr-8080-exec-83] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 16:14:02.964 INFORMA합ES [http-apr-8080-exec-83] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 16:14:02.965 INFORMA합ES [176] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 16:14:02.966 INFORMA합ES [176] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 16:14:02.966 INFORMA합ES [176] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 16:14:32.299 INFORMA합ES [http-apr-8080-exec-85] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 16:14:32.300 INFORMA합ES [http-apr-8080-exec-85] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 16:14:32.306 INFORMA합ES [http-apr-8080-exec-85] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 16:14:32.312 INFORMA합ES [http-apr-8080-exec-85] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 16:14:32.314 INFORMA합ES [http-apr-8080-exec-85] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 16:14:52.470 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 16:14:52.472 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 16:14:52.473 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 16:14:52.473 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 16:14:52.474 INFORMA합ES [http-apr-8080-exec-77] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 16:15:25.727 INFORMA합ES [http-apr-8080-exec-88] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 16:15:25.728 INFORMA합ES [http-apr-8080-exec-88] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 16:15:25.729 INFORMA합ES [http-apr-8080-exec-88] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 16:15:25.731 INFORMA합ES [http-apr-8080-exec-88] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 16:15:25.732 INFORMA합ES [http-apr-8080-exec-88] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 16:20:39.151 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 16:20:39.152 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 16:20:39.153 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 16:20:39.154 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 16:20:39.155 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 16:21:55.894 INFORMA합ES [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+03-Nov-2019 16:21:55.898 INFORMA합ES [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+03-Nov-2019 18:12:37.629 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 18:12:37.629 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 18:12:37.629 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 18:12:37.633 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 18:12:37.633 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 18:12:40.369 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-Nov-2019 18:12:40.369 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-Nov-2019 18:12:40.411 INFORMA합ES [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1e2aaf4f')
+03-Nov-2019 18:13:14.687 INFORMA합ES [http-apr-8080-exec-9] org.apache.catalina.core.ApplicationContext.log DiretorAuth:Initializing filter
+03-Nov-2019 18:13:14.687 INFORMA합ES [http-apr-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Auth:Initializing filter
+03-Nov-2019 18:13:14.692 INFORMA합ES [http-apr-8080-exec-9] org.apache.catalina.core.ApplicationContext.log FuncionarioAuth:Initializing filter
+03-Nov-2019 18:13:14.692 INFORMA합ES [http-apr-8080-exec-9] org.apache.catalina.core.ApplicationContext.log PedagogoAuth:Initializing filter
+03-Nov-2019 18:13:14.692 INFORMA합ES [http-apr-8080-exec-9] org.apache.catalina.core.ApplicationContext.log AdminstradorAuth:Initializing filter
+03-Nov-2019 18:15:34.591 GRAVE [http-apr-8080-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [Error Parsing /login.xhtml: Error Traced[line: 152] O tipo de elemento "p:inputText" deve ser seguido pelas especifica寤es do atributo, ">" ou "/>".] with root cause
+ javax.faces.view.facelets.FaceletException: Error Parsing /login.xhtml: Error Traced[line: 152] O tipo de elemento "p:inputText" deve ser seguido pelas especifica寤es do atributo, ">" ou "/>".
+	at com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:456)
+	at com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:439)
+	at com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:130)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:495)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.access$200(DefaultFaceletFactory.java:106)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory$2.newInstance(DefaultFaceletFactory.java:205)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory$2.newInstance(DefaultFaceletFactory.java:203)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache$2.newInstance(DefaultFaceletCache.java:97)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache$2.newInstance(DefaultFaceletCache.java:92)
+	at com.sun.faces.util.ExpiringConcurrentCache$1.call(ExpiringConcurrentCache.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:114)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:146)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:63)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:316)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:246)
+	at com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:114)
+	at com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:241)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:121)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Nov-2019 18:22:13.470 GRAVE [http-apr-8080-exec-20] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [Error Parsing /login.xhtml: Error Traced[line: 153] O tipo de elemento div" deve ser encerrado pela tag final correspondente "</div>".] with root cause
+ javax.faces.view.facelets.FaceletException: Error Parsing /login.xhtml: Error Traced[line: 153] O tipo de elemento div" deve ser encerrado pela tag final correspondente "</div>".
+	at com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:456)
+	at com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:439)
+	at com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:130)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:495)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.access$200(DefaultFaceletFactory.java:106)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory$2.newInstance(DefaultFaceletFactory.java:205)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory$2.newInstance(DefaultFaceletFactory.java:203)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache$2.newInstance(DefaultFaceletCache.java:97)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache$2.newInstance(DefaultFaceletCache.java:92)
+	at com.sun.faces.util.ExpiringConcurrentCache$1.call(ExpiringConcurrentCache.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:114)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:146)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:63)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:316)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:246)
+	at com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:114)
+	at com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:241)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:121)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Nov-2019 18:39:07.017 GRAVE [http-apr-8080-exec-19] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Faces Servlet] in context with path [] threw exception [javax.persistence.NoResultException: No entity found for query] with root cause
+ javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:23)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

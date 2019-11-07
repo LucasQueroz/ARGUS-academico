@@ -20,6 +20,7 @@ public class Professor implements Serializable {
     private String data_nascimento;
     private String endereco; 
     private String naturalidade;
+    private int id_turma;
 
     /**
      * @return the id
@@ -89,6 +90,20 @@ public class Professor implements Serializable {
      */
     public void setNaturalidade(String naturalidade) {
         this.naturalidade = naturalidade;
+    }
+
+    /**
+     * @return the id_turma
+     */
+    public int getId_turma() {
+        return id_turma;
+    }
+
+    /**
+     * @param id_turma the id_turma to set
+     */
+    public void setId_turma(int id_turma) {
+        this.id_turma = id_turma;
     }
     
 }

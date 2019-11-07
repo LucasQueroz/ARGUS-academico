@@ -32,12 +32,27 @@ public class AlunoBean implements Serializable {
         aluno = new Aluno();
     }
     
+    public void matricularAluno(int id){
+        AlunoDAO alunoDAO = new AlunoDAO();
+        Aluno a = new Aluno();
+        a = alunoDAO.buscar(id);
+        
+        Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
+        sessionMap.put("aluno", a);
+        
+        try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("matricular_aluno.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
     public void gravar(){
         AlunoDAO alunoDAO = new AlunoDAO();
         alunoDAO.gravar(aluno);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_alunos.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_alunos.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -57,7 +72,7 @@ public class AlunoBean implements Serializable {
         sessionMap.put("aluno", a);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_aluno.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("editar_aluno.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -68,7 +83,7 @@ public class AlunoBean implements Serializable {
         alunoDAO.editar(aluno);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_alunos.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_alunos.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }

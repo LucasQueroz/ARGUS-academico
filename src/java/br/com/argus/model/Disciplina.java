@@ -19,7 +19,7 @@ public class Disciplina implements Serializable{
     private String nome;
     private String codigo;
     private int carga_horaria;
-    private int id_professor;
+    //private int id_professor;
     private int id_turma;
     private int id_curriculo;
 
@@ -77,20 +77,6 @@ public class Disciplina implements Serializable{
      */
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    /**
-     * @return the id_professor
-     */
-    public int getId_professor() {
-        return id_professor;
-    }
-
-    /**
-     * @param id_professor the id_professor to set
-     */
-    public void setId_professor(int id_professor) {
-        this.id_professor = id_professor;
     }
 
     /**

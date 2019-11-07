@@ -7,13 +7,17 @@ import java.io.Serializable;
  * @author lucas queroz
  */
 public class LoginEntity implements Serializable {
-    
+
     private static long serialVersionUID = 1L;
+    
+    private String nome;
+    private String senha;
+    
 
     /**
      * @return the serialVersionUID
      */
-   public static long getSerialVersionUID() {
+    public static long getSerialVersionUID() {
         return serialVersionUID;
     }
 
@@ -23,24 +27,21 @@ public class LoginEntity implements Serializable {
     public static void setSerialVersionUID(long aSerialVersionUID) {
         serialVersionUID = aSerialVersionUID;
     }
-    
-    private String email;
-    private String senha;
 
     public LoginEntity() {
     }
 
-    public LoginEntity(String email, String senha) {
-        this.email = email;
+    public LoginEntity(String nome, String senha) {
+        this.nome = nome;
         this.senha = senha;
     }
 
-    public String getEmail() {
-        return email;
+    public String getNome() {
+        return nome;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getSenha() {
@@ -50,5 +51,5 @@ public class LoginEntity implements Serializable {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    
+
 }

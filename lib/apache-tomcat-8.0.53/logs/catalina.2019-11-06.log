@@ -1,0 +1,996 @@
+06-Nov-2019 16:25:00.202 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.53
+06-Nov-2019 16:25:00.448 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 29 2018 14:42:45 UTC
+06-Nov-2019 16:25:00.448 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.53.0
+06-Nov-2019 16:25:00.448 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Nov-2019 16:25:00.448 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Nov-2019 16:25:00.448 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Nov-2019 16:25:00.448 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_101\jre
+06-Nov-2019 16:25:00.448 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_101-b13
+06-Nov-2019 16:25:00.452 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Nov-2019 16:25:00.452 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53
+06-Nov-2019 16:25:00.452 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53
+06-Nov-2019 16:25:00.452 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\logging.properties
+06-Nov-2019 16:25:00.452 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Nov-2019 16:25:00.452 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Nov-2019 16:25:00.452 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Nov-2019 16:25:00.452 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Nov-2019 16:25:00.456 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53
+06-Nov-2019 16:25:00.456 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53
+06-Nov-2019 16:25:00.456 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\temp
+06-Nov-2019 16:25:00.456 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.17 using APR version 1.6.3.
+06-Nov-2019 16:25:00.468 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+06-Nov-2019 16:25:02.567 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2o  27 Mar 2018)
+06-Nov-2019 16:25:05.259 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8080"]
+06-Nov-2019 16:25:05.303 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+06-Nov-2019 16:25:05.315 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 9944 ms
+06-Nov-2019 16:25:05.711 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+06-Nov-2019 16:25:05.711 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.53
+06-Nov-2019 16:25:05.987 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\ARGUS_PBD.xml
+06-Nov-2019 16:25:06.475 ADVERTÊNCIA [localhost-startStop-1] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+06-Nov-2019 16:25:06.939 GRAVE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ARGUS_PBD]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:620)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1832)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@35fb2135]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5016)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5149)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS PBD\build\web] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:746)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:704)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 13 more
+
+06-Nov-2019 16:25:06.967 GRAVE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\ARGUS_PBD.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ARGUS_PBD]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:759)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:620)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1832)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+06-Nov-2019 16:25:06.983 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\ARGUS_PBD.xml has finished in 992 ms
+06-Nov-2019 16:25:06.983 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\PDelfos.xml
+06-Nov-2019 16:25:07.131 GRAVE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/PDelfos]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:620)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1832)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@47a6bb]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5016)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5149)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\eltho\Documents\PDelfos\build\web] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:746)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:704)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 13 more
+
+06-Nov-2019 16:25:07.135 GRAVE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\PDelfos.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/PDelfos]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:759)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:620)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1832)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+06-Nov-2019 16:25:07.139 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\PDelfos.xml has finished in 156 ms
+06-Nov-2019 16:25:07.139 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\ROOT.xml
+06-Nov-2019 16:25:07.163 ADVERTÊNCIA [localhost-startStop-1] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+06-Nov-2019 16:25:36.948 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 16:25:37.956 ADVERTÊNCIA [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = teste Property maxActive is not used in DBCP2, use maxTotal instead. maxTotal default value is 8. You have set value of "20" for "maxActive" property, which is being ignored.
+06-Nov-2019 16:25:37.956 ADVERTÊNCIA [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = teste Property maxWait is not used in DBCP2 , use maxWaitMillis instead. maxWaitMillis default value is -1. You have set value of "-1" for "maxWait" property, which is being ignored.
+06-Nov-2019 16:25:39.043 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 16:25:41.683 INFORMAÇÕES [localhost-startStop-1] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 16:25:43.702 INFORMAÇÕES [localhost-startStop-1] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 16:25:56.020 INFORMAÇÕES [localhost-startStop-1] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 16:25:56.020 INFORMAÇÕES [localhost-startStop-1] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 16:25:57.554 ADVERTÊNCIA [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,530] milliseconds.
+06-Nov-2019 16:25:58.158 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\ROOT.xml has finished in 51,019 ms
+06-Nov-2019 16:25:58.162 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\docs
+06-Nov-2019 16:25:58.334 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\docs has finished in 172 ms
+06-Nov-2019 16:25:58.334 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\examples
+06-Nov-2019 16:26:03.584 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\examples has finished in 5,250 ms
+06-Nov-2019 16:26:03.584 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\host-manager
+06-Nov-2019 16:26:03.972 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\host-manager has finished in 388 ms
+06-Nov-2019 16:26:03.972 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\manager
+06-Nov-2019 16:26:04.216 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\manager has finished in 244 ms
+06-Nov-2019 16:26:04.236 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8080"]
+06-Nov-2019 16:26:04.392 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+06-Nov-2019 16:26:04.428 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 59109 ms
+06-Nov-2019 16:26:19.634 INFORMAÇÕES [http-apr-8080-exec-9] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 16:26:56.477 INFORMAÇÕES [http-apr-8080-exec-9] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 16:26:57.326 INFORMAÇÕES [http-apr-8080-exec-9] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 16:26:58.225 INFORMAÇÕES [http-apr-8080-exec-9] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 16:26:59.122 INFORMAÇÕES [http-apr-8080-exec-9] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 16:27:15.163 INFORMAÇÕES [http-apr-8080-exec-9] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 16:27:15.167 INFORMAÇÕES [http-apr-8080-exec-9] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 16:27:15.279 INFORMAÇÕES [http-apr-8080-exec-9] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 16:27:57.229 INFORMAÇÕES [21] com.sun.faces.renderkit.RenderKitUtils.renderUnhandledMessages AVISO: FacesMessage(s) foram enfileirados, mas podem não ter sido exibidos.
+sourceId=null[severity=(ERROR 2), summary=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.), detail=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.)]
+06-Nov-2019 16:44:11.390 INFORMAÇÕES [http-apr-8080-exec-19] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 16:44:38.067 INFORMAÇÕES [http-apr-8080-exec-19] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 16:44:38.817 INFORMAÇÕES [http-apr-8080-exec-19] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 16:44:40.400 INFORMAÇÕES [http-apr-8080-exec-19] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 16:44:41.876 INFORMAÇÕES [http-apr-8080-exec-19] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 16:44:50.761 INFORMAÇÕES [http-apr-8080-exec-19] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 16:44:50.761 INFORMAÇÕES [http-apr-8080-exec-19] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 16:44:50.808 INFORMAÇÕES [http-apr-8080-exec-19] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 16:44:51.359 INFORMAÇÕES [http-apr-8080-exec-17] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 16:45:05.390 INFORMAÇÕES [http-apr-8080-exec-17] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 16:45:05.906 INFORMAÇÕES [http-apr-8080-exec-17] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 16:45:06.609 INFORMAÇÕES [http-apr-8080-exec-17] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 16:45:07.734 INFORMAÇÕES [http-apr-8080-exec-17] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 16:45:16.349 INFORMAÇÕES [http-apr-8080-exec-17] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 16:45:16.353 INFORMAÇÕES [http-apr-8080-exec-17] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 16:45:16.593 INFORMAÇÕES [http-apr-8080-exec-17] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 16:45:25.247 INFORMAÇÕES [http-apr-8080-exec-22] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 16:45:38.197 INFORMAÇÕES [http-apr-8080-exec-22] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 16:45:38.525 INFORMAÇÕES [http-apr-8080-exec-22] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 16:45:39.183 INFORMAÇÕES [http-apr-8080-exec-22] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 16:45:39.761 INFORMAÇÕES [http-apr-8080-exec-22] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 16:45:47.485 INFORMAÇÕES [http-apr-8080-exec-22] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 16:45:47.485 INFORMAÇÕES [http-apr-8080-exec-22] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 16:45:47.516 INFORMAÇÕES [65] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 16:46:10.408 INFORMAÇÕES [http-apr-8080-exec-24] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 16:46:23.967 INFORMAÇÕES [http-apr-8080-exec-24] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 16:46:24.227 INFORMAÇÕES [http-apr-8080-exec-24] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 16:46:24.863 INFORMAÇÕES [http-apr-8080-exec-24] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 16:46:25.456 INFORMAÇÕES [http-apr-8080-exec-24] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 16:46:32.471 INFORMAÇÕES [http-apr-8080-exec-24] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 16:46:32.471 INFORMAÇÕES [http-apr-8080-exec-24] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 16:46:32.502 INFORMAÇÕES [http-apr-8080-exec-24] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 16:46:32.705 INFORMAÇÕES [http-apr-8080-exec-13] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 16:46:43.470 INFORMAÇÕES [http-apr-8080-exec-13] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 16:46:43.954 INFORMAÇÕES [http-apr-8080-exec-13] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 16:46:44.617 INFORMAÇÕES [http-apr-8080-exec-13] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 16:46:45.319 INFORMAÇÕES [http-apr-8080-exec-13] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 16:46:50.887 INFORMAÇÕES [http-apr-8080-exec-13] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 16:46:50.887 INFORMAÇÕES [http-apr-8080-exec-13] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 16:46:50.911 INFORMAÇÕES [http-apr-8080-exec-13] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 16:49:40.352 INFORMAÇÕES [http-apr-8080-exec-26] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 16:49:57.684 INFORMAÇÕES [http-apr-8080-exec-26] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 16:49:58.026 INFORMAÇÕES [http-apr-8080-exec-26] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 16:49:58.638 INFORMAÇÕES [http-apr-8080-exec-26] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 16:49:59.219 INFORMAÇÕES [http-apr-8080-exec-26] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 16:50:05.092 INFORMAÇÕES [http-apr-8080-exec-26] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 16:50:05.096 INFORMAÇÕES [http-apr-8080-exec-26] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 16:50:05.132 INFORMAÇÕES [http-apr-8080-exec-26] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 16:51:55.823 WARN [http-apr-8080-exec-28] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 16:51:55.827 WARN [http-apr-8080-exec-28] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 16:51:55.827 WARN [http-apr-8080-exec-28] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 16:51:58.199 INFO [http-apr-8080-exec-28] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: teste
+	...]
+06-Nov-2019 16:52:01.534 INFO [http-apr-8080-exec-28] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.1.Final}
+06-Nov-2019 16:52:01.650 INFO [http-apr-8080-exec-28] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+06-Nov-2019 16:52:01.682 INFO [http-apr-8080-exec-28] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+06-Nov-2019 16:52:57.463 ADVERTÊNCIA [http-apr-8080-exec-28] com.sun.faces.lifecycle.InvokeApplicationPhase.execute #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+ javax.faces.FacesException: #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.faces.el.EvaluationException: javax.persistence.NoResultException: No entity found for query
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	... 28 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:23)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	... 29 more
+
+06-Nov-2019 16:55:59.261 INFORMAÇÕES [http-apr-8080-exec-43] com.sun.faces.renderkit.RenderKitUtils.renderUnhandledMessages AVISO: FacesMessage(s) foram enfileirados, mas podem não ter sido exibidos.
+sourceId=null[severity=(ERROR 2), summary=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.), detail=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.)]
+06-Nov-2019 17:02:22.555 INFORMAÇÕES [http-apr-8080-exec-42] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 17:02:26.205 ADVERTÊNCIA [http-apr-8080-exec-42] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Nov-2019 17:03:48.801 INFORMAÇÕES [http-apr-8080-exec-42] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 17:03:51.135 INFORMAÇÕES [http-apr-8080-exec-42] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 17:03:53.201 INFORMAÇÕES [http-apr-8080-exec-42] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 17:03:57.612 INFORMAÇÕES [http-apr-8080-exec-42] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 17:04:08.459 INFORMAÇÕES [http-apr-8080-exec-42] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 17:04:08.460 INFORMAÇÕES [http-apr-8080-exec-42] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 17:04:08.861 INFORMAÇÕES [http-apr-8080-exec-42] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 17:33:33.319 INFORMAÇÕES [http-apr-8080-exec-51] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 17:35:42.246 INFORMAÇÕES [http-apr-8080-exec-51] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 17:35:43.234 INFORMAÇÕES [http-apr-8080-exec-51] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 17:35:44.785 INFORMAÇÕES [http-apr-8080-exec-51] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 17:35:48.382 INFORMAÇÕES [http-apr-8080-exec-51] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 17:35:53.669 INFORMAÇÕES [http-apr-8080-exec-51] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 17:35:53.669 INFORMAÇÕES [http-apr-8080-exec-51] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 17:35:53.681 INFORMAÇÕES [http-apr-8080-exec-51] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 17:35:54.303 INFORMAÇÕES [http-apr-8080-exec-49] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 17:36:03.876 INFORMAÇÕES [http-apr-8080-exec-49] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 17:36:04.111 INFORMAÇÕES [http-apr-8080-exec-49] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 17:36:04.642 INFORMAÇÕES [http-apr-8080-exec-49] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 17:36:05.162 INFORMAÇÕES [http-apr-8080-exec-49] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 17:36:12.812 INFORMAÇÕES [http-apr-8080-exec-49] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 17:36:12.812 INFORMAÇÕES [http-apr-8080-exec-49] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 17:36:13.076 INFORMAÇÕES [http-apr-8080-exec-49] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 17:36:50.584 INFORMAÇÕES [http-apr-8080-exec-57] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 17:37:01.702 INFORMAÇÕES [http-apr-8080-exec-57] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 17:37:02.507 INFORMAÇÕES [http-apr-8080-exec-57] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 17:37:03.044 INFORMAÇÕES [http-apr-8080-exec-57] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 17:37:03.591 INFORMAÇÕES [http-apr-8080-exec-57] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 17:37:08.893 INFORMAÇÕES [http-apr-8080-exec-57] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 17:37:08.894 INFORMAÇÕES [http-apr-8080-exec-57] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 17:37:08.907 INFORMAÇÕES [http-apr-8080-exec-57] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 17:37:11.407 INFORMAÇÕES [http-apr-8080-exec-46] com.sun.faces.renderkit.RenderKitUtils.renderUnhandledMessages AVISO: FacesMessage(s) foram enfileirados, mas podem não ter sido exibidos.
+sourceId=null[severity=(ERROR 2), summary=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.), detail=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.)]
+06-Nov-2019 17:37:11.421 INFORMAÇÕES [103] com.sun.faces.renderkit.RenderKitUtils.renderUnhandledMessages AVISO: FacesMessage(s) foram enfileirados, mas podem não ter sido exibidos.
+sourceId=null[severity=(ERROR 2), summary=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.), detail=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.)]
+06-Nov-2019 17:40:09.412 WARN [http-apr-8080-exec-62] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 17:40:09.414 WARN [http-apr-8080-exec-62] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 17:40:09.414 WARN [http-apr-8080-exec-62] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 17:40:13.394 INFO [http-apr-8080-exec-62] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: teste
+	...]
+06-Nov-2019 17:40:19.796 INFO [http-apr-8080-exec-62] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.1.Final}
+06-Nov-2019 17:40:19.821 INFO [http-apr-8080-exec-62] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+06-Nov-2019 17:40:19.908 INFO [http-apr-8080-exec-62] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+06-Nov-2019 17:40:42.820 ADVERTÊNCIA [http-apr-8080-exec-62] com.sun.faces.lifecycle.InvokeApplicationPhase.execute #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+ javax.faces.FacesException: #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.faces.el.EvaluationException: javax.persistence.NoResultException: No entity found for query
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	... 28 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:23)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	... 29 more
+
+06-Nov-2019 17:44:50.045 ADVERTÊNCIA [http-apr-8080-exec-66] com.sun.faces.lifecycle.InvokeApplicationPhase.execute #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+ javax.faces.FacesException: #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.faces.el.EvaluationException: javax.persistence.NoResultException: No entity found for query
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	... 28 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:23)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	... 29 more
+
+06-Nov-2019 17:46:33.616 ADVERTÊNCIA [http-apr-8080-exec-63] com.sun.faces.lifecycle.InvokeApplicationPhase.execute #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+ javax.faces.FacesException: #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.faces.el.EvaluationException: javax.persistence.NoResultException: No entity found for query
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	... 28 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:23)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	... 29 more
+
+06-Nov-2019 17:49:34.015 ADVERTÊNCIA [http-apr-8080-exec-68] com.sun.faces.lifecycle.InvokeApplicationPhase.execute #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+ javax.faces.FacesException: #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.faces.el.EvaluationException: javax.persistence.NoResultException: No entity found for query
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	... 28 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:23)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	... 29 more
+
+06-Nov-2019 17:50:36.254 ADVERTÊNCIA [http-apr-8080-exec-64] com.sun.faces.lifecycle.InvokeApplicationPhase.execute #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+ javax.faces.FacesException: #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.faces.el.EvaluationException: javax.persistence.NoResultException: No entity found for query
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	... 28 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:23)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	... 29 more
+
+06-Nov-2019 17:50:43.937 INFORMAÇÕES [http-apr-8080-exec-65] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 17:50:48.173 ADVERTÊNCIA [http-apr-8080-exec-65] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Nov-2019 17:52:00.596 INFORMAÇÕES [http-apr-8080-exec-65] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 17:52:03.522 INFORMAÇÕES [http-apr-8080-exec-65] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 17:52:08.162 INFORMAÇÕES [http-apr-8080-exec-65] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 17:52:11.506 INFORMAÇÕES [http-apr-8080-exec-65] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 17:52:30.051 INFORMAÇÕES [http-apr-8080-exec-65] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 17:52:30.051 INFORMAÇÕES [http-apr-8080-exec-65] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 17:52:30.957 INFORMAÇÕES [http-apr-8080-exec-65] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 17:54:09.539 WARN [http-apr-8080-exec-62] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 17:54:09.540 WARN [http-apr-8080-exec-62] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 17:54:09.541 WARN [http-apr-8080-exec-62] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 17:54:12.024 INFO [http-apr-8080-exec-62] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: teste
+	...]
+06-Nov-2019 17:54:16.535 INFO [http-apr-8080-exec-62] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.1.Final}
+06-Nov-2019 17:54:16.670 INFO [http-apr-8080-exec-62] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+06-Nov-2019 17:54:16.725 INFO [http-apr-8080-exec-62] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+06-Nov-2019 17:57:10.264 ADVERTÊNCIA [http-apr-8080-exec-62] com.sun.faces.lifecycle.InvokeApplicationPhase.execute #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+ javax.faces.FacesException: #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.faces.el.EvaluationException: javax.persistence.NoResultException: No entity found for query
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	... 28 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:25)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	... 29 more
+
+06-Nov-2019 17:58:11.564 INFORMAÇÕES [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Nov-2019 17:58:12.232 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-apr-8080"]
+06-Nov-2019 17:58:12.322 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-apr-8009"]
+06-Nov-2019 17:58:12.463 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+06-Nov-2019 17:58:13.061 ADVERTÊNCIA [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Nov-2019 17:58:14.081 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-apr-8080"]
+06-Nov-2019 17:58:14.788 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-apr-8009"]
+06-Nov-2019 17:58:14.940 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-apr-8080"]
+06-Nov-2019 17:58:15.230 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-apr-8009"]
+06-Nov-2019 22:46:25.368 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.53
+06-Nov-2019 22:46:25.402 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 29 2018 14:42:45 UTC
+06-Nov-2019 22:46:25.402 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.53.0
+06-Nov-2019 22:46:25.406 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Nov-2019 22:46:25.406 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Nov-2019 22:46:25.406 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Nov-2019 22:46:25.406 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_101\jre
+06-Nov-2019 22:46:25.406 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_101-b13
+06-Nov-2019 22:46:25.406 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Nov-2019 22:46:25.406 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53
+06-Nov-2019 22:46:25.406 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53
+06-Nov-2019 22:46:25.406 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\logging.properties
+06-Nov-2019 22:46:25.406 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Nov-2019 22:46:25.406 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Nov-2019 22:46:25.406 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Nov-2019 22:46:25.410 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Nov-2019 22:46:25.410 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53
+06-Nov-2019 22:46:25.410 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53
+06-Nov-2019 22:46:25.410 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\temp
+06-Nov-2019 22:46:25.410 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.17 using APR version 1.6.3.
+06-Nov-2019 22:46:25.410 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+06-Nov-2019 22:46:27.485 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2o  27 Mar 2018)
+06-Nov-2019 22:46:30.073 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8080"]
+06-Nov-2019 22:46:30.202 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+06-Nov-2019 22:46:30.214 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 23976 ms
+06-Nov-2019 22:46:30.910 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+06-Nov-2019 22:46:30.910 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.53
+06-Nov-2019 22:46:31.065 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\ARGUS_PBD.xml
+06-Nov-2019 22:46:31.470 ADVERTÊNCIA [localhost-startStop-1] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+06-Nov-2019 22:46:32.062 GRAVE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ARGUS_PBD]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:620)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1832)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@3a787b62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5016)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5149)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS PBD\build\web] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:746)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:704)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 13 more
+
+06-Nov-2019 22:46:32.116 GRAVE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\ARGUS_PBD.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ARGUS_PBD]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:759)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:620)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1832)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+06-Nov-2019 22:46:32.304 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\ARGUS_PBD.xml has finished in 1,195 ms
+06-Nov-2019 22:46:32.304 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\PDelfos.xml
+06-Nov-2019 22:46:32.339 GRAVE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/PDelfos]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:620)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1832)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@35673cfe]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5016)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5149)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\eltho\Documents\PDelfos\build\web] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:746)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:704)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 13 more
+
+06-Nov-2019 22:46:32.343 GRAVE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\PDelfos.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/PDelfos]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:759)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:620)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1832)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+06-Nov-2019 22:46:32.347 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\PDelfos.xml has finished in 43 ms
+06-Nov-2019 22:46:32.359 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\ROOT.xml
+06-Nov-2019 22:46:32.694 ADVERTÊNCIA [localhost-startStop-1] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+06-Nov-2019 22:47:18.694 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 22:47:20.756 ADVERTÊNCIA [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = teste Property maxActive is not used in DBCP2, use maxTotal instead. maxTotal default value is 8. You have set value of "20" for "maxActive" property, which is being ignored.
+06-Nov-2019 22:47:20.756 ADVERTÊNCIA [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = teste Property maxWait is not used in DBCP2 , use maxWaitMillis instead. maxWaitMillis default value is -1. You have set value of "-1" for "maxWait" property, which is being ignored.
+06-Nov-2019 22:47:22.492 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 22:47:24.655 INFORMAÇÕES [localhost-startStop-1] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 22:47:27.046 INFORMAÇÕES [localhost-startStop-1] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 22:47:42.369 INFORMAÇÕES [localhost-startStop-1] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 22:47:42.373 INFORMAÇÕES [localhost-startStop-1] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 22:47:45.051 ADVERTÊNCIA [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [2,674] milliseconds.
+06-Nov-2019 22:47:46.714 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\conf\Catalina\localhost\ROOT.xml has finished in 74,355 ms
+06-Nov-2019 22:47:46.722 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\docs
+06-Nov-2019 22:47:46.908 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\docs has finished in 186 ms
+06-Nov-2019 22:47:46.908 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\examples
+06-Nov-2019 22:47:51.567 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\examples has finished in 4,659 ms
+06-Nov-2019 22:47:51.567 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\host-manager
+06-Nov-2019 22:47:51.948 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\host-manager has finished in 381 ms
+06-Nov-2019 22:47:51.948 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\manager
+06-Nov-2019 22:47:52.190 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\lucas queroz\Documents\NetBeansProjects\ARGUS ACAD\lib\apache-tomcat-8.0.53\webapps\manager has finished in 242 ms
+06-Nov-2019 22:47:52.210 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8080"]
+06-Nov-2019 22:47:52.352 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+06-Nov-2019 22:47:52.392 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 82177 ms
+06-Nov-2019 22:47:59.157 INFORMAÇÕES [http-apr-8080-exec-19] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+06-Nov-2019 22:48:42.449 INFORMAÇÕES [http-apr-8080-exec-19] org.apache.catalina.core.StandardContext.checkUnusualURLPattern Suspicious url pattern: "/protegido*" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+06-Nov-2019 22:48:43.763 INFORMAÇÕES [http-apr-8080-exec-19] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 22:48:46.384 INFORMAÇÕES [http-apr-8080-exec-19] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.5 ( 20140108-1427 https://svn.java.net/svn/mojarra~svn/tags/2.2.5@12761) para o contexto ''
+06-Nov-2019 22:48:48.294 INFORMAÇÕES [http-apr-8080-exec-19] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: Anotações PostConstruct/PreDestroy presentes.  Os métodos ManagedBeans marcados com essas anotações informarão as anotações processadas.
+06-Nov-2019 22:49:25.251 INFORMAÇÕES [http-apr-8080-exec-19] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 6.1
+06-Nov-2019 22:49:25.251 INFORMAÇÕES [http-apr-8080-exec-19] org.omnifaces.VersionLoggerEventListener.processEvent Using OmniFaces version 1.14.1
+06-Nov-2019 22:49:28.617 INFORMAÇÕES [http-apr-8080-exec-19] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+06-Nov-2019 22:50:11.262 INFORMAÇÕES [http-apr-8080-exec-13] com.sun.faces.renderkit.RenderKitUtils.renderUnhandledMessages AVISO: FacesMessage(s) foram enfileirados, mas podem não ter sido exibidos.
+sourceId=null[severity=(ERROR 2), summary=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.), detail=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.)]
+06-Nov-2019 22:54:53.637 WARN [http-apr-8080-exec-29] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 22:54:53.637 WARN [http-apr-8080-exec-29] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 22:54:53.641 WARN [http-apr-8080-exec-29] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 22:54:59.760 INFO [http-apr-8080-exec-29] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: teste
+	...]
+06-Nov-2019 22:55:02.957 INFO [http-apr-8080-exec-29] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.1.Final}
+06-Nov-2019 22:55:03.013 INFO [http-apr-8080-exec-29] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+06-Nov-2019 22:55:03.062 INFO [http-apr-8080-exec-29] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+06-Nov-2019 22:59:42.038 ADVERTÊNCIA [http-apr-8080-exec-29] com.sun.faces.lifecycle.InvokeApplicationPhase.execute #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+ javax.faces.FacesException: #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.faces.el.EvaluationException: javax.persistence.NoResultException: No entity found for query
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	... 28 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:25)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	... 29 more
+
+06-Nov-2019 23:00:02.400 ADVERTÊNCIA [http-apr-8080-exec-37] com.sun.faces.lifecycle.InvokeApplicationPhase.execute #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+ javax.faces.FacesException: #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.faces.el.EvaluationException: javax.persistence.NoResultException: No entity found for query
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	... 28 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:25)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	... 29 more
+
+06-Nov-2019 23:01:26.346 ADVERTÊNCIA [http-apr-8080-exec-34] com.sun.faces.lifecycle.InvokeApplicationPhase.execute #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+ javax.faces.FacesException: #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.faces.el.EvaluationException: javax.persistence.NoResultException: No entity found for query
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	... 28 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:25)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	... 29 more
+
+06-Nov-2019 23:02:23.565 ADVERTÊNCIA [http-apr-8080-exec-32] com.sun.faces.lifecycle.InvokeApplicationPhase.execute #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+ javax.faces.FacesException: #{loginBean.logarNoSistema()}: javax.persistence.NoResultException: No entity found for query
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.faces.el.EvaluationException: javax.persistence.NoResultException: No entity found for query
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	... 28 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498)
+	at br.com.argus.dao.UsuarioDAO.buscar(UsuarioDAO.java:27)
+	at br.com.argus.bussiness.LoginUsuario.tipoUsuario(LoginUsuario.java:25)
+	at br.com.argus.bean.LoginBean.logarNoSistema(LoginBean.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	... 29 more
+
+06-Nov-2019 23:04:28.375 INFORMAÇÕES [http-apr-8080-exec-29] com.sun.faces.renderkit.RenderKitUtils.renderUnhandledMessages AVISO: FacesMessage(s) foram enfileirados, mas podem não ter sido exibidos.
+sourceId=null[severity=(ERROR 2), summary=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.), detail=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.)]
+06-Nov-2019 23:07:29.910 INFORMAÇÕES [http-apr-8080-exec-30] com.sun.faces.renderkit.RenderKitUtils.renderUnhandledMessages AVISO: FacesMessage(s) foram enfileirados, mas podem não ter sido exibidos.
+sourceId=null[severity=(ERROR 2), summary=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.), detail=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.)]
+06-Nov-2019 23:10:08.989 WARN [http-apr-8080-exec-36] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 23:10:09.005 WARN [http-apr-8080-exec-36] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 23:10:09.005 WARN [http-apr-8080-exec-36] org.hibernate.ejb.HibernatePersistence.logDeprecation HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+06-Nov-2019 23:10:11.499 INFO [http-apr-8080-exec-36] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: teste
+	...]
+06-Nov-2019 23:10:27.106 ADVERTÊNCIA [http-apr-8080-exec-33] com.sun.faces.context.ExternalContextImpl.getMimeType JSF1091: Nenhum tipo de mime pôde ser encontrado para o arquivo /listar_usuario.jsp.  Para resolver isso, adicione um mapeamento de mime-type ao web.xml do aplicativo.
+06-Nov-2019 23:10:27.486 ADVERTÊNCIA [http-apr-8080-exec-33] com.sun.faces.context.ExternalContextImpl.getMimeType JSF1091: Nenhum tipo de mime pôde ser encontrado para o arquivo /listar_usuario.jsp.  Para resolver isso, adicione um mapeamento de mime-type ao web.xml do aplicativo.
+06-Nov-2019 23:10:36.918 INFORMAÇÕES [http-apr-8080-exec-35] com.sun.faces.renderkit.RenderKitUtils.renderUnhandledMessages AVISO: FacesMessage(s) foram enfileirados, mas podem não ter sido exibidos.
+sourceId=null[severity=(ERROR 2), summary=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.), detail=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.)]
+06-Nov-2019 23:16:58.586 INFORMAÇÕES [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Nov-2019 23:16:58.994 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-apr-8080"]
+06-Nov-2019 23:16:59.282 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-apr-8009"]
+06-Nov-2019 23:16:59.426 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+06-Nov-2019 23:17:02.102 ADVERTÊNCIA [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Nov-2019 23:17:03.687 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-apr-8080"]
+06-Nov-2019 23:17:04.072 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-apr-8009"]
+06-Nov-2019 23:17:04.605 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-apr-8080"]
+06-Nov-2019 23:17:04.642 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-apr-8009"]

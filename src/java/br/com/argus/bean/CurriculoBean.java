@@ -39,7 +39,7 @@ public class CurriculoBean implements Serializable {
         curriculoDAO.gravar(curriculo);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_curriculo.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_curriculo.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -59,7 +59,7 @@ public class CurriculoBean implements Serializable {
         sessionMap.put("curriculo", c);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_curriculo.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("editar_curriculo.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -70,7 +70,7 @@ public class CurriculoBean implements Serializable {
         curriculoDAO.editar(curriculo);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_curriculo.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_curriculo.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }

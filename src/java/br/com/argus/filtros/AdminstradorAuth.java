@@ -59,7 +59,7 @@ public class AdminstradorAuth implements Filter {
         LoginEntity login = (LoginEntity) session.getAttribute("administrador");
         
         if(login == null){
-            res.sendRedirect(req.getContextPath() + "/login.jsf");
+            res.sendRedirect(req.getContextPath() + "login.jsf");
         } else {
             chain.doFilter(request, response);
         }

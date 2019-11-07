@@ -37,7 +37,7 @@ public class DisciplinaBean implements Serializable {
         disciplinaDAO.gravar(disciplina);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_disciplina.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_disciplina.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -73,7 +73,7 @@ public class DisciplinaBean implements Serializable {
         sessionMap.put("disciplina", d);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_disciplina.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("editar_disciplina.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -84,7 +84,7 @@ public class DisciplinaBean implements Serializable {
         disciplinaDAO.editar(disciplina);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_disciplina.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_disciplina.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }

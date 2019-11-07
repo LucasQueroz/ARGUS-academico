@@ -17,7 +17,7 @@ public class Turma implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nome;
-
+    
     /**
      * @return the id
      */
@@ -45,4 +45,5 @@ public class Turma implements Serializable {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
 }

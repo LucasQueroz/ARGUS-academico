@@ -25,7 +25,8 @@ public class Aluno implements Serializable {
     private int id_curriculo;
     private int id_turma;
     private int id_responsavel;
-
+    private int id_disciplina;
+    
     /**
      * @return the id
      */
@@ -164,6 +165,20 @@ public class Aluno implements Serializable {
      */
     public void setId_responsavel(int id_responsavel) {
         this.id_responsavel = id_responsavel;
+    }
+
+    /**
+     * @return the id_disciplina
+     */
+    public int getId_disciplina() {
+        return id_disciplina;
+    }
+
+    /**
+     * @param id_disciplina the id_disciplina to set
+     */
+    public void setId_disciplina(int id_disciplina) {
+        this.id_disciplina = id_disciplina;
     }
     
 }
