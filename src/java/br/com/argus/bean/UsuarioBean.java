@@ -43,6 +43,7 @@ public class UsuarioBean implements Serializable {
     }*/
     
     public void gravar(){
+        //JOptionPane.showMessageDialog(null, "Passei no usuario 1");
         usuario.setSenha(Criptografia.criptografar("senha123"));
         
         UsuarioDAO usuarioDAO = new UsuarioDAO();

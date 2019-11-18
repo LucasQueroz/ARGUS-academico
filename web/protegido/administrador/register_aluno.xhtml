@@ -47,28 +47,32 @@
                             <div class="col-md-5">
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <label for="nome">Nome do alunoz</label>
-                                        <p:inputText value="#{alunoBean.aluno.nome}" id="nome" class="form-control form-control-lg"/>
+                                        <label for="nome">Nome do aluno</label>
+                                        <p:inputText value="#{alunoBean.aluno.nome}" class="form-control form-control-lg"/>
                                     </div>
                                     <div class="col-md-12 form-group">
                                         <label for="senha">Nome do pai</label>
-                                        <p:inputText value="#{alunoBean.aluno.pai}" id="pai" class="form-control form-control-lg"/>
+                                        <p:inputText value="#{alunoBean.aluno.pai}" class="form-control form-control-lg"/>
                                     </div>
                                     <div class="col-md-12 form-group">
                                         <label for="data_nascimento">Nome da mãe</label>
-                                        <p:inputText value="#{alunoBean.aluno.mae}" id="mae" class="form-control form-control-lg"/>
+                                        <p:inputText value="#{alunoBean.aluno.mae}" class="form-control form-control-lg"/>
                                     </div>
                                     <div class="col-md-12 form-group">
                                         <label for="naturalidade">Endereço</label>
-                                        <p:inputText value="#{alunoBean.aluno.endereco}"  id="endereco" class="form-control form-control-lg"/>
+                                        <p:inputText value="#{alunoBean.aluno.endereco}" class="form-control form-control-lg"/>
                                     </div>
                                     <div class="col-md-12 form-group">
                                         <label for="tipo_usuario">Data de nascimento</label>
-                                        <p:inputText value="#{alunoBean.aluno.data_nascimento}"  id="data_nascimento" class="form-control form-control-lg"/>
+                                        <p:inputText value="#{alunoBean.aluno.data_nascimento}" class="form-control form-control-lg" />
                                     </div>
                                     <div class="col-md-12 form-group">
                                         <label for="endereco">Naturalidade</label>
-                                        <p:inputText value="#{alunoBean.aluno.naturaliadade}" id="naturalidade" class="form-control form-control-lg"/>
+                                        <p:inputText value="#{alunoBean.aluno.naturaliadade}" class="form-control form-control-lg"/>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <label for="nome">Id do responsável</label>
+                                        <p:inputText value="#{alunoBean.aluno.id_responsavel}" class="form-control form-control-lg"/>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -150,8 +154,7 @@
         <!-- ============================= Script =================================== -->
         <ui:include src="script.xhtml"></ui:include>
         <!-- =============================    Script   ============================== -->
-
-
+        
     </h:body>
 
 </html>

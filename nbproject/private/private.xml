@@ -3,15 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/administrador/register_disciplina.xhtml</file>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/model/Disciplina.java</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/model/Atendimento_Pedagogico.java</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/pedagogo/listar_atendimento_pedagogico_por_aluno.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/bean/Atendimento_PedagogicoBean.java</file>
             <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/administrador/listar_alunos.xhtml</file>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/bean/AlunoBean.java</file>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/administrador/index.xhtml</file>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/diretor/listar_disciplina.xhtml</file>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/bean/DisciplinaBean.java</file>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/administrador/register_aluno.xhtml</file>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/administrador/listar_curriculo.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/pedagogo/index.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/pedagogo/menu.xhtml</file>
         </group>
     </open-files>
 </project-private>

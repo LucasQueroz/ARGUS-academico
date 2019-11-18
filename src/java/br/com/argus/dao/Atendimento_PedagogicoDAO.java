@@ -6,6 +6,7 @@ import br.com.argus.model.Usuario;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -45,7 +46,8 @@ public class Atendimento_PedagogicoDAO {
             EntityManager e = f.createEntityManager();
             e.getTransaction().begin();
             e.persist(atendimento_Pedagogico);
-            e.getTransaction().commit();            
+            e.getTransaction().commit();  
+            
 	}
 
 }

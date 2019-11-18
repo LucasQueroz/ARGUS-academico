@@ -16,6 +16,7 @@ import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -42,10 +43,10 @@ public class Atendimento_PedagogicoBean implements Serializable {
     public void gravar(){
         
         Atendimento_PedagogicoDAO atendimento_PedagogicoDAO = new Atendimento_PedagogicoDAO();
-        atendimento_PedagogicoDAO.gravar(getAtendimento_Pedagogico());
+        atendimento_PedagogicoDAO.gravar(atendimento_Pedagogico);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_atendimento_pedagogico.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_atendimento_pedagogico.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -60,16 +61,21 @@ public class Atendimento_PedagogicoBean implements Serializable {
      
     }
     
+    public List<Atendimento_Pedagogico> obter_por_aluno(){
+        List<Atendimento_Pedagogico> atendimento_Pedagogico = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("SELECT ap.detalhamento FROM Atendimento_Pedagogico ap inner join p.detalhesProduto as d");
+        atendimento_Pedagogico = q.getResultList();
+        return atendimento_Pedagogico;
+     
+    }
+    
     /*public void editar(Long id){
         Usuario usuario = new Usuario();
         EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
         usuario = e.find(Usuario.class, id);
         //JPAUtil.shutdown();
         System.out.println("Usuario:"  + usuario.getNome());
-    }*/
-    
-    /*public static void main(String[] args) {
-        editar();
     }*/
     
     public void editar(int id){

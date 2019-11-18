@@ -61,13 +61,14 @@ public class ParcelaBean implements Serializable {
     }
     
     public void gravar(int id_responsavel){
-        parcela.setId(id_responsavel);
+        parcela.setNumero_a_pagar(12);
+        parcela.setId_responsavel(id_responsavel);
         
         ParcelaDAO parcelaDAO = new ParcelaDAO();
         parcelaDAO.gravar(parcela);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_parcela.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_alunos.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -99,7 +100,7 @@ public class ParcelaBean implements Serializable {
         sessionMap.put("parcela", p);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_parcela.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("editar_parcela.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -110,7 +111,19 @@ public class ParcelaBean implements Serializable {
         parcelaDAO.editar(parcela);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_parcela.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_parcela.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void atualizar(Parcela parcela, int numero_a_pagar){
+        parcela.setNumero_a_pagar(numero_a_pagar - 1);
+        ParcelaDAO parcelaDAO= new ParcelaDAO();
+        parcelaDAO.editar(parcela);
+        
+        try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_parcela.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }

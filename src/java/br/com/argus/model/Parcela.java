@@ -16,7 +16,7 @@ public class Parcela {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private float valor;
-    private int numero_pago;
+    private int numero_a_pagar;
     private int id_responsavel;
 
     /**
@@ -48,20 +48,6 @@ public class Parcela {
     }
 
     /**
-     * @return the numero_pago
-     */
-    public int getNumero_pago() {
-        return numero_pago;
-    }
-
-    /**
-     * @param numero_pago the numero_pago to set
-     */
-    public void setNumero_pago(int numero_pago) {
-        this.numero_pago = numero_pago;
-    }
-
-    /**
      * @return the id_responsavel
      */
     public int getId_responsavel() {
@@ -73,6 +59,20 @@ public class Parcela {
      */
     public void setId_responsavel(int id_responsavel) {
         this.id_responsavel = id_responsavel;
+    }
+
+    /**
+     * @return the numero_a_pagar
+     */
+    public int getNumero_a_pagar() {
+        return numero_a_pagar;
+    }
+
+    /**
+     * @param numero_a_pagar the numero_a_pagar to set
+     */
+    public void setNumero_a_pagar(int numero_a_pagar) {
+        this.numero_a_pagar = numero_a_pagar;
     }
     
 }

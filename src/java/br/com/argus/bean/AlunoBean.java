@@ -47,6 +47,23 @@ public class AlunoBean implements Serializable {
         }
     }
     
+    public void registrarMatricola(Aluno aluno){
+        AlunoDAO alunoDAO = new AlunoDAO();
+        alunoDAO.editar(aluno);
+        
+        Aluno a = new Aluno();
+        a = alunoDAO.buscar(aluno.getId());
+        
+        Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
+        sessionMap.put("aluno", a);
+        
+        try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("register_parcela.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
     public void gravar(){
         AlunoDAO alunoDAO = new AlunoDAO();
         alunoDAO.gravar(aluno);
