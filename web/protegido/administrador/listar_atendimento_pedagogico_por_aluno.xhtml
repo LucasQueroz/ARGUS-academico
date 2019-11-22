@@ -121,12 +121,12 @@
             <div class="site-section">
                 <div class="container">
                     <div class="row">
-                        <h:dataTable value="#{atendimento_Pedagogico_join_AlunoBean.obter()}" var="atendimento_por_aluno"
+                        <h:dataTable value="#{atendimento_PedagogicoBean.obter()}" var="atendimento_por_aluno"
                                      border="1">
 
                             <h:column>
                                 <f:facet name="header">Nome do Aluno</f:facet>
-                                <h:outputText value="#{atendimento_por_aluno.nome}"></h:outputText>
+                                <h:outputText value="#{atendimento_por_aluno.aluno.nome}"></h:outputText>
                             </h:column>
                             <h:column>
                                 <f:facet name="header">Detalhamento Pedagógico</f:facet>

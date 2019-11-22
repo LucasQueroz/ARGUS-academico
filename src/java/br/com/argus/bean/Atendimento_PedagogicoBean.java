@@ -58,17 +58,16 @@ public class Atendimento_PedagogicoBean implements Serializable {
         Query q = e.createQuery("FROM Atendimento_Pedagogico");
         atendimento_Pedagogico = q.getResultList();
         return atendimento_Pedagogico;
-     
     }
     
-    public List<Atendimento_Pedagogico> obter_por_aluno(){
+    /*public List<Atendimento_Pedagogico> obter_por_aluno(){
         List<Atendimento_Pedagogico> atendimento_Pedagogico = new ArrayList<>();
         EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
         Query q = e.createQuery("SELECT ap.detalhamento FROM Atendimento_Pedagogico ap inner join p.detalhesProduto as d");
         atendimento_Pedagogico = q.getResultList();
         return atendimento_Pedagogico;
      
-    }
+    }*/
     
     /*public void editar(Long id){
         Usuario usuario = new Usuario();

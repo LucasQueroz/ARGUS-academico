@@ -7,62 +7,63 @@
       xmlns:ui="http://java.sun.com/jsf/facelets">
 
     <h:form>  
-                        <p:growl id="messages"/>
+        <p:growl id="messages"/>
 
-                        <p:menubar>
-                            <p:submenu label="Cadastrar" icon="pi pi-file">
-                                <p:menuitem value="Aluno" url="register_aluno.jsf" />
-                                <p:menuitem value="Ano Letivo" url="register_ano_letivo.jsf" />
-                                <p:menuitem value="Atendimento Pedagógico" url="protegido/pedagogo/register_atendimento_pedagogico.jsf" />
-                                <p:menuitem value="Currículo" url="register_curriculo.jsf" />
-                                <p:menuitem value="Disciplina" url="register_disciplina.jsf" />
-                                <p:menuitem value="Pedagogo" url="register_pedagogo.jsf" />
-                                <p:menuitem value="Professor" url="register_professor.jsf" />
-                                <p:menuitem value="Responsável" url="register_responsavel.jsf" />
-                                <p:menuitem value="Turma" url="register_turma.jsf" />
-                                <p:menuitem value="Usuário" url="register_usuario.jsf" />
-                            </p:submenu>
+        <p:menubar>
+            <p:submenu label="Cadastrar" icon="pi pi-file">
+                <p:menuitem value="Aluno" url="register_aluno.jsf" />
+                <p:menuitem value="Ano Letivo" url="register_ano_letivo.jsf" />
+                <p:menuitem value="Atendimento Pedagógico" url="register_atendimento_pedagogico.jsf" />
+                <p:menuitem value="Currículo" url="register_curriculo.jsf" />
+                <p:menuitem value="Disciplina" url="register_disciplina.jsf" />
+                <p:menuitem value="Pedagogo" url="register_pedagogo.jsf" />
+                <p:menuitem value="Professor" url="register_professor.jsf" />
+                <p:menuitem value="Responsável" url="register_responsavel.jsf" />
+                <p:menuitem value="Turma" url="register_turma.jsf" />
+                <p:menuitem value="Usuário" url="register_usuario.jsf" />
+            </p:submenu>
 
-                            <p:submenu label="Editar" icon="pi pi-pencil">
-                                <p:menuitem value="Aluno" url="listar_alunos.jsf" />
-                                <p:menuitem value="Ano Letivo" url="listar_ano_letivo.jsf" />
-                                <p:menuitem value="Atendimento Pedagógico" url="listar_atendimento_pedagogico.jsf" />
-                                <p:menuitem value="Currículo" url="listar_curriculo.jsf" />
-                                <p:menuitem value="Disciplina" url="listar_disciplina.jsf" />
-                                <p:menuitem value="Pedagogo" url="listar_pedagogo.jsf" />
-                                <p:menuitem value="Professor" url="listar_professor.jsf" />
-                                <p:menuitem value="Responsável" url="listar_responsavel.jsf" />
-                                <p:menuitem value="Turma" url="listar_turma.jsf" />
-                                <p:menuitem value="Usuário" url="listar_usuario.jsf" />
-                            </p:submenu>
+            <p:submenu label="Editar" icon="pi pi-pencil">
+                <p:menuitem value="Aluno" url="listar_alunos.jsf" />
+                <p:menuitem value="Ano Letivo" url="listar_ano_letivo.jsf" />
+                <p:menuitem value="Atendimento Pedagógico" url="listar_atendimento_pedagogico.jsf" />
+                <p:menuitem value="Currículo" url="listar_curriculo.jsf" />
+                <p:menuitem value="Disciplina" url="listar_disciplina.jsf" />
+                <p:menuitem value="Pedagogo" url="listar_pedagogo.jsf" />
+                <p:menuitem value="Professor" url="listar_professor.jsf" />
+                <p:menuitem value="Responsável" url="listar_responsavel.jsf" />
+                <p:menuitem value="Turma" url="listar_turma.jsf" />
+                <p:menuitem value="Usuário" url="listar_usuario.jsf" />
+            </p:submenu>
 
-                            <p:submenu label="Visualizar" icon="pi pi-pencil">
-                                <p:menuitem value="Aluno" url="listar_alunos.jsf" />
-                                <p:menuitem value="Ano Letivo" url="listar_ano_letivo.jsf" />
-                                <p:menuitem value="Atendimento Pedagógico" url="listar_atendimento_pedagogico.jsf" />
-                                <p:menuitem value="Currículo" url="listar_curriculo.jsf" />
-                                <p:menuitem value="Disciplina" url="listar_disciplina.jsf" />
-                                <p:menuitem value="Pedagogo" url="listar_pedagogo.jsf" />
-                                <p:menuitem value="Professor" url="listar_professor.jsf" />
-                                <p:menuitem value="Responsável" url="listar_responsavel.jsf" />
-                                <p:menuitem value="Turma" url="listar_turma.jsf" />
-                                <p:menuitem value="Usuário" url="listar_usuario.jsf" />
-                                <p:menuitem value="Parcelas" url="listar_parcela.jsf" />
-                            </p:submenu>
+            <p:submenu label="Visualizar" icon="pi pi-pencil">
+                <p:menuitem value="Aluno" url="listar_alunos.jsf" />
+                <p:menuitem value="Ano Letivo" url="listar_ano_letivo.jsf" />
+                <p:menuitem value="Atendimento Pedagógico" url="listar_atendimento_pedagogico.jsf" />
+                <p:menuitem value="Atendimento Pedagógico por Aluno" url="listar_atendimento_pedagogico_por_aluno.jsf" />
+                <p:menuitem value="Currículo" url="listar_curriculo.jsf" />
+                <p:menuitem value="Disciplina" url="listar_disciplina.jsf" />
+                <p:menuitem value="Pedagogo" url="listar_pedagogo.jsf" />
+                <p:menuitem value="Professor" url="listar_professor.jsf" />
+                <p:menuitem value="Responsável" url="listar_responsavel.jsf" />
+                <p:menuitem value="Turma" url="listar_turma.jsf" />
+                <p:menuitem value="Usuário" url="listar_usuario.jsf" />
+                <p:menuitem value="Parcelas" url="listar_parcela.jsf" />
+            </p:submenu>
 
-                            <p:submenu label="Deletar" icon="pi pi-pencil">
-                                <p:menuitem value="Aluno" url="listar_alunos.jsf" />
-                                <p:menuitem value="Ano Letivo" url="listar_ano_letivo.jsf" />
-                                <p:menuitem value="Atendimento Pedagógico" url="listar_atendimento_pedagogico.jsf" />
-                                <p:menuitem value="Currículo" url="listar_curriculo.jsf" />
-                                <p:menuitem value="Disciplina" url="listar_disciplina.jsf" />
-                                <p:menuitem value="Pedagogo" url="listar_pedagogo.jsf" />
-                                <p:menuitem value="Professor" url="listar_professor.jsf" />
-                                <p:menuitem value="Responsável" url="listar_responsavel.jsf" />
-                                <p:menuitem value="Turma" url="listar_turma.jsf" />
-                                <p:menuitem value="Usuário" url="listar_usuario.jsf" />
-                            </p:submenu>
-                        </p:menubar>
-                    </h:form>
-    
+            <p:submenu label="Deletar" icon="pi pi-pencil">
+                <p:menuitem value="Aluno" url="listar_alunos.jsf" />
+                <p:menuitem value="Ano Letivo" url="listar_ano_letivo.jsf" />
+                <p:menuitem value="Atendimento Pedagógico" url="listar_atendimento_pedagogico.jsf" />
+                <p:menuitem value="Currículo" url="listar_curriculo.jsf" />
+                <p:menuitem value="Disciplina" url="listar_disciplina.jsf" />
+                <p:menuitem value="Pedagogo" url="listar_pedagogo.jsf" />
+                <p:menuitem value="Professor" url="listar_professor.jsf" />
+                <p:menuitem value="Responsável" url="listar_responsavel.jsf" />
+                <p:menuitem value="Turma" url="listar_turma.jsf" />
+                <p:menuitem value="Usuário" url="listar_usuario.jsf" />
+            </p:submenu>
+        </p:menubar>
+    </h:form>
+
 </html>

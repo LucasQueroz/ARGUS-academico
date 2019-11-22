@@ -26,10 +26,15 @@ import javax.persistence.Query;
 public class AlunoBean implements Serializable {
     
     private Aluno aluno;
+    private List<Aluno> alunos;
     
     @PostConstruct
     private void init(){
         aluno = new Aluno();
+        alunos = obterAluno();
+        for (Aluno aluno1 : alunos) {
+            System.out.println(aluno1.getNome());
+        }
     }
     
     public void matricularAluno(int id){
@@ -107,11 +112,9 @@ public class AlunoBean implements Serializable {
     }
     
     public List<Aluno> obterAluno(){
-        List<Aluno> alunos = new ArrayList<>();
         EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        Query q = e.createQuery("FROM Aluno");
-        alunos = q.getResultList();
-        return alunos;
+        Query q = e.createQuery("SELECT a FROM Aluno a");
+        return q.getResultList();
     }
 
     /**
@@ -119,6 +122,10 @@ public class AlunoBean implements Serializable {
      */
     public Aluno getAluno() {
         return aluno;
+    }
+
+    public List<Aluno> getAlunos() {
+        return alunos;
     }
 
 }

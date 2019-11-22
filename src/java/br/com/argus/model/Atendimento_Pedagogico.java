@@ -1,9 +1,15 @@
 package br.com.argus.model;
 
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -21,6 +27,23 @@ public class Atendimento_Pedagogico {
     private int id_pedagogo;
     private int id_usuario;
     private int id_aluno;
+    @ManyToOne
+    private Aluno aluno;
+    
+    
+    
+    
+    /*@ManyToOne
+    private Usuario usuario;
+    @ManyToOne
+    private Pedagogo pedagogo;*/
+
+
+
+
+
+//@OneToOne(mappedBy = "atendimento_pedagogico", cascade = CascadeType.ALL)
+    //private List<Aluno> alunos = new ArrayList<>();
 
     /**
      * @return the id
@@ -119,5 +142,35 @@ public class Atendimento_Pedagogico {
     public void setId_aluno(int id_aluno) {
         this.id_aluno = id_aluno;
     }
+
+    /**
+     * @return the aluno
+     */
+    //@ManyToOne
+    //@JoinColumn(name = "id_aluno")
+    public Aluno getAluno() {
+        return aluno;
+    }
+
+    /**
+     * @param aluno the aluno to set
+     */
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+
+    /**
+     * @return the alunos
+     *
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }*/
+
+    /**
+     * @param alunos the alunos to set
+     *
+    public void setAlunos(List<Aluno> alunos) {
+        this.alunos = alunos;
+    }*/
     
 }

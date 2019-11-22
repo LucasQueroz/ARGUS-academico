@@ -51,7 +51,7 @@
                 <div class="container">
                     <div class="d-flex align-items-center">
                         <div class="site-logo">
-                            <a href="index.html" class="d-block">
+                            <a href="index.jsf" class="d-block">
                                 <img src="../../images/logo.jpg" alt="Image" class="img-fluid"/>
                             </a>
                         </div>
@@ -121,7 +121,7 @@
             <div class="site-section">
                 <div class="container">
                     <div class="row">
-                        <h:dataTable value="#{atendimento_PedagogicoBean.obter_por_aluno()}" var="atendimento_por_aluno"
+                        <h:dataTable value="#{atendimento_Pedagogico_join_AlunoBean.obter()}" var="atendimento_por_aluno"
                                      border="1">
 
                             <h:column>
@@ -135,9 +135,7 @@
                             <h:column>
                                 <f:facet name="header">Ver Relatório de Acompanhamento</f:facet>
                                 <h:form>
-                                    <h:commandLink actionListener="#{atendimento_PedagogicoBean.obter_por_aluno(aluno.id)}">
-                                        <h:outputText value="Fazer matrícola"/>
-                                    </h:commandLink>
+                                    
                                 </h:form>
                             </h:column>
                         </h:dataTable>

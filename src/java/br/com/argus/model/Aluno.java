@@ -27,6 +27,14 @@ public class Aluno implements Serializable {
     private int id_responsavel;
     private int id_disciplina;
     
+    //@OneToMany(cascade = CascadeType.ALL)
+    //private List<Atendimento_Pedagogico> atendimento_pedagogicos;
+    
+    //@OneToMany(fetch = FetchType.LAZY)
+    //@JoinColumn(name = "id_atendimento_pedagogico")
+    //private Atendimento_Pedagogico atendimento_Pedagogico;
+    
+    
     /**
      * @return the id
      */
@@ -180,5 +188,33 @@ public class Aluno implements Serializable {
     public void setId_disciplina(int id_disciplina) {
         this.id_disciplina = id_disciplina;
     }
+
+    /**
+     * @return the atendimento_Pedagogicos
+     *
+    public List<Atendimento_Pedagogico> getAtendimento_Pedagogicos() {
+        return atendimento_pedagogicos;
+    }
+
+    **
+     * @param atendimento_Pedagogicos the atendimento_Pedagogicos to set
+     *
+    public void setAtendimento_Pedagogicos(List<Atendimento_Pedagogico> atendimento_Pedagogicos) {
+        this.atendimento_pedagogicos = atendimento_Pedagogicos;
+    }*/
+
+    /**
+     * @return the atendimento_Pedagogico
+     
+    public Atendimento_Pedagogico getAtendimento_Pedagogico() {
+        return atendimento_Pedagogico;
+    }
+
+    /**
+     * @param atendimento_Pedagogico the atendimento_Pedagogico to set
+     *
+    public void setAtendimento_Pedagogico(Atendimento_Pedagogico atendimento_Pedagogico) {
+        this.atendimento_Pedagogico = atendimento_Pedagogico;
+    }*/
     
 }
