@@ -65,7 +65,9 @@
                 </div>
                 <div class="col-lg-9 d-none d-lg-block">Seja bem vindo, #{loginBean.login.nome}</div>
                 <div class="col-lg-3 text-right">
+                    <a
                     <h:form>
+                        <a href="alterar_senha.jsf" class="small mr-3">Mudar senha</a>
                         <p:commandButton action="#{loginBean.logout()}" class="small mr-3" value="Log Out" />
                     </h:form>
                 </div>

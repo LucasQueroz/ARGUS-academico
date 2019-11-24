@@ -57,10 +57,10 @@ public class UsuarioBean implements Serializable {
     }
     
     public List<Usuario> obterUsuarios(){
-        List<Usuario> usuarios = new ArrayList<>();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        Query q = e.createQuery("FROM Usuario");
-        usuarios = q.getResultList();
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        
+        List<Usuario> usuarios = usuarioDAO.obterUsuario();
+        
         return usuarios;
      
     }

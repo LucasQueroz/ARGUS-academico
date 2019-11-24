@@ -3,6 +3,7 @@ package br.com.argus.bean;
 import br.com.argus.dao.AlunoDAO;
 import br.com.argus.model.Aluno;
 import br.com.argus.model.JPAUtil;
+import com.sun.javafx.scene.control.skin.VirtualFlow;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -14,8 +15,10 @@ import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
+import javax.faces.model.SelectItem;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -26,15 +29,17 @@ import javax.persistence.Query;
 public class AlunoBean implements Serializable {
     
     private Aluno aluno;
-    private List<Aluno> alunos;
+    //private List<Aluno> alunos;
     
+    //private List<SelectItem> alunosSelect;
+
     @PostConstruct
     private void init(){
         aluno = new Aluno();
-        alunos = obterAluno();
+        /*alunos = obterAluno();
         for (Aluno aluno1 : alunos) {
             System.out.println(aluno1.getNome());
-        }
+        }*/
     }
     
     public void matricularAluno(int id){
@@ -112,9 +117,8 @@ public class AlunoBean implements Serializable {
     }
     
     public List<Aluno> obterAluno(){
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        Query q = e.createQuery("SELECT a FROM Aluno a");
-        return q.getResultList();
+        AlunoDAO alunoDAO = new AlunoDAO();
+        return alunoDAO.listar();
     }
 
     /**
@@ -124,8 +128,26 @@ public class AlunoBean implements Serializable {
         return aluno;
     }
 
-    public List<Aluno> getAlunos() {
+    /*public List<Aluno> getAlunos() {
         return alunos;
-    }
+    }*/
 
+    /*public List<SelectItem> getAlunosSelect() {
+        if(alunosSelect == null){
+            alunosSelect = new ArrayList<>();
+            
+            AlunoDAO alunoDAO = new AlunoDAO();
+            List<Aluno> listaAlunos = alunoDAO.obterAlunos();
+            
+            if(listaAlunos != null && !listaAlunos.isEmpty()){
+                SelectItem item;
+                for(Aluno alunoLista : listaAlunos){
+                    item = new SelectItem(alunoLista, alunoLista.getNome());
+                    alunosSelect.add(item);
+                }
+            }
+        }
+        //JOptionPane.showMessageDialog(null, "Size alunos" + alunosSelect.size());
+        return alunosSelect;
+    }*/
 }

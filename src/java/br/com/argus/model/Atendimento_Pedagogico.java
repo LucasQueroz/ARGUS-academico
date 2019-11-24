@@ -30,21 +30,6 @@ public class Atendimento_Pedagogico {
     @ManyToOne
     private Aluno aluno;
     
-    
-    
-    
-    /*@ManyToOne
-    private Usuario usuario;
-    @ManyToOne
-    private Pedagogo pedagogo;*/
-
-
-
-
-
-//@OneToOne(mappedBy = "atendimento_pedagogico", cascade = CascadeType.ALL)
-    //private List<Aluno> alunos = new ArrayList<>();
-
     /**
      * @return the id
      */

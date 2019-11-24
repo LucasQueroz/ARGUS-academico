@@ -189,32 +189,9 @@ public class Aluno implements Serializable {
         this.id_disciplina = id_disciplina;
     }
 
-    /**
-     * @return the atendimento_Pedagogicos
-     *
-    public List<Atendimento_Pedagogico> getAtendimento_Pedagogicos() {
-        return atendimento_pedagogicos;
+    @Override
+    public String toString() {
+        return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
     }
 
-    **
-     * @param atendimento_Pedagogicos the atendimento_Pedagogicos to set
-     *
-    public void setAtendimento_Pedagogicos(List<Atendimento_Pedagogico> atendimento_Pedagogicos) {
-        this.atendimento_pedagogicos = atendimento_Pedagogicos;
-    }*/
-
-    /**
-     * @return the atendimento_Pedagogico
-     
-    public Atendimento_Pedagogico getAtendimento_Pedagogico() {
-        return atendimento_Pedagogico;
-    }
-
-    /**
-     * @param atendimento_Pedagogico the atendimento_Pedagogico to set
-     *
-    public void setAtendimento_Pedagogico(Atendimento_Pedagogico atendimento_Pedagogico) {
-        this.atendimento_Pedagogico = atendimento_Pedagogico;
-    }*/
-    
 }

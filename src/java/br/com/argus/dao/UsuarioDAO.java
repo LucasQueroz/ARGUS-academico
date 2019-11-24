@@ -3,6 +3,8 @@ package br.com.argus.dao;
 import br.com.argus.model.JPAUtil;
 import br.com.argus.model.Pedagogo;
 import br.com.argus.model.Usuario;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -56,6 +58,14 @@ public class UsuarioDAO {
         e.persist(usuario);
         e.getTransaction().commit();
 
+    }
+
+    public List<Usuario> obterUsuario() {
+        List<Usuario> usuarios = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Usuario");
+        usuarios = q.getResultList();
+        return usuarios;
     }
 
 }

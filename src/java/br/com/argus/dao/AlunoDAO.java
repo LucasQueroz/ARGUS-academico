@@ -2,9 +2,12 @@ package br.com.argus.dao;
 
 import br.com.argus.model.Aluno;
 import br.com.argus.model.JPAUtil;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 /**
  *
@@ -40,6 +43,14 @@ public class AlunoDAO {
         entity.getTransaction().begin();
         entity.merge(aluno);
         entity.getTransaction().commit();
+    }
+
+    public List<Aluno> listar() {
+        List<Aluno> alunos = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Aluno");
+        alunos = q.getResultList();
+        return alunos;
     }
     
 }

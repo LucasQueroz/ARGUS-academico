@@ -1,6 +1,8 @@
 package br.com.argus.bean;
 
+import br.com.argus.dao.AlunoDAO;
 import br.com.argus.dao.Atendimento_PedagogicoDAO;
+import br.com.argus.model.Aluno;
 import br.com.argus.model.Atendimento_Pedagogico;
 import br.com.argus.model.JPAUtil;
 import java.io.IOException;
@@ -27,10 +29,14 @@ import javax.swing.JOptionPane;
 public class Atendimento_PedagogicoBean implements Serializable {
     
     private Atendimento_Pedagogico atendimento_Pedagogico;
+    private List<Atendimento_Pedagogico> atendimento_Pedagogicos;
+    private List<Aluno> alunos;
     
     @PostConstruct
     private void init(){
         atendimento_Pedagogico = new Atendimento_Pedagogico();
+        AlunoDAO alunoDAO = new AlunoDAO();
+        alunos = alunoDAO.listar();
     }
     
     /*public String novo(){
@@ -41,6 +47,26 @@ public class Atendimento_PedagogicoBean implements Serializable {
     }*/
     
     public void gravar(){
+        
+        Atendimento_PedagogicoDAO atendimento_PedagogicoDAO = new Atendimento_PedagogicoDAO();
+        atendimento_PedagogicoDAO.gravar(atendimento_Pedagogico);
+        
+        atendimento_Pedagogico = new Atendimento_Pedagogico();
+        
+        AlunoDAO alunoDAO = new AlunoDAO();
+        alunos = alunoDAO.listar();
+        
+        atendimento_Pedagogicos = atendimento_PedagogicoDAO.listar();
+        
+        try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_atendimento_pedagogico.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void gravar(int aluno_id){
+        //atendimento_Pedagogico.set
         
         Atendimento_PedagogicoDAO atendimento_PedagogicoDAO = new Atendimento_PedagogicoDAO();
         atendimento_PedagogicoDAO.gravar(atendimento_Pedagogico);
@@ -109,11 +135,16 @@ public class Atendimento_PedagogicoBean implements Serializable {
         atendimento_PedagogicoDAO.eliminar(id);
     }
 
-    /**
-     * @return the atendimento_Pedagogico
-     */
     public Atendimento_Pedagogico getAtendimento_Pedagogico() {
         return atendimento_Pedagogico;
+    }
+    
+    public void setAlunos(List<Aluno> alunos) {
+        this.alunos = alunos;
+    }
+
+    public List<Aluno> getAlunos() {
+        return alunos;
     }
     
 }
