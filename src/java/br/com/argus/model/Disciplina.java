@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -19,9 +20,18 @@ public class Disciplina implements Serializable{
     private String nome;
     private String codigo;
     private int carga_horaria;
+    
+    @ManyToOne
+    private Professor professor;
+    @ManyToOne
+    private Curriculo curriculo;
+    @ManyToOne
+    private Turma turma;
+    
+    
     //private int id_professor;
-    private int id_turma;
-    private int id_curriculo;
+    //private int id_turma;
+    //private int id_curriculo;
 
     /**
      * @return the id
@@ -80,31 +90,45 @@ public class Disciplina implements Serializable{
     }
 
     /**
-     * @return the id_turma
+     * @return the professor
      */
-    public int getId_turma() {
-        return id_turma;
+    public Professor getProfessor() {
+        return professor;
     }
 
     /**
-     * @param id_turma the id_turma to set
+     * @param professor the professor to set
      */
-    public void setId_turma(int id_turma) {
-        this.id_turma = id_turma;
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
     }
 
     /**
-     * @return the id_curriculo
+     * @return the curriculo
      */
-    public int getId_curriculo() {
-        return id_curriculo;
+    public Curriculo getCurriculo() {
+        return curriculo;
     }
 
     /**
-     * @param id_curriculo the id_curriculo to set
+     * @param curriculo the curriculo to set
      */
-    public void setId_curriculo(int id_curriculo) {
-        this.id_curriculo = id_curriculo;
+    public void setCurriculo(Curriculo curriculo) {
+        this.curriculo = curriculo;
+    }
+
+    /**
+     * @return the turma
+     */
+    public Turma getTurma() {
+        return turma;
+    }
+
+    /**
+     * @param turma the turma to set
+     */
+    public void setTurma(Turma turma) {
+        this.turma = turma;
     }
 
 }

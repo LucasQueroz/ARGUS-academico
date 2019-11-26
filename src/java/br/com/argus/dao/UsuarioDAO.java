@@ -1,12 +1,12 @@
 package br.com.argus.dao;
 
 import br.com.argus.model.JPAUtil;
-import br.com.argus.model.Pedagogo;
 import br.com.argus.model.Usuario;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.NoResultException;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 import javax.swing.JOptionPane;
@@ -21,7 +21,7 @@ public class UsuarioDAO {
         return u;
     }
 
-    public Usuario buscar(String nome, String senha) {
+    public Usuario buscar(String nome, String senha) throws NoResultException {
         Query query = entity.createQuery("FROM Usuario u where u.nome = :nome and u.senha=:senha");
         query.setParameter("nome", nome);
         query.setParameter("senha", senha);
@@ -60,12 +60,19 @@ public class UsuarioDAO {
 
     }
 
-    public List<Usuario> obterUsuario() {
+    public List<Usuario> listar() {
         List<Usuario> usuarios = new ArrayList<>();
         EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
         Query q = e.createQuery("FROM Usuario");
         usuarios = q.getResultList();
         return usuarios;
     }
-
+    
+    public List<Usuario> listaPedagogo(){
+        List<Usuario> usuarios = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Usuario WHERE tipo_usuario='pedagogo'");
+        usuarios = q.getResultList();
+        return usuarios;
+    }
 }

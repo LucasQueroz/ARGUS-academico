@@ -37,9 +37,8 @@ public class ParcelaBean implements Serializable {
     }
     
     public void listar(int id_responsavel){
-        parcela.setId_responsavel(id_responsavel);
          try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_parcela.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_parcela.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -54,7 +53,7 @@ public class ParcelaBean implements Serializable {
         sessionMap.put("responsavel", r);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/register_parcela.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("register_parcela.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -62,7 +61,6 @@ public class ParcelaBean implements Serializable {
     
     public void gravar(int id_responsavel){
         parcela.setNumero_a_pagar(12);
-        parcela.setId_responsavel(id_responsavel);
         
         ParcelaDAO parcelaDAO = new ParcelaDAO();
         parcelaDAO.gravar(parcela);

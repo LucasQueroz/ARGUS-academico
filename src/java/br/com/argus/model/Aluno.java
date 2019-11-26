@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -22,18 +23,13 @@ public class Aluno implements Serializable {
     private String endereco;
     private String data_nascimento;
     private String naturaliadade;
-    private int id_curriculo;
-    private int id_turma;
-    private int id_responsavel;
-    private int id_disciplina;
     
-    //@OneToMany(cascade = CascadeType.ALL)
-    //private List<Atendimento_Pedagogico> atendimento_pedagogicos;
-    
-    //@OneToMany(fetch = FetchType.LAZY)
-    //@JoinColumn(name = "id_atendimento_pedagogico")
-    //private Atendimento_Pedagogico atendimento_Pedagogico;
-    
+    @ManyToOne
+    private Turma turma;
+    @ManyToOne
+    private Curriculo curriculo;
+    @ManyToOne
+    private Responsavel responsavel;
     
     /**
      * @return the id
@@ -134,64 +130,51 @@ public class Aluno implements Serializable {
     }
 
     /**
-     * @return the id_curriculo
+     * @return the turma
      */
-    public int getId_curriculo() {
-        return id_curriculo;
+    public Turma getTurma() {
+        return turma;
     }
 
     /**
-     * @param id_curriculo the id_curriculo to set
+     * @param turma the turma to set
      */
-    public void setId_curriculo(int id_curriculo) {
-        this.id_curriculo = id_curriculo;
+    public void setTurma(Turma turma) {
+        this.turma = turma;
     }
 
     /**
-     * @return the id_turma
+     * @return the curriculo
      */
-    public int getId_turma() {
-        return id_turma;
+    public Curriculo getCurriculo() {
+        return curriculo;
     }
 
     /**
-     * @param id_turma the id_turma to set
+     * @param curriculo the curriculo to set
      */
-    public void setId_turma(int id_turma) {
-        this.id_turma = id_turma;
+    public void setCurriculo(Curriculo curriculo) {
+        this.curriculo = curriculo;
     }
 
     /**
-     * @return the id_responsavel
+     * @return the responsavel
      */
-    public int getId_responsavel() {
-        return id_responsavel;
+    public Responsavel getResponsavel() {
+        return responsavel;
     }
 
     /**
-     * @param id_responsavel the id_responsavel to set
+     * @param responsavel the responsavel to set
      */
-    public void setId_responsavel(int id_responsavel) {
-        this.id_responsavel = id_responsavel;
+    public void setResponsavel(Responsavel responsavel) {
+        this.responsavel = responsavel;
     }
-
-    /**
-     * @return the id_disciplina
-     */
-    public int getId_disciplina() {
-        return id_disciplina;
-    }
-
-    /**
-     * @param id_disciplina the id_disciplina to set
-     */
-    public void setId_disciplina(int id_disciplina) {
-        this.id_disciplina = id_disciplina;
-    }
-
+    
     @Override
     public String toString() {
         return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
     }
+
 
 }

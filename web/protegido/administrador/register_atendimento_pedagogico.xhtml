@@ -91,10 +91,7 @@
 
             <label for="nome">Data</label>
             <p:inputText value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.data}" class="form-control form-control-lg"/>
-
-            <label for="senha">ID do pedagogo</label>
-            <p:inputText value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.id_pedagogo}" class="form-control form-control-lg"/>
-
+            
             <label for="data_nascimento">Detalhamento</label>
             <p:inputTextarea value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.detalhamento}" class="form-control form-control-lg"/>
 
@@ -107,6 +104,15 @@
                                  converter="omnifaces.SelectItemsConverter">
                     <f:selectItem itemLabel="Select on" noSelectionOption="true" />
                     <f:selectItems value="#{atendimento_PedagogicoBean.alunos}" var="aluno" itemValue="#{aluno}" itemLabel="#{aluno.nome}"/>
+                </p:selectOneMenu>
+            </h:panelGrid>
+            
+            <h:panelGrid columns="2">
+                <h:outputLabel for="nome">Pedagogo</h:outputLabel>
+                <p:selectOneMenu value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.usuario}" 
+                                 converter="omnifaces.SelectItemsConverter">
+                    <f:selectItem itemLabel="Select on" noSelectionOption="true" />
+                    <f:selectItems value="#{atendimento_PedagogicoBean.usuarios}" var="pedagogo" itemValue="#{usuario}" itemLabel="#{usuario.nome}"/>
                 </p:selectOneMenu>
             </h:panelGrid>
             

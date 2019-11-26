@@ -1,8 +1,10 @@
 package br.com.argus.bean;
 
 import br.com.argus.dao.AlunoDAO;
+import br.com.argus.dao.ResponsavelDAO;
 import br.com.argus.model.Aluno;
 import br.com.argus.model.JPAUtil;
+import br.com.argus.model.Responsavel;
 import com.sun.javafx.scene.control.skin.VirtualFlow;
 import java.io.IOException;
 import java.io.Serializable;
@@ -29,17 +31,13 @@ import javax.swing.JOptionPane;
 public class AlunoBean implements Serializable {
     
     private Aluno aluno;
-    //private List<Aluno> alunos;
+    private List<Responsavel> responsaveis;
     
-    //private List<SelectItem> alunosSelect;
-
     @PostConstruct
     private void init(){
         aluno = new Aluno();
-        /*alunos = obterAluno();
-        for (Aluno aluno1 : alunos) {
-            System.out.println(aluno1.getNome());
-        }*/
+        ResponsavelDAO responsavelDAO = new ResponsavelDAO();
+        setResponsaveis(responsavelDAO.listar());
     }
     
     public void matricularAluno(int id){
@@ -150,4 +148,18 @@ public class AlunoBean implements Serializable {
         //JOptionPane.showMessageDialog(null, "Size alunos" + alunosSelect.size());
         return alunosSelect;
     }*/
+
+    /**
+     * @return the responsaveis
+     */
+    public List<Responsavel> getResponsaveis() {
+        return responsaveis;
+    }
+
+    /**
+     * @param responsaveis the responsaveis to set
+     */
+    public void setResponsaveis(List<Responsavel> responsaveis) {
+        this.responsaveis = responsaveis;
+    }
 }

@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -17,7 +18,10 @@ public class Ano_Letivo implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nome;
-    private int id_curriculo;
+    //private int id_curriculo;
+    
+    @OneToOne
+    private Curriculo curriculo;
 
     /**
      * @return the id
@@ -48,17 +52,17 @@ public class Ano_Letivo implements Serializable {
     }
 
     /**
-     * @return the id_curriculo
+     * @return the curriculo
      */
-    public int getId_curriculo() {
-        return id_curriculo;
+    public Curriculo getCurriculo() {
+        return curriculo;
     }
 
     /**
-     * @param id_curriculo the id_curriculo to set
+     * @param curriculo the curriculo to set
      */
-    public void setId_curriculo(int id_curriculo) {
-        this.id_curriculo = id_curriculo;
+    public void setCurriculo(Curriculo curriculo) {
+        this.curriculo = curriculo;
     }
     
 }

@@ -140,22 +140,7 @@
 			<f:facet name="header">Naturalidade</f:facet>
 			<h:outputText value="#{professor.naturalidade}"></h:outputText>
                     </h:column>
-                    <h:column>
-                        <f:facet name="header">Excluir</f:facet>
-                        <h:form>
-                            <h:commandLink actionListener="#{professorBean.eliminar(professor.id)}">
-                            <h:outputText value="Deletar"/>
-                        </h:commandLink>
-                        </h:form>
-                    </h:column>
-                    <h:column>
-                        <f:facet name="header">Editar</f:facet>
-                        <h:form>
-                            <h:commandLink actionListener="#{professorBean.editar(professor.id)}">
-                            <h:outputText value="Editar"/>
-                        </h:commandLink>
-                        </h:form>
-                    </h:column>
+                    
 		</h:dataTable>
             </div>
         </div>

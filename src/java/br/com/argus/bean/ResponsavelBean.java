@@ -39,7 +39,7 @@ public class ResponsavelBean implements Serializable {
         responsavelDAO.gravar(responsavel);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_responsavel.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_responsavel.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -75,7 +75,7 @@ public class ResponsavelBean implements Serializable {
         sessionMap.put("responsavel", r);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_responsavel.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("editar_responsavel.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -86,7 +86,7 @@ public class ResponsavelBean implements Serializable {
         responsavelDAO.editar(responsavel);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_responsavel.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_responsavel.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }

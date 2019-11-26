@@ -136,22 +136,7 @@
 			<f:facet name="header">ID Responsável</f:facet>
                         <h:outputText value="#{parcela.id_responsavel}"></h:outputText>
                     </h:column>
-                    <h:column>
-                        <f:facet name="header">Excluir</f:facet>
-                        <h:form>
-                            <h:commandLink actionListener="#{parcelaBean.eliminar(parcela.id)}">
-                            <h:outputText value="Deletar"/>
-                        </h:commandLink>
-                        </h:form>
-                    </h:column>
-                    <h:column>
-                        <f:facet name="header">Editar</f:facet>
-                        <h:form>
-                            <h:commandLink actionListener="#{parcelaBean.editar(parcela.id)}">
-                            <h:outputText value="Editar"/>
-                        </h:commandLink>
-                        </h:form>
-                    </h:column>
+                    
 		</h:dataTable>
             </div>
         </div>

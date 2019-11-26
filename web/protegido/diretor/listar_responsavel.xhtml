@@ -145,30 +145,7 @@
 			<f:facet name="header">Naturalidade</f:facet>
 			<h:outputText value="#{responsavel.naturalidade}"></h:outputText>
                     </h:column>
-                    <h:column>
-                        <f:facet name="header">Excluir</f:facet>
-                        <h:form>
-                            <h:commandLink actionListener="#{responsavelBean.eliminar(responsavel.id)}">
-                            <h:outputText value="Deletar"/>
-                        </h:commandLink>
-                        </h:form>
-                    </h:column>
-                    <h:column>
-                        <f:facet name="header">Editar</f:facet>
-                        <h:form>
-                            <h:commandLink actionListener="#{responsavelBean.editar(responsavel.id)}">
-                            <h:outputText value="Editar"/>
-                        </h:commandLink>
-                        </h:form>
-                    </h:column>
-                    <h:column>
-                        <f:facet name="header">Cadastrar Parcela</f:facet>
-                        <h:form>
-                            <h:commandLink actionListener="#{parcelaBean.novo(responsavel.id)}">
-                            <h:outputText value="Cadastrar Parcelas"/>
-                        </h:commandLink>
-                        </h:form>
-                    </h:column>
+                    
                     <h:column>
                         <f:facet name="header">Listar Parcela</f:facet>
                         <h:form>

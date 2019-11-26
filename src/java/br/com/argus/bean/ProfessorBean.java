@@ -42,7 +42,7 @@ public class ProfessorBean implements Serializable {
         professorDao.gravar(professor);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_professor.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_professor.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -78,7 +78,7 @@ public class ProfessorBean implements Serializable {
         sessionMap.put("professor", p);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/editar_professor.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("editar_professor.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -91,7 +91,7 @@ public class ProfessorBean implements Serializable {
         professorDAO.editar(professor);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/listar_professor.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_professor.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }

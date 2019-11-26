@@ -53,8 +53,7 @@ public class NotaBean implements Serializable{
     }
     
     public void listar(int id_aluno){
-        nota.setId_aluno(id_aluno);
-         try {
+        try {
             FacesContext.getCurrentInstance().getExternalContext().redirect("listar_notas.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
@@ -62,8 +61,6 @@ public class NotaBean implements Serializable{
     }
     
     public void gravar(int id_aluno){
-        nota.setId_aluno(id_aluno);
-        
         NotaDAO notaDAO = new NotaDAO();
         notaDAO.gravar(nota);
         

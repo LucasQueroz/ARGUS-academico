@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -21,8 +22,13 @@ public class Nota implements Serializable{
     private float nota3;
     private float nota4;
     private float nota_na_final;
-    private int id_aluno;
-    private int id_diciplina;
+    //private int id_aluno;
+    //private int id_diciplina;
+    
+    @ManyToOne
+    private Disciplina disciplina;
+    @ManyToOne
+    private Aluno aluno;
 
     /**
      * @return the id
@@ -95,34 +101,6 @@ public class Nota implements Serializable{
     }
 
     /**
-     * @return the id_aluno
-     */
-    public int getId_aluno() {
-        return id_aluno;
-    }
-
-    /**
-     * @param id_aluno the id_aluno to set
-     */
-    public void setId_aluno(int id_aluno) {
-        this.id_aluno = id_aluno;
-    }
-
-    /**
-     * @return the id_diciplina
-     */
-    public int getId_diciplina() {
-        return id_diciplina;
-    }
-
-    /**
-     * @param id_diciplina the id_diciplina to set
-     */
-    public void setId_diciplina(int id_diciplina) {
-        this.id_diciplina = id_diciplina;
-    }
-
-    /**
      * @return the nota_na_final
      */
     public float getNota_na_final() {
@@ -134,6 +112,34 @@ public class Nota implements Serializable{
      */
     public void setNota_na_final(float nota_na_final) {
         this.nota_na_final = nota_na_final;
+    }
+
+    /**
+     * @return the aluno
+     */
+    public Aluno getAluno() {
+        return aluno;
+    }
+
+    /**
+     * @param aluno the aluno to set
+     */
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+
+    /**
+     * @return the disciplina
+     */
+    public Disciplina getDisciplina() {
+        return disciplina;
+    }
+
+    /**
+     * @param disciplina the disciplina to set
+     */
+    public void setDisciplina(Disciplina disciplina) {
+        this.disciplina = disciplina;
     }
     
 }

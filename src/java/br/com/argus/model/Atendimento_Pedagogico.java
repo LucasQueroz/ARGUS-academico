@@ -24,11 +24,13 @@ public class Atendimento_Pedagogico {
     private String detalhamento;
     private String data;
     private boolean concluido;
-    private int id_pedagogo;
-    private int id_usuario;
-    private int id_aluno;
+    //private int id_pedagogo;
+    //private int id_usuario;
+    //private int id_aluno;
     @ManyToOne
     private Aluno aluno;
+    @ManyToOne
+    private Usuario usuario;
     
     /**
      * @return the id
@@ -87,48 +89,6 @@ public class Atendimento_Pedagogico {
     }
 
     /**
-     * @return the id_pedagogo
-     */
-    public int getId_pedagogo() {
-        return id_pedagogo;
-    }
-
-    /**
-     * @param id_pedagogo the id_pedagogo to set
-     */
-    public void setId_pedagogo(int id_pedagogo) {
-        this.id_pedagogo = id_pedagogo;
-    }
-
-    /**
-     * @return the id_usuario
-     */
-    public int getId_usuario() {
-        return id_usuario;
-    }
-
-    /**
-     * @param id_usuario the id_usuario to set
-     */
-    public void setId_usuario(int id_usuario) {
-        this.id_usuario = id_usuario;
-    }
-
-    /**
-     * @return the id_aluno
-     */
-    public int getId_aluno() {
-        return id_aluno;
-    }
-
-    /**
-     * @param id_aluno the id_aluno to set
-     */
-    public void setId_aluno(int id_aluno) {
-        this.id_aluno = id_aluno;
-    }
-
-    /**
      * @return the aluno
      */
     //@ManyToOne
@@ -145,17 +105,22 @@ public class Atendimento_Pedagogico {
     }
 
     /**
-     * @return the alunos
-     *
-    public List<Aluno> getAlunos() {
-        return alunos;
-    }*/
+     * @return the usuario
+     */
+    public Usuario getUsuario() {
+        return usuario;
+    }
 
     /**
-     * @param alunos the alunos to set
-     *
-    public void setAlunos(List<Aluno> alunos) {
-        this.alunos = alunos;
-    }*/
+     * @param usuario the usuario to set
+     */
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
     
+    @Override
+    public String toString() {
+        return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
+    }
+
 }

@@ -2,9 +2,12 @@ package br.com.argus.bean;
 
 import br.com.argus.dao.AlunoDAO;
 import br.com.argus.dao.Atendimento_PedagogicoDAO;
+import br.com.argus.dao.UsuarioDAO;
+import br.com.argus.filtros.PedagogoAuth;
 import br.com.argus.model.Aluno;
 import br.com.argus.model.Atendimento_Pedagogico;
 import br.com.argus.model.JPAUtil;
+import br.com.argus.model.Usuario;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -31,12 +34,17 @@ public class Atendimento_PedagogicoBean implements Serializable {
     private Atendimento_Pedagogico atendimento_Pedagogico;
     private List<Atendimento_Pedagogico> atendimento_Pedagogicos;
     private List<Aluno> alunos;
+    private List<Usuario> usuarios;
     
     @PostConstruct
     private void init(){
         atendimento_Pedagogico = new Atendimento_Pedagogico();
+        
         AlunoDAO alunoDAO = new AlunoDAO();
         alunos = alunoDAO.listar();
+        
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        usuarios = usuarioDAO.listaPedagogo();
     }
     
     /*public String novo(){
@@ -145,6 +153,20 @@ public class Atendimento_PedagogicoBean implements Serializable {
 
     public List<Aluno> getAlunos() {
         return alunos;
+    }
+
+    /**
+     * @return the usuarios
+     */
+    public List<Usuario> getUsuarios() {
+        return usuarios;
+    }
+
+    /**
+     * @param usuarios the usuarios to set
+     */
+    public void setUsuarios(List<Usuario> usuarios) {
+        this.usuarios = usuarios;
     }
     
 }

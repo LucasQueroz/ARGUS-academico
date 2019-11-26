@@ -59,7 +59,7 @@ public class UsuarioBean implements Serializable {
     public List<Usuario> obterUsuarios(){
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         
-        List<Usuario> usuarios = usuarioDAO.obterUsuario();
+        List<Usuario> usuarios = usuarioDAO.listar();
         
         return usuarios;
      

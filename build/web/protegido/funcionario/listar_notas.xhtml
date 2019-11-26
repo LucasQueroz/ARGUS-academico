@@ -154,22 +154,6 @@
                                 <f:facet name="header">Nota na Final</f:facet>
                                 <h:outputText value="#{nota.nota_na_final}"></h:outputText>
                             </h:column>
-                            <h:column>
-                                <f:facet name="header">Excluir</f:facet>
-                                <h:form>
-                                    <h:commandLink actionListener="#{notaBean.eliminar(nota.id)}">
-                                        <h:outputText value="Deletar"/>
-                                    </h:commandLink>
-                                </h:form>
-                            </h:column>
-                            <h:column>
-                                <f:facet name="header">Editar</f:facet>
-                                <h:form>
-                                    <h:commandLink actionListener="#{notaBean.editar(nota.id, nota.id_diciplina)}">
-                                        <h:outputText value="Editar"/>
-                                    </h:commandLink>
-                                </h:form>
-                            </h:column>
                         </h:dataTable>
                     </div>
                 </div>

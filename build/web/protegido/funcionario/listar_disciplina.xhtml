@@ -152,23 +152,6 @@
 			<f:facet name="header">Código</f:facet>
                         <h:outputText value="#{discplina.codigo}"></h:outputText>
                     </h:column>
-                    <h:column>
-                        <f:facet name="header">Excluir</f:facet>
-                        <h:form>
-                            <h:commandLink actionListener="#{disciplinaBean.eliminar(discplina.id)}">
-                            <h:outputText value="Deletar"/>
-                        </h:commandLink>
-                        </h:form>
-                    </h:column>
-                    <h:column>
-                        <f:facet name="header">Editar</f:facet>
-                        <h:form>
-                            <h:commandLink actionListener="#{disciplinaBean.editar(discplina.id)}">
-                            <h:outputText value="Editar"/>
-                        </h:commandLink>
-                        </h:form>
-                    </h:column>
-                    
 		</h:dataTable>
             </div>
         </div>

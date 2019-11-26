@@ -105,5 +105,10 @@ public class Responsavel implements Serializable {
     public void setNaturalidade(String naturalidade) {
         this.naturalidade = naturalidade;
     }
+    
+    @Override
+    public String toString() {
+        return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
+    }
 
 }

@@ -133,30 +133,6 @@
 			<f:facet name="header">Código</f:facet>
                         <h:outputText value="#{curriculo.codigo}"></h:outputText>
                     </h:column>
-                    <h:column>
-                        <f:facet name="header">Excluir</f:facet>
-                        <h:form>
-                            <h:commandLink actionListener="#{curriculoBean.eliminar(curriculo.id)}">
-                            <h:outputText value="Deletar"/>
-                        </h:commandLink>
-                        </h:form>
-                    </h:column>
-                    <h:column>
-                        <f:facet name="header">Editar</f:facet>
-                        <h:form>
-                            <h:commandLink actionListener="#{curriculoBean.editar(curriculo.id)}">
-                            <h:outputText value="Editar"/>
-                        </h:commandLink>
-                        </h:form>
-                    </h:column>
-                    <h:column>
-                        <f:facet name="header">Cadastrar Matéria</f:facet>
-                        <h:form>
-                            <h:commandLink actionListener="#{notaBean.novo(aluno.id)}">
-                            <h:outputText value="Cadastrar"/>
-                        </h:commandLink>
-                        </h:form>
-                    </h:column>
                     
 		</h:dataTable>
             </div>
