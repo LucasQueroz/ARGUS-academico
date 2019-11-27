@@ -27,12 +27,9 @@ public class Disciplina implements Serializable{
     private Curriculo curriculo;
     @ManyToOne
     private Turma turma;
+    @ManyToOne
+    private Ano_Letivo ano_Letivo;
     
-    
-    //private int id_professor;
-    //private int id_turma;
-    //private int id_curriculo;
-
     /**
      * @return the id
      */
@@ -129,6 +126,25 @@ public class Disciplina implements Serializable{
      */
     public void setTurma(Turma turma) {
         this.turma = turma;
+    }
+
+    /**
+     * @return the ano_Letivo
+     */
+    public Ano_Letivo getAno_Letivo() {
+        return ano_Letivo;
+    }
+
+    /**
+     * @param ano_Letivo the ano_Letivo to set
+     */
+    public void setAno_Letivo(Ano_Letivo ano_Letivo) {
+        this.ano_Letivo = ano_Letivo;
+    }
+    
+    @Override
+    public String toString() {
+        return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
     }
 
 }

@@ -1,11 +1,15 @@
 package br.com.argus.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.EntityManager;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.persistence.Query;
 
 /**
  *
@@ -38,6 +42,20 @@ public class Ano_Letivo implements Serializable {
     }
 
     /**
+     * @return the curriculo
+     */
+    public Curriculo getCurriculo() {
+        return curriculo;
+    }
+
+    /**
+     * @param curriculo the curriculo to set
+     */
+    public void setCurriculo(Curriculo curriculo) {
+        this.curriculo = curriculo;
+    }
+
+    /**
      * @return the nome
      */
     public String getNome() {
@@ -51,18 +69,17 @@ public class Ano_Letivo implements Serializable {
         this.nome = nome;
     }
 
-    /**
-     * @return the curriculo
-     */
-    public Curriculo getCurriculo() {
-        return curriculo;
+    public List<Ano_Letivo> listar() {
+        List<Ano_Letivo> ano_Letivos = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Ano_Letivo");
+        ano_Letivos = q.getResultList();
+        return ano_Letivos;
     }
-
-    /**
-     * @param curriculo the curriculo to set
-     */
-    public void setCurriculo(Curriculo curriculo) {
-        this.curriculo = curriculo;
+    
+    @Override
+    public String toString() {
+        return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
     }
     
 }

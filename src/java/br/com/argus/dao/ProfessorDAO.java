@@ -2,10 +2,12 @@ package br.com.argus.dao;
 
 import br.com.argus.model.JPAUtil;
 import br.com.argus.model.Professor;
-import br.com.argus.model.Usuario;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 /**
  *
@@ -41,6 +43,14 @@ public class ProfessorDAO {
         e.getTransaction().begin();
         e.persist(professor);
         e.getTransaction().commit();      
+    }
+
+    public List<Professor> listar() {
+        List<Professor> proefessores = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Professor");
+        proefessores = q.getResultList();
+        return proefessores;
     }
 
 }

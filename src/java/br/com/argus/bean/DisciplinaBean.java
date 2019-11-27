@@ -1,8 +1,11 @@
 package br.com.argus.bean;
 
 import br.com.argus.dao.DisciplinaDAO;
+import br.com.argus.dao.ProfessorDAO;
+import br.com.argus.model.Ano_Letivo;
 import br.com.argus.model.Disciplina;
 import br.com.argus.model.JPAUtil;
+import br.com.argus.model.Professor;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -26,10 +29,17 @@ import javax.persistence.Query;
 public class DisciplinaBean implements Serializable {
     
     private Disciplina disciplina;
+    private List<Ano_Letivo> ano_letivos;
+    private List<Professor> professores;
     
     @PostConstruct
     private void init(){
         disciplina = new Disciplina();
+        Ano_Letivo ano_Letivos = new Ano_Letivo();
+        setAno_letivos(ano_Letivos.listar());
+        
+        ProfessorDAO professorDAO = new ProfessorDAO();
+        professores = professorDAO.listar();
     }
     
     public void gravar(){
@@ -100,6 +110,27 @@ public class DisciplinaBean implements Serializable {
      */
     public Disciplina getDisciplina() {
         return disciplina;
+    }
+
+    /**
+     * @return the ano_letivos
+     */
+    public List<Ano_Letivo> getAno_letivos() {
+        return ano_letivos;
+    }
+
+    /**
+     * @param ano_letivos the ano_letivos to set
+     */
+    public void setAno_letivos(List<Ano_Letivo> ano_letivos) {
+        this.ano_letivos = ano_letivos;
+    }
+
+    /**
+     * @return the professores
+     */
+    public List<Professor> getProfessores() {
+        return professores;
     }
 
 }

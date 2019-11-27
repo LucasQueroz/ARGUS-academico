@@ -2,9 +2,12 @@ package br.com.argus.dao;
 
 import br.com.argus.model.Ano_Letivo;
 import br.com.argus.model.JPAUtil;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 /**
  *
@@ -40,6 +43,14 @@ public class Ano_LetivoDAO {
         e.getTransaction().begin();
         e.persist(ano_letivo);
         e.getTransaction().commit();
+    }
+
+    public List<Ano_Letivo> listar() {
+        List<Ano_Letivo> responsaveis = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Ano_Letivo");
+        responsaveis = q.getResultList();
+        return responsaveis;
     }
 
 }

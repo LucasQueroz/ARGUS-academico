@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -18,9 +19,6 @@ public class Parcela {
     private int id;
     private float valor;
     private int numero_a_pagar;
-    
-    @ManyToOne
-    private Responsavel responsavel;
     
     /**
      * @return the id
@@ -64,18 +62,4 @@ public class Parcela {
         this.numero_a_pagar = numero_a_pagar;
     }
 
-    /**
-     * @return the responsavel
-     */
-    public Responsavel getResponsavel() {
-        return responsavel;
-    }
-
-    /**
-     * @param responsavel the responsavel to set
-     */
-    public void setResponsavel(Responsavel responsavel) {
-        this.responsavel = responsavel;
-    }
-    
 }

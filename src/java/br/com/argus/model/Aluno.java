@@ -1,4 +1,4 @@
-package br.com.argus.model;
+ package br.com.argus.model;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -30,6 +31,18 @@ public class Aluno implements Serializable {
     private Curriculo curriculo;
     @ManyToOne
     private Responsavel responsavel;
+    @ManyToOne
+    private Ano_Letivo ano_Letivo;
+    @OneToOne
+    private Parcela parcela;
+
+    public void setAno_Letivo(Ano_Letivo ano_Letivo) {
+        this.ano_Letivo = ano_Letivo;
+    }
+
+    public Ano_Letivo getAno_Letivo() {
+        return ano_Letivo;
+    }
     
     /**
      * @return the id
@@ -174,6 +187,20 @@ public class Aluno implements Serializable {
     @Override
     public String toString() {
         return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
+    }
+
+    /**
+     * @return the parcela
+     */
+    public Parcela getParcela() {
+        return parcela;
+    }
+
+    /**
+     * @param parcela the parcela to set
+     */
+    public void setParcela(Parcela parcela) {
+        this.parcela = parcela;
     }
 
 

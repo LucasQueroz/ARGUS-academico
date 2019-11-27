@@ -106,4 +106,9 @@ public class Professor implements Serializable {
         this.id_turma = id_turma;
     }
     
+    @Override
+    public String toString() {
+        return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
+    }
+    
 }

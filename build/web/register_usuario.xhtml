@@ -7,13 +7,30 @@
       xmlns:ui="http://java.sun.com/jsf/facelets">
 
 <h:head>
-  <title>Registro de Responsável</title>
+  <title>Registro de Usuário</title>
   <meta charset="utf-8"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
 
-  <!-- ============================= LINK =================================== -->
-        <ui:include src="link.xhtml"></ui:include>
-        <!-- =============================    LINK   ============================== -->
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet"></link>
+    <link rel="stylesheet" href="../../fonts/icomoon/style.css"></link>
+
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="../../css/jquery-ui.css"></link>
+    <link rel="stylesheet" href="../../css/owl.carousel.min.css"></link>
+    <link rel="stylesheet" href="../../css/owl.theme.default.min.css"></link>
+    <link rel="stylesheet" href="../../css/owl.theme.default.min.css"></link>
+
+    <link rel="stylesheet" href="../../css/jquery.fancybox.min.css"></link>
+
+    <link rel="stylesheet" href="../../css/bootstrap-datepicker.css"></link>
+
+    <link rel="stylesheet" href="../../fonts/flaticon/font/flaticon.css"></link>
+
+    <link rel="stylesheet" href="../../css/aos.css"></link>
+    <link href="../../css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css"></link>
+
+    <link rel="stylesheet" href="css/style.css"></link>
+
 
 </h:head>
 
@@ -57,6 +74,29 @@
           </div>
           <div class="mr-auto">
               
+            <!--<nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="active">
+                  <a href="index.html" class="nav-link text-left">Home</a>
+                </li>
+                <li class="has-children">
+                  <a href="about.html" class="nav-link text-left">About Us</a>
+                  <ul class="dropdown">
+                    <li><a href="teachers.html">Our Teachers</a></li>
+                    <li><a href="about.html">Our School</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="admissions.html" class="nav-link text-left">Admissions</a>
+                </li>
+                <li>
+                  <a href="courses.html" class="nav-link text-left">Courses</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link text-left">Contact</a>
+                  </li>
+              </ul>                                                                                                                                                                                                                                                                                          </ul>
+            </nav>-->
           </div>
             
           <div class="ml-auto">
@@ -75,12 +115,12 @@
 
     </header>
     
-    <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('images/bg_1.jpg')">
+    <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('../../images/bg_1.jpg')">
         <div class="container">
           <div class="row align-items-end justify-content-center text-center">
             <div class="col-lg-7">
               <h2 class="mb-0">Registrar</h2>
-              <p>Responsável</p>
+              <p>Usuário</p>
             </div>
           </div>
         </div>
@@ -102,28 +142,28 @@
                           <div class="row">
                               <div class="col-md-12 form-group">
                                   <label for="nome">Nome</label>
-                                  <p:inputText value="#{responsavelBean.responsavel.nome}" class="form-control form-control-lg"/>
+                                  <p:inputText value="#{usuarioBean.usuario.nome}" id="nome" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
-                                  <label for="senha">CPF</label>
-                                  <p:inputText value="#{responsavelBean.responsavel.cpf}" class="form-control form-control-lg"/>
+                                  <label for="data_nascimento">Data de Nascimento</label>
+                                  <p:inputText value="#{usuarioBean.usuario.data_nascimento}" id="data_nascimento" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
-                                  <label for="data_nascimento">Endereço</label>
-                                  <p:inputText value="#{responsavelBean.responsavel.endereco}" class="form-control form-control-lg"/>
+                                  <label for="naturalidade">Naturalidade</label>
+                                  <p:inputText value="#{usuarioBean.usuario.naturalidade}"  id="naturalidade" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
-                                  <label for="naturalidade">Data de nascimento</label>
-                                  <p:inputText value="#{responsavelBean.responsavel.data_nascimento}" class="form-control form-control-lg"/>
+                                  <label for="tipo_usuario">Tipo de Usuário</label>
+                                  <p:inputText value="#{usuarioBean.usuario.tipo_usuario}"  id="tipo_usuario" class="form-control form-control-lg"/>
                               </div>
                               <div class="col-md-12 form-group">
-                                  <label for="tipo_usuario">Naturalidade</label>
-                                  <p:inputText value="#{responsavelBean.responsavel.naturalidade}" class="form-control form-control-lg"/>
+                                  <label for="endereco">Endereço</label>
+                                  <p:inputText value="#{usuarioBean.usuario.endereco}" id="endereco" class="form-control form-control-lg"/>
                               </div>
                           </div>
                           <div class="row">
                               <div class="col-12">
-                                  <p:commandButton action="#{responsavelBean.gravar}" update="@form" value="Gravar" class="btn btn-primary btn-lg px-5"/>                            
+                                  <p:commandButton action="#{usuarioBean.gravar}" update="@form" value="Gravar" class="btn btn-primary btn-lg px-5"/>                            
                               </div>
                           </div>
                       </div>
@@ -138,7 +178,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
-            <p class="mb-4"><img src="images/logo.png" alt="Image" class="img-fluid"></img></p>
+            <p class="mb-4"><img src="../../images/logo.png" alt="Image" class="img-fluid"></img></p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>  
             <p><a href="#">Learn More</a></p>
           </div>
@@ -197,9 +237,27 @@
   <!-- loader -->
   <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#51be78"/></svg></div>
 
-  <!-- ============================= Script  =================================== -->
-        <ui:include src="script.xhtml"></ui:include>
-        <!-- =============================    Script   ============================== -->
+  
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+
+
+
+    <script src="js/main.js"></script>
+
 
 </h:body>
 

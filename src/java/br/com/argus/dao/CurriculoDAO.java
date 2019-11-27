@@ -3,9 +3,12 @@ package br.com.argus.dao;
 import br.com.argus.model.Aluno;
 import br.com.argus.model.Curriculo;
 import br.com.argus.model.JPAUtil;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 /**
  *
@@ -41,6 +44,14 @@ public class CurriculoDAO {
         entity.getTransaction().begin();
         entity.merge(curriculo);
         entity.getTransaction().commit();
+    }
+
+    public List<Curriculo> listar() {
+        List<Curriculo> curriculos = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Curriculo");
+        curriculos = q.getResultList();
+        return curriculos;
     }
     
 }

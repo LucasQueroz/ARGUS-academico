@@ -112,7 +112,7 @@
                 <p:selectOneMenu value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.usuario}" 
                                  converter="omnifaces.SelectItemsConverter">
                     <f:selectItem itemLabel="Select on" noSelectionOption="true" />
-                    <f:selectItems value="#{atendimento_PedagogicoBean.usuarios}" var="pedagogo" itemValue="#{usuario}" itemLabel="#{usuario.nome}"/>
+                    <f:selectItems value="#{atendimento_PedagogicoBean.usuarios}" var="usuario" itemValue="#{usuario}" itemLabel="#{usuario.nome}"/>
                 </p:selectOneMenu>
             </h:panelGrid>
             

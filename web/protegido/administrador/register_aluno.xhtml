@@ -34,16 +34,11 @@
 
             <div class="custom-breadcrumns border-bottom">
                 <div class="container">
-                    <a href="index.html">Home</a>
+                    <a href="index.jsf">Home</a>
                     <span class="mx-3 icon-keyboard_arrow_right"></span>
                     <span class="current">Register</span>
                 </div>
             </div>
-
-
-
-
-            
 
         </div>
         <!-- .site-wrap -->
@@ -75,7 +70,7 @@
                 <p:selectOneMenu value="#{alunoBean.aluno.responsavel}" 
                                  converter="omnifaces.SelectItemsConverter">
                     <f:selectItem itemLabel="Select on" noSelectionOption="true" />
-                    <f:selectItems value="#{alunoBean.responsaveis}" var="aluno" itemValue="#{responsavel}" itemLabel="#{responsavel.nome}"/>
+                    <f:selectItems value="#{alunoBean.responsaveis}" var="responsavel" itemValue="#{responsavel}" itemLabel="#{responsavel.nome}"/>
                 </p:selectOneMenu>
             </h:panelGrid>
 
