@@ -56,29 +56,7 @@
                             <!-- ============================= LINK =================================== -->
                             <ui:include src="menu.xhtml"></ui:include>
                             <!-- =============================    LINK   ============================== -->
-                            <!--<nav class="site-navigation position-relative text-right" role="navigation">
-                              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                                <li class="active">
-                                  <a href="index.html" class="nav-link text-left">Home</a>
-                                </li>
-                                <li class="has-children">
-                                  <a href="about.html" class="nav-link text-left">About Us</a>
-                                  <ul class="dropdown">
-                                    <li><a href="teachers.html">Our Teachers</a></li>
-                                    <li><a href="about.html">Our School</a></li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <a href="admissions.html" class="nav-link text-left">Admissions</a>
-                                </li>
-                                <li>
-                                  <a href="courses.html" class="nav-link text-left">Courses</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html" class="nav-link text-left">Contact</a>
-                                  </li>
-                              </ul>                                                                                                                                                                                                                                                                                          </ul>
-                            </nav>-->
+                            
                         </div>
 
                         <div class="ml-auto">
@@ -123,26 +101,25 @@
                             <div class="col-md-5">
                                 <div class="row">
                                     <div class="col-md-12 form-group">
+                                        <label for="nome">Aluno</label>
+                                        <p:outputLabel value="#{aluno.nome}" class="form-control form-control-lg"/>
+                                    </div>
+                                    <div class="col-md-12 form-group">
                                         <label for="nome">Responsável</label>
-                                        <p:outputLabel value="#{responsavel.nome}" class="form-control form-control-lg"/>
+                                        <p:outputLabel value="#{aluno.responsavel.nome}" class="form-control form-control-lg"/>
                                     </div>
                                     <div class="col-md-12 form-group">
                                         <label for="senha">Valor da Parcela</label>
-                                        <p:inputText value="#{parcela.valor}" class="form-control form-control-lg"/>
+                                        <p:outputLabel value="#{aluno.parcela.valor}" class="form-control form-control-lg"/>
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <label for="senha">Número de parcelas pagas</label>
-                                        <p:inputText value="#{parcela.numero_a_pagar}" class="form-control form-control-lg"/>
+                                        <label for="senha">Número de parcelas a serem pagas</label>
+                                        <p:outputLabel value="#{aluno.parcela.numero_a_pagar}" class="form-control form-control-lg"/>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                        <p:commandButton action="#{parcelaBean.atualizar(parcela)}" update="@form" value="Atualizar" class="btn btn-primary btn-lg px-5"/>                            
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p:commandButton action="#{parcelaBean.atualizar(parcela, parcela.numero_a_pagar)}" update="@form" value="Liquidar Parcela" class="btn btn-primary btn-lg px-5"/>                            
+                                        <p:commandButton action="#{parcelaBean.liquidarParcela(aluno)}" update="@form" value="Liquidar Parcela" class="btn btn-primary btn-lg px-5"/>                            
                                     </div>
                                 </div>
                             </div>

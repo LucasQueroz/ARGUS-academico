@@ -7,7 +7,7 @@
       xmlns:ui="http://java.sun.com/jsf/facelets">
 
     <h:head>
-        <title>Registro de Atendimento Pedagogico</title>
+        <title>Registro de Atendimento Pedagógico</title>
         <meta charset="utf-8"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
 
@@ -91,13 +91,18 @@
 
             <label for="nome">Data</label>
             <p:inputText value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.data}" class="form-control form-control-lg"/>
-            
+
             <label for="data_nascimento">Detalhamento</label>
             <p:inputTextarea value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.detalhamento}" class="form-control form-control-lg"/>
 
-            <label for="naturalidade">Concluido</label>
-            <p:inputText value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.concluido}"  class="form-control form-control-lg"/>
-            
+            <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+                <p:outputLabel for="@next" value="Atendimento Concluído" />
+                <p:selectOneMenu id="console" value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.concluido}" style="width:125px">
+                    <f:selectItem itemLabel="Não" itemValue="false" />
+                    <f:selectItem itemLabel="Sim" itemValue="true" />
+                </p:selectOneMenu>
+            </h:panelGrid>
+
             <h:panelGrid columns="2">
                 <h:outputLabel for="nome">Aluno</h:outputLabel>
                 <p:selectOneMenu value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.aluno}" 
@@ -106,7 +111,7 @@
                     <f:selectItems value="#{atendimento_PedagogicoBean.alunos}" var="aluno" itemValue="#{aluno}" itemLabel="#{aluno.nome}"/>
                 </p:selectOneMenu>
             </h:panelGrid>
-            
+
             <h:panelGrid columns="2">
                 <h:outputLabel for="nome">Pedagogo</h:outputLabel>
                 <p:selectOneMenu value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.usuario}" 
@@ -115,9 +120,9 @@
                     <f:selectItems value="#{atendimento_PedagogicoBean.usuarios}" var="usuario" itemValue="#{usuario}" itemLabel="#{usuario.nome}"/>
                 </p:selectOneMenu>
             </h:panelGrid>
-            
+
             <p:commandButton action="#{atendimento_PedagogicoBean.gravar}" update="@form" value="Gravar" class="btn btn-primary btn-lg px-5"/>                            
-            
+
         </h:form>
 
 

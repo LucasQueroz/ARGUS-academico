@@ -4,6 +4,7 @@ import br.com.argus.dao.AlunoDAO;
 import br.com.argus.dao.ParcelaDAO;
 import br.com.argus.dao.ResponsavelDAO;
 import br.com.argus.dao.UsuarioDAO;
+import br.com.argus.model.Aluno;
 import br.com.argus.model.JPAUtil;
 import br.com.argus.model.Parcela;
 import br.com.argus.model.Responsavel;
@@ -44,7 +45,7 @@ public class ParcelaBean implements Serializable {
         }
     }
     
-    public void novo(int id){
+    /*public void novo(int id){
         ResponsavelDAO parcelaDAO = new ResponsavelDAO();
         Responsavel r = new Responsavel();
         r = parcelaDAO.buscar(id);
@@ -54,6 +55,18 @@ public class ParcelaBean implements Serializable {
         
         try {
             FacesContext.getCurrentInstance().getExternalContext().redirect("register_parcela.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }*/
+    
+    public void novo(Aluno aluno){
+        
+        Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
+        sessionMap.put("aluno", aluno);
+        
+        try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("editar_parcela.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -104,7 +117,7 @@ public class ParcelaBean implements Serializable {
         }
     }
     
-    public void atualizar(Parcela parcela){
+    public void atualizar(Aluno aluno){
         ParcelaDAO parcelaDAO= new ParcelaDAO();
         parcelaDAO.editar(parcela);
         
@@ -115,17 +128,21 @@ public class ParcelaBean implements Serializable {
         }
     }
     
-    public void atualizar(Parcela parcela, int numero_a_pagar){
-        parcela.setNumero_a_pagar(numero_a_pagar - 1);
-        ParcelaDAO parcelaDAO= new ParcelaDAO();
-        parcelaDAO.editar(parcela);
+    public void liquidarParcela(Aluno aluno){
+        AlunoDAO alunoDAO = new AlunoDAO();
+        Aluno alunoSetar = alunoDAO.buscar(aluno.getId());
+        
+        alunoSetar.getParcela().setNumero_a_pagar(aluno.getParcela().getNumero_a_pagar() - 1);
+        alunoDAO.editar(alunoSetar);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_parcela.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_alunos.jsf");
         } catch (IOException ex) {
             Logger.getLogger(UsuarioBean.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    
     
     public void eliminar(int id){
         ParcelaDAO parcelaDAO = new ParcelaDAO();

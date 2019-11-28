@@ -1,8 +1,9 @@
 package br.com.argus.bean;
 
+import br.com.argus.dao.CurriculoDAO;
 import br.com.argus.dao.DisciplinaDAO;
 import br.com.argus.dao.ProfessorDAO;
-import br.com.argus.model.Ano_Letivo;
+import br.com.argus.model.Curriculo;
 import br.com.argus.model.Disciplina;
 import br.com.argus.model.JPAUtil;
 import br.com.argus.model.Professor;
@@ -29,14 +30,15 @@ import javax.persistence.Query;
 public class DisciplinaBean implements Serializable {
     
     private Disciplina disciplina;
-    private List<Ano_Letivo> ano_letivos;
+    private List<Curriculo> curriculos;
     private List<Professor> professores;
     
     @PostConstruct
     private void init(){
         disciplina = new Disciplina();
-        Ano_Letivo ano_Letivos = new Ano_Letivo();
-        setAno_letivos(ano_Letivos.listar());
+        
+        CurriculoDAO curriculo = new CurriculoDAO();
+        curriculos = curriculo.listar();
         
         ProfessorDAO professorDAO = new ProfessorDAO();
         professores = professorDAO.listar();
@@ -61,18 +63,6 @@ public class DisciplinaBean implements Serializable {
         return diciplinas;
      
     }
-    
-    /*public void editar(Long id){
-        Usuario usuario = new Usuario();
-        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        usuario = e.find(Usuario.class, id);
-        //JPAUtil.shutdown();
-        System.out.println("Usuario:"  + usuario.getNome());
-    }*/
-    
-    /*public static void main(String[] args) {
-        editar();
-    }*/
     
     public void editar(int id){
         DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
@@ -104,7 +94,7 @@ public class DisciplinaBean implements Serializable {
         DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
         disciplinaDAO.eliminar(id);
     }
-
+    
     /**
      * @return the disciplina
      */
@@ -113,24 +103,17 @@ public class DisciplinaBean implements Serializable {
     }
 
     /**
-     * @return the ano_letivos
-     */
-    public List<Ano_Letivo> getAno_letivos() {
-        return ano_letivos;
-    }
-
-    /**
-     * @param ano_letivos the ano_letivos to set
-     */
-    public void setAno_letivos(List<Ano_Letivo> ano_letivos) {
-        this.ano_letivos = ano_letivos;
-    }
-
-    /**
      * @return the professores
      */
     public List<Professor> getProfessores() {
         return professores;
+    }
+
+    /**
+     * @return the curriculos
+     */
+    public List<Curriculo> getCurriculos() {
+        return curriculos;
     }
 
 }

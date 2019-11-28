@@ -55,5 +55,13 @@ public class DisciplinaDAO {
         disciplinas = q.getResultList();
         return disciplinas;
     }
-
+    
+    public List<Disciplina> listar(int curriculo_id) {
+        List<Disciplina> disciplinas = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Disciplina WHERE curriculo_id = '2'");
+        disciplinas = q.getResultList();
+        return disciplinas;
+    }
+    
 }

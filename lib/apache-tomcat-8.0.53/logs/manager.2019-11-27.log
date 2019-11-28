@@ -328,3 +328,137 @@
 27-Nov-2019 15:29:51.866 INFORMA합ES [http-apr-8080-exec-163] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
 27-Nov-2019 15:30:29.933 INFORMA합ES [http-apr-8080-exec-172] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
 27-Nov-2019 15:30:29.969 INFORMA합ES [http-apr-8080-exec-168] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 15:58:53.449 INFORMA합ES [http-apr-8080-exec-182] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:00:58.589 INFORMA합ES [http-apr-8080-exec-3] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+27-Nov-2019 17:00:58.589 INFORMA합ES [http-apr-8080-exec-3] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+27-Nov-2019 17:00:58.589 INFORMA합ES [http-apr-8080-exec-3] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:00:58.635 INFORMA합ES [http-apr-8080-exec-4] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:00:59.886 INFORMA합ES [http-apr-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 17:36:08.441 INFORMA합ES [http-apr-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:36:23.807 INFORMA합ES [http-apr-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:38:38.928 INFORMA합ES [http-apr-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:38:39.132 INFORMA합ES [http-apr-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 17:39:52.921 INFORMA합ES [http-apr-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:39:52.984 INFORMA합ES [http-apr-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 17:40:14.794 INFORMA합ES [http-apr-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:40:14.826 INFORMA합ES [http-apr-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 17:40:48.183 INFORMA합ES [http-apr-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:41:15.855 INFORMA합ES [http-apr-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:42:01.566 INFORMA합ES [http-apr-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:42:01.618 INFORMA합ES [http-apr-8080-exec-27] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 17:42:38.108 INFORMA합ES [http-apr-8080-exec-30] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:42:38.144 INFORMA합ES [http-apr-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 17:54:26.736 INFORMA합ES [http-apr-8080-exec-40] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:54:27.068 INFORMA합ES [http-apr-8080-exec-34] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 17:54:29.503 INFORMA합ES [http-apr-8080-exec-36] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 18:04:35.472 INFORMA합ES [http-apr-8080-exec-46] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 18:04:35.472 INFORMA합ES [http-apr-8080-exec-48] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 18:06:48.198 INFORMA합ES [http-apr-8080-exec-51] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 18:06:48.229 INFORMA합ES [http-apr-8080-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 18:07:34.841 INFORMA합ES [http-apr-8080-exec-44] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 18:07:34.866 INFORMA합ES [http-apr-8080-exec-47] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 18:35:33.528 INFORMA합ES [http-apr-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+27-Nov-2019 18:35:33.528 INFORMA합ES [http-apr-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+27-Nov-2019 18:35:33.528 INFORMA합ES [http-apr-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 18:35:33.637 INFORMA합ES [http-apr-8080-exec-3] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 18:42:57.329 INFORMA합ES [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 18:44:58.353 INFORMA합ES [http-apr-8080-exec-3] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 18:49:09.351 INFORMA합ES [http-apr-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 18:50:29.717 INFORMA합ES [http-apr-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:28:37.977 INFORMA합ES [http-apr-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+27-Nov-2019 20:28:37.977 INFORMA합ES [http-apr-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+27-Nov-2019 20:28:37.977 INFORMA합ES [http-apr-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:28:38.008 INFORMA합ES [http-apr-8080-exec-13] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:33:42.125 INFORMA합ES [http-apr-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:34:19.181 INFORMA합ES [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:37:24.617 INFORMA합ES [http-apr-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:38:59.326 INFORMA합ES [http-apr-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:39:26.680 INFORMA합ES [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:39:59.858 INFORMA합ES [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:44:46.567 INFORMA합ES [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:44:46.619 INFORMA합ES [http-apr-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 20:46:14.528 INFORMA합ES [http-apr-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:46:14.591 INFORMA합ES [http-apr-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 20:48:42.569 INFORMA합ES [http-apr-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:48:42.600 INFORMA합ES [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 20:51:16.618 INFORMA합ES [http-apr-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:51:16.712 INFORMA합ES [http-apr-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 20:51:16.712 GRAVE [http-apr-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Manager: ManagerServlet.reload[/]
+ java.lang.IllegalStateException: Context with name [] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3889)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1007)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:351)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:604)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+27-Nov-2019 20:51:29.539 INFORMA합ES [http-apr-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:51:29.554 INFORMA합ES [http-apr-8080-exec-30] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:51:29.695 INFORMA합ES [http-apr-8080-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/'
+27-Nov-2019 20:51:30.804 INFORMA합ES [http-apr-8080-exec-26] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/LUCASQ~1/AppData/Local/Temp/context6522828122873724047.xml'
+27-Nov-2019 20:51:52.397 INFORMA합ES [http-apr-8080-exec-27] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/'
+27-Nov-2019 20:57:24.861 INFORMA합ES [http-apr-8080-exec-27] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:58:47.868 INFORMA합ES [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:59:26.579 INFORMA합ES [http-apr-8080-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 20:59:39.699 INFORMA합ES [http-apr-8080-exec-27] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:00:19.048 INFORMA합ES [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:02:45.311 INFORMA합ES [http-apr-8080-exec-34] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:03:00.072 INFORMA합ES [http-apr-8080-exec-26] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:03:52.499 INFORMA합ES [http-apr-8080-exec-32] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:09:06.792 INFORMA합ES [http-apr-8080-exec-26] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:09:52.283 INFORMA합ES [http-apr-8080-exec-34] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:09:55.766 INFORMA합ES [http-apr-8080-exec-32] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:10:27.864 INFORMA합ES [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:14:50.194 INFORMA합ES [http-apr-8080-exec-32] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:14:50.350 INFORMA합ES [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 21:18:44.097 INFORMA합ES [http-apr-8080-exec-26] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:22:25.449 INFORMA합ES [http-apr-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:22:25.480 INFORMA합ES [http-apr-8080-exec-35] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 21:23:08.543 INFORMA합ES [http-apr-8080-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:23:08.558 INFORMA합ES [http-apr-8080-exec-43] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 21:23:32.990 INFORMA합ES [http-apr-8080-exec-41] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:23:33.098 INFORMA합ES [http-apr-8080-exec-44] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 21:25:26.235 INFORMA합ES [http-apr-8080-exec-47] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:25:26.298 INFORMA합ES [http-apr-8080-exec-45] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 21:35:48.782 INFORMA합ES [http-apr-8080-exec-59] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:37:45.159 INFORMA합ES [http-apr-8080-exec-55] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:40:07.488 INFORMA합ES [http-apr-8080-exec-52] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:40:40.166 INFORMA합ES [http-apr-8080-exec-58] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:47:01.206 INFORMA합ES [http-apr-8080-exec-55] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:48:06.045 INFORMA합ES [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 21:48:49.678 INFORMA합ES [http-apr-8080-exec-55] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 22:14:17.189 INFORMA합ES [http-apr-8080-exec-52] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 22:14:17.687 INFORMA합ES [http-apr-8080-exec-55] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 22:26:40.855 INFORMA합ES [http-apr-8080-exec-70] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 22:26:40.902 INFORMA합ES [http-apr-8080-exec-71] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 22:26:59.727 INFORMA합ES [http-apr-8080-exec-72] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 22:26:59.770 INFORMA합ES [http-apr-8080-exec-66] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 22:28:38.933 INFORMA합ES [http-apr-8080-exec-67] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 22:28:38.995 INFORMA합ES [http-apr-8080-exec-70] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 22:28:54.447 INFORMA합ES [http-apr-8080-exec-76] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 22:28:54.515 INFORMA합ES [http-apr-8080-exec-72] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'
+27-Nov-2019 22:29:35.696 INFORMA합ES [http-apr-8080-exec-73] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+27-Nov-2019 22:29:35.790 INFORMA합ES [http-apr-8080-exec-76] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/'

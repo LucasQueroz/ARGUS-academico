@@ -51,7 +51,7 @@ public class AlunoBean implements Serializable {
         setCurriculos(curriculoDAO.listar());
     }
     
-    public void matricularAluno(int id){
+    /*public void matricularAluno(int id){
         AlunoDAO alunoDAO = new AlunoDAO();
         Aluno a = new Aluno();
         a = alunoDAO.buscar(id);
@@ -64,7 +64,9 @@ public class AlunoBean implements Serializable {
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
+    }*/
+    
+    
     
     /*public void registrarMatricola(){
         
@@ -92,7 +94,7 @@ public class AlunoBean implements Serializable {
     
     
     public void registrarMatricola(Aluno aluno){
-        JOptionPane.showMessageDialog(null, "Passei 0");
+        //JOptionPane.showMessageDialog(null, "Passei 0");
         
         Matricula matricula = new Matricula();
         ParcelaDAO parcelaDAO = new ParcelaDAO();
@@ -104,13 +106,13 @@ public class AlunoBean implements Serializable {
         AlunoDAO alunoDAO = new AlunoDAO();
         Aluno alunoSetar = alunoDAO.buscar(aluno.getId());
         
-        JOptionPane.showMessageDialog(null, "Passei 1");
+        //JOptionPane.showMessageDialog(null, "Passei 1");
         
         parcelaDAO.gravar(parcela);
         alunoSetar.setParcela(parcela);
         alunoSetar.setCurriculo(this.aluno.getCurriculo());
         
-        JOptionPane.showMessageDialog(null, "Curriculo nome:" + this.aluno.getCurriculo().getNome());
+        //JOptionPane.showMessageDialog(null, "Curriculo nome:" + this.aluno.getCurriculo().getNome());
         
         alunoSetar.setAno_Letivo(matricula.selecionaAnoLetivo(this.aluno.getCurriculo().getNome()));
         

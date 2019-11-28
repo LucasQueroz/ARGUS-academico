@@ -20,6 +20,7 @@ import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -30,17 +31,47 @@ import javax.persistence.Query;
 public class NotaBean implements Serializable{
     
     private Nota nota;
+    private List<Disciplina> disciplinas;
     //private NotaDAO notaDAO;
     
     @PostConstruct
     private void init(){
         nota = new Nota();
+        
+        //DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
+        //disciplinas = disciplinaDAO.listar();
+        
+        DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
+        disciplinas = disciplinaDAO.listar();
+        JOptionPane.showMessageDialog(null, "Iniciando...");
+        
     }
     
-    public void novo(int id){
+    /*public void novo(int id){
         AlunoDAO alunoDAO = new AlunoDAO();
         Aluno a = new Aluno();
         a = alunoDAO.buscar(id);
+        
+        Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
+        sessionMap.put("aluno", a);
+        
+        try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("register_notas.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }*/
+    
+    public void novo(Aluno aluno){
+        
+        AlunoDAO alunoDAO = new AlunoDAO();
+        Aluno a = new Aluno();
+        a = alunoDAO.buscar(aluno.getId());
+        
+        JOptionPane.showMessageDialog(null, "Aluno curriculo id: " + aluno.getCurriculo().getId());
+        DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
+        disciplinas = disciplinaDAO.listar(aluno.getCurriculo().getId());
+        JOptionPane.showMessageDialog(null, "Size disciplinas: " + disciplinas.size());
         
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
         sessionMap.put("aluno", a);
@@ -128,6 +159,13 @@ public class NotaBean implements Serializable{
      */
     public Nota getNota() {
         return nota;
+    }
+
+    /**
+     * @return the disciplinas
+     */
+    public List<Disciplina> getDisciplinas() {
+        return disciplinas;
     }
 
 }

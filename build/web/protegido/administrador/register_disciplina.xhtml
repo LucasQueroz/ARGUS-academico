@@ -88,15 +88,15 @@
 
             <div class="custom-breadcrumns border-bottom">
                 <div class="container">
-                    <a href="index.html">Home</a>
+                    <a href="index.jsf">Home</a>
                     <span class="mx-3 icon-keyboard_arrow_right"></span>
                     <span class="current">Register</span>
                 </div>
             </div>
 
-            
 
-            
+
+
 
         </div>
         <!-- .site-wrap -->
@@ -105,52 +105,52 @@
         <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#51be78"/></svg></div>
 
         <h:form>
-                <div class="site-section">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-md-5">
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <label for="nome">Nome da disciplina</label>
-                                        <p:inputText value="#{disciplinaBean.disciplina.nome}" class="form-control form-control-lg"/>
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label for="senha">Carga Horária</label>
-                                        <p:inputText value="#{disciplinaBean.disciplina.carga_horaria}" class="form-control form-control-lg"/>
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label for="data_nascimento">Código</label>
-                                        <p:inputText value="#{disciplinaBean.disciplina.codigo}" class="form-control form-control-lg"/>
-                                    </div>
-                                    <h:panelGrid columns="2">
-                                        <h:outputLabel for="nome">Ano Letivo</h:outputLabel>
-                                        <p:selectOneMenu value="#{disciplinaBean.disciplina.ano_Letivo}" 
-                                                         converter="omnifaces.SelectItemsConverter">
-                                            <f:selectItem itemLabel="Select on" noSelectionOption="true" />
-                                            <f:selectItems value="#{disciplinaBean.ano_letivos}" var="ano_Letivo" itemValue="#{ano_Letivo}" itemLabel="#{ano_Letivo.nome}"/>
-                                        </p:selectOneMenu>
-                                    </h:panelGrid>
-                                    <h:panelGrid columns="2">
-                                        <h:outputLabel for="nome">Professor</h:outputLabel>
-                                        <p:selectOneMenu value="#{disciplinaBean.disciplina.professor}" 
-                                                         converter="omnifaces.SelectItemsConverter">
-                                            <f:selectItem itemLabel="Select on" noSelectionOption="true" />
-                                            <f:selectItems value="#{disciplinaBean.professores}" var="professor" itemValue="#{professor}" itemLabel="#{professor.nome}"/>
-                                        </p:selectOneMenu>
-                                    </h:panelGrid>
+            <div class="site-section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-5">
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <label for="nome">Nome da disciplina</label>
+                                    <p:inputText value="#{disciplinaBean.disciplina.nome}" class="form-control form-control-lg"/>
                                 </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p:commandButton action="#{disciplinaBean.gravar}" update="@form" value="Gravar" class="btn btn-primary btn-lg px-5"/>                            
-                                    </div>
+                                <div class="col-md-12 form-group">
+                                    <label for="senha">Carga Horária</label>
+                                    <p:inputText value="#{disciplinaBean.disciplina.carga_horaria}" class="form-control form-control-lg"/>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label for="data_nascimento">Código</label>
+                                    <p:inputText value="#{disciplinaBean.disciplina.codigo}" class="form-control form-control-lg"/>
+                                </div>
+                                <h:panelGrid columns="2">
+                                    <h:outputLabel for="nome">Curriculo</h:outputLabel>
+                                    <p:selectOneMenu value="#{disciplinaBean.disciplina.curriculo}" 
+                                                     converter="omnifaces.SelectItemsConverter">
+                                        <f:selectItem itemLabel="Select on" noSelectionOption="true" />
+                                        <f:selectItems value="#{disciplinaBean.curriculos}" var="curriculo" itemValue="#{curriculo}" itemLabel="#{curriculo.nome}"/>
+                                    </p:selectOneMenu>
+                                </h:panelGrid>
+                                <h:panelGrid columns="2">
+                                    <h:outputLabel for="nome">Professor</h:outputLabel>
+                                    <p:selectOneMenu value="#{disciplinaBean.disciplina.professor}" 
+                                                     converter="omnifaces.SelectItemsConverter">
+                                        <f:selectItem itemLabel="Select on" noSelectionOption="true" />
+                                        <f:selectItems value="#{disciplinaBean.professores}" var="professor" itemValue="#{professor}" itemLabel="#{professor.nome}"/>
+                                    </p:selectOneMenu>
+                                </h:panelGrid>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p:commandButton action="#{disciplinaBean.gravar}" update="@form" value="Gravar" class="btn btn-primary btn-lg px-5"/>                            
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </h:form>
+            </div>
+        </h:form>
 
-        
+
         <!-- ============================= Script  =================================== -->
         <ui:include src="script.xhtml"></ui:include>
         <!-- =============================    Script   ============================== -->

@@ -22,8 +22,6 @@ public class Nota implements Serializable{
     private float nota3;
     private float nota4;
     private float nota_na_final;
-    //private int id_aluno;
-    //private int id_diciplina;
     
     @ManyToOne
     private Disciplina disciplina;
