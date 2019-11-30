@@ -82,4 +82,9 @@ public class Usuario implements Serializable {
         this.endereco = endereco;
     }
     
+    @Override
+    public String toString() {
+        return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
+    }
+    
 }

@@ -62,4 +62,8 @@ public class Parcela {
         this.numero_a_pagar = numero_a_pagar;
     }
 
+    @Override
+    public String toString() {
+        return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
+    }
 }

@@ -184,11 +184,6 @@ public class Aluno implements Serializable {
         this.responsavel = responsavel;
     }
     
-    @Override
-    public String toString() {
-        return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
-    }
-
     /**
      * @return the parcela
      */
@@ -203,5 +198,9 @@ public class Aluno implements Serializable {
         this.parcela = parcela;
     }
 
+    @Override
+    public String toString() {
+        return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
+    }
 
 }

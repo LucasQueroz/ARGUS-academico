@@ -69,13 +69,13 @@ public class Ano_Letivo implements Serializable {
         this.nome = nome;
     }
 
-    public List<Ano_Letivo> listar() {
+    /*public List<Ano_Letivo> listar() {
         List<Ano_Letivo> ano_Letivos = new ArrayList<>();
         EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
         Query q = e.createQuery("FROM Ano_Letivo");
         ano_Letivos = q.getResultList();
         return ano_Letivos;
-    }
+    }*/
     
     @Override
     public String toString() {

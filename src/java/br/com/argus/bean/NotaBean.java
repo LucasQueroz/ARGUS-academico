@@ -30,10 +30,8 @@ import javax.swing.JOptionPane;
 @ViewScoped
 public class NotaBean implements Serializable{
     
-    //private Aluno aluno;
     private Nota nota;
     private List<Disciplina> disciplinas;
-    //private NotaDAO notaDAO;
     
     @PostConstruct
     private void init(){
@@ -65,11 +63,24 @@ public class NotaBean implements Serializable{
         sessionMap.put("aluno", a);
         
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("register_notas.jsf");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_disciplina_por_aluno.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+    
+    public void novaNota(Disciplina disciplina){
+        DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
+        Disciplina d = new Disciplina();
         
+        d = disciplinaDAO.buscar(disciplina.getId());
+        Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
+        sessionMap.put("disciplina", d);
+        try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("register_nota.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
     public List<Disciplina> buscarDisciplinas(Aluno aluno){
@@ -86,12 +97,36 @@ public class NotaBean implements Serializable{
         }
     }
     
-    public void gravar(int id_aluno){
+    /*public void gravar(Aluno aluno){
+        JOptionPane.showMessageDialog(null, "Passei 1");
+        nota.setAluno(aluno);
+        
+        JOptionPane.showMessageDialog(null, "Notas: " + nota.getNota1()+ ", "+ nota.getNota2() + ", "+ nota.getNota3() 
+                + ", "+ nota.getNota4());
+        
         NotaDAO notaDAO = new NotaDAO();
         notaDAO.gravar(nota);
         
         try {
             FacesContext.getCurrentInstance().getExternalContext().redirect("listar_notas.jsf");
+        } catch (IOException ex) {
+            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }*/
+    
+    public void gravar(Aluno aluno, Disciplina disciplina){
+        //JOptionPane.showMessageDialog(null, "Passei 1");
+        nota.setAluno(aluno);
+        nota.setDisciplina(disciplina);
+        
+        //JOptionPane.showMessageDialog(null, "Notas: " + nota.getNota1()+ ", "+ nota.getNota2() + ", "+ nota.getNota3() 
+          //      + ", "+ nota.getNota4());
+        
+        NotaDAO notaDAO = new NotaDAO();
+        notaDAO.gravar(nota);
+        
+        try {
+            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_disciplina_por_aluno.jsf");
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -140,4 +140,9 @@ public class Nota implements Serializable{
         this.disciplina = disciplina;
     }
     
+    @Override
+    public String toString() {
+        return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
+    }
+    
 }

@@ -127,8 +127,6 @@ public class AlunoBean implements Serializable {
         }
     }
     
-    
-    
     public void gravar(){
         AlunoDAO alunoDAO = new AlunoDAO();
         alunoDAO.gravar(aluno);
