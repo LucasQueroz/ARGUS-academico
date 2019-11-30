@@ -140,7 +140,7 @@
                                     <p:selectOneMenu value="#{notaBean.nota.disciplina}" 
                                                      converter="omnifaces.SelectItemsConverter">
                                         <f:selectItem itemLabel="Select on" noSelectionOption="true" />
-                                        <f:selectItems value="#{notaBean.disciplinas}" var="disciplina" itemValue="#{disciplina}" itemLabel="#{disciplina.nome}"/>
+                                        <f:selectItems value="#{notaBean.disciplinas = notaBean.buscarDisciplinas(aluno)}" var="disciplina" itemValue="#{disciplina}" itemLabel="#{disciplina.nome}"/>
                                     </p:selectOneMenu>
                                 </h:panelGrid>
                             </div>

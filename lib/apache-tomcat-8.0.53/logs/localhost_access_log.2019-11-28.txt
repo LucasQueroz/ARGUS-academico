@@ -2670,3 +2670,7 @@
 127.0.0.1 - - [28/Nov/2019:10:59:46 -0200] "POST /protegido/administrador/register_atendimento_pedagogico.jsf HTTP/1.1" 200 109
 127.0.0.1 - - [28/Nov/2019:10:59:49 -0200] "GET /protegido/administrador/listar_atendimento_pedagogico.jsf HTTP/1.1" 200 14956
 127.0.0.1 - - [28/Nov/2019:10:59:49 -0200] "GET /images/logo.png HTTP/1.1" 404 1091
+127.0.0.1 - - [28/Nov/2019:11:56:27 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [28/Nov/2019:11:56:27 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+192.168.100.169 - - [28/Nov/2019:12:02:02 -0200] "GET / HTTP/1.1" 200 13766
+192.168.100.169 - - [28/Nov/2019:12:02:09 -0200] "GET /HNAP1/ HTTP/1.1" 500 2955

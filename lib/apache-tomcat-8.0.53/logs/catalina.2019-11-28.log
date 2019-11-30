@@ -2798,3 +2798,7 @@ Caused by: javax.el.PropertyNotFoundException: Target Unreachable, identifier 'p
 28-Nov-2019 10:59:42.535 INFO [http-apr-8080-exec-121] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
 	name: teste
 	...]
+28-Nov-2019 12:02:02.404 INFORMAÇÕES [http-apr-8080-exec-113] com.sun.faces.renderkit.RenderKitUtils.renderUnhandledMessages AVISO: FacesMessage(s) foram enfileirados, mas podem não ter sido exibidos.
+sourceId=null[severity=(ERROR 2), summary=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.), detail=(Um ou mais recursos possuem o destino de 'head', mas nenhum componente de 'head' foi definido na exibição.)]
+28-Nov-2019 12:02:08.897 ADVERTÊNCIA [http-apr-8080-exec-115] com.sun.faces.context.ExternalContextImpl.getMimeType JSF1091: Nenhum tipo de mime pôde ser encontrado para o arquivo /HNAP1/login.jsp.  Para resolver isso, adicione um mapeamento de mime-type ao web.xml do aplicativo.
+28-Nov-2019 12:02:08.957 ADVERTÊNCIA [http-apr-8080-exec-115] com.sun.faces.context.ExternalContextImpl.getMimeType JSF1091: Nenhum tipo de mime pôde ser encontrado para o arquivo /HNAP1/login.jsp.  Para resolver isso, adicione um mapeamento de mime-type ao web.xml do aplicativo.

@@ -51,7 +51,7 @@ public class AlunoBean implements Serializable {
         setCurriculos(curriculoDAO.listar());
     }
     
-    /*public void matricularAluno(int id){
+    public void matricularAluno(int id){
         AlunoDAO alunoDAO = new AlunoDAO();
         Aluno a = new Aluno();
         a = alunoDAO.buscar(id);
@@ -64,7 +64,7 @@ public class AlunoBean implements Serializable {
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }*/
+    }
     
     
     

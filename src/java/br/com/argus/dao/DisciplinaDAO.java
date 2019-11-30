@@ -10,6 +10,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -58,8 +59,10 @@ public class DisciplinaDAO {
     
     public List<Disciplina> listar(int curriculo_id) {
         List<Disciplina> disciplinas = new ArrayList<>();
+        
         EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
-        Query q = e.createQuery("FROM Disciplina WHERE curriculo_id = '2'");
+        Query q = e.createQuery("FROM Disciplina WHERE curriculo_id = :curriculo_id");
+        q.setParameter("curriculo_id", curriculo_id);
         disciplinas = q.getResultList();
         return disciplinas;
     }

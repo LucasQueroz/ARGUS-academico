@@ -30,6 +30,7 @@ import javax.swing.JOptionPane;
 @ViewScoped
 public class NotaBean implements Serializable{
     
+    //private Aluno aluno;
     private Nota nota;
     private List<Disciplina> disciplinas;
     //private NotaDAO notaDAO;
@@ -37,14 +38,6 @@ public class NotaBean implements Serializable{
     @PostConstruct
     private void init(){
         nota = new Nota();
-        
-        //DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
-        //disciplinas = disciplinaDAO.listar();
-        
-        DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
-        disciplinas = disciplinaDAO.listar();
-        JOptionPane.showMessageDialog(null, "Iniciando...");
-        
     }
     
     /*public void novo(int id){
@@ -68,11 +61,6 @@ public class NotaBean implements Serializable{
         Aluno a = new Aluno();
         a = alunoDAO.buscar(aluno.getId());
         
-        JOptionPane.showMessageDialog(null, "Aluno curriculo id: " + aluno.getCurriculo().getId());
-        DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
-        disciplinas = disciplinaDAO.listar(aluno.getCurriculo().getId());
-        JOptionPane.showMessageDialog(null, "Size disciplinas: " + disciplinas.size());
-        
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
         sessionMap.put("aluno", a);
         
@@ -81,6 +69,13 @@ public class NotaBean implements Serializable{
         } catch (IOException ex) {
             Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+    }
+    
+    public List<Disciplina> buscarDisciplinas(Aluno aluno){
+        DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
+        setDisciplinas(disciplinaDAO.listar(aluno.getCurriculo().getId()));
+        return getDisciplinas();
     }
     
     public void listar(int id_aluno){
@@ -166,6 +161,13 @@ public class NotaBean implements Serializable{
      */
     public List<Disciplina> getDisciplinas() {
         return disciplinas;
+    }
+
+    /**
+     * @param disciplinas the disciplinas to set
+     */
+    public void setDisciplinas(List<Disciplina> disciplinas) {
+        this.disciplinas = disciplinas;
     }
 
 }
