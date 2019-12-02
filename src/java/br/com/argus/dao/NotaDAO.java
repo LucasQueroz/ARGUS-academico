@@ -2,9 +2,12 @@ package br.com.argus.dao;
 
 import br.com.argus.model.JPAUtil;
 import br.com.argus.model.Nota;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 /**
  *
@@ -42,4 +45,12 @@ public class NotaDAO {
         entity.getTransaction().commit();
     }
      
+    public List<Nota> listarPorAluno(int aluno_id){
+        List<Nota> notas = new ArrayList<>();
+        EntityManager e = JPAUtil.getEntityManagerFactory().createEntityManager();
+        Query q = e.createQuery("FROM Nota WHERE aluno_id = :aluno_id");
+        q.setParameter("aluno_id", aluno_id);
+        notas = q.getResultList();
+        return notas;
+    }
 }

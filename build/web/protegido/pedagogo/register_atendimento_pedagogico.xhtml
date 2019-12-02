@@ -7,19 +7,17 @@
       xmlns:ui="http://java.sun.com/jsf/facelets">
 
     <h:head>
-        <title>Registro de Atendimento Pedagogico</title>
+        <title>Registro de Atendimento Pedagógico</title>
         <meta charset="utf-8"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
 
         <!-- ============================= Script  =================================== -->
-        <ui:include src="link.xhtml"></ui:include>
+        <!-- <ui:include src="link.xhtml"></ui:include> -->
         <!-- =============================    Script   ============================== -->
-
 
     </h:head>
 
     <h:body>
-
         <div class="site-wrap">
 
             <div class="site-mobile-menu site-navbar-target">
@@ -30,7 +28,6 @@
                 </div>
                 <div class="site-mobile-menu-body"></div>
             </div>
-
 
             <div class="py-2 bg-light">
                 <div class="container">
@@ -59,44 +56,12 @@
                             </a>
                         </div>
                         <div class="mr-auto">
-                            
 
-                            <!--<nav class="site-navigation position-relative text-right" role="navigation">
-                              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                                <li class="active">
-                                  <a href="index.html" class="nav-link text-left">Home</a>
-                                </li>
-                                <li class="has-children">
-                                  <a href="about.html" class="nav-link text-left">About Us</a>
-                                  <ul class="dropdown">
-                                    <li><a href="teachers.html">Our Teachers</a></li>
-                                    <li><a href="about.html">Our School</a></li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <a href="admissions.html" class="nav-link text-left">Admissions</a>
-                                </li>
-                                <li>
-                                  <a href="courses.html" class="nav-link text-left">Courses</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html" class="nav-link text-left">Contact</a>
-                                  </li>
-                              </ul>                                                                                                                                                                                                                                                                                          </ul>
-                            </nav>-->
+                            <!-- ============================= LINK =================================== -->
+                            <ui:include src="menu.xhtml"></ui:include>
+                            <!-- =============================    LINK   ============================== -->
+
                         </div>
-
-                        <div class="ml-auto">
-                            <div class="social-wrap">
-                                <a href="#"><span class="icon-facebook"></span></a>
-                                <a href="#"><span class="icon-twitter"></span></a>
-                                <a href="#"><span class="icon-linkedin"></span></a>
-
-                                <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
-                                        class="icon-menu h3"></span></a>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
@@ -115,111 +80,55 @@
 
             <div class="custom-breadcrumns border-bottom">
                 <div class="container">
-                    <a href="index.html">Home</a>
+                    <a href="index.jsf">Home</a>
                     <span class="mx-3 icon-keyboard_arrow_right"></span>
                     <span class="current">Register</span>
                 </div>
             </div>
-
-            <h:form>
-                <div class="site-section">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-md-5">
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <label for="nome">Id do aluno</label>
-                                        <p:inputText value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.id_aluno}" class="form-control form-control-lg"/>
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label for="nome">Data</label>
-                                        <p:inputText value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.data}" class="form-control form-control-lg"/>
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label for="senha">ID do pedagogo</label>
-                                        <p:inputText value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.id_pedagogo}" class="form-control form-control-lg"/>
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label for="data_nascimento">Detalhamento</label>
-                                        <p:inputTextarea value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.detalhamento}" class="form-control form-control-lg"/>
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label for="naturalidade">Concluido</label>
-                                        <p:inputText value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.concluido}"  class="form-control form-control-lg"/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p:commandButton action="#{atendimento_PedagogicoBean.gravar}" update="@form" value="Gravar" class="btn btn-primary btn-lg px-5"/>                            
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </h:form>
-
-
-
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <p class="mb-4"><img src="images/logo.png" alt="Image" class="img-fluid"></img></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>  
-                            <p><a href="#">Learn More</a></p>
-                        </div>
-                        <div class="col-lg-3">
-                            <h3 class="footer-heading"><span>Our Campus</span></h3>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Acedemic</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Our Interns</a></li>
-                                <li><a href="#">Our Leadership</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Human Resources</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3">
-                            <h3 class="footer-heading"><span>Our Courses</span></h3>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Math</a></li>
-                                <li><a href="#">Science Engineering</a></li>
-                                <li><a href="#">Arts Humanities</a></li>
-                                <li><a href="#">Economics Finance</a></li>
-                                <li><a href="#">Business Administration</a></li>
-                                <li><a href="#">Computer Science</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3">
-                            <h3 class="footer-heading"><span>Contact</span></h3>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Help Center</a></li>
-                                <li><a href="#">Support Community</a></li>
-                                <li><a href="#">Press</a></li>
-                                <li><a href="#">Share Your Story</a></li>
-                                <li><a href="#">Our Supporters</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="copyright">
-                                <p>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                    Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
         </div>
-        <!-- .site-wrap -->
+
+        <h:form>
+
+            <label for="nome">Data</label>
+            <p:inputText value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.data}" class="form-control form-control-lg"/>
+
+            <label for="data_nascimento">Detalhamento</label>
+            <p:inputTextarea value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.detalhamento}" class="form-control form-control-lg"/>
+
+            <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+                <p:outputLabel for="@next" value="Atendimento Concluído" />
+                <p:selectOneMenu id="console" value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.concluido}" style="width:125px">
+                    <f:selectItem itemLabel="Não" itemValue="false" />
+                    <f:selectItem itemLabel="Sim" itemValue="true" />
+                </p:selectOneMenu>
+            </h:panelGrid>
+
+            <h:panelGrid columns="2">
+                <h:outputLabel for="nome">Aluno</h:outputLabel>
+                <p:selectOneMenu value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.aluno}" 
+                                 converter="omnifaces.SelectItemsConverter">
+                    <f:selectItem itemLabel="Select on" noSelectionOption="true" />
+                    <f:selectItems value="#{atendimento_PedagogicoBean.alunos}" var="aluno" itemValue="#{aluno}" itemLabel="#{aluno.nome}"/>
+                </p:selectOneMenu>
+            </h:panelGrid>
+
+            <h:panelGrid columns="2">
+                <h:outputLabel for="nome">Pedagogo</h:outputLabel>
+                <p:selectOneMenu value="#{atendimento_PedagogicoBean.atendimento_Pedagogico.usuario}" 
+                                 converter="omnifaces.SelectItemsConverter">
+                    <f:selectItem itemLabel="Select on" noSelectionOption="true" />
+                    <f:selectItems value="#{atendimento_PedagogicoBean.usuarios}" var="usuario" itemValue="#{usuario}" itemLabel="#{usuario.nome}"/>
+                </p:selectOneMenu>
+            </h:panelGrid>
+
+            <p:commandButton action="#{atendimento_PedagogicoBean.gravar}" update="@form" value="Gravar" class="btn btn-primary btn-lg px-5"/>                            
+
+        </h:form>
+
+
+
+
+
 
         <!-- loader -->
         <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#51be78"/></svg></div>

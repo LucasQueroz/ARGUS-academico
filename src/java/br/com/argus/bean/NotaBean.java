@@ -1,5 +1,6 @@
 package br.com.argus.bean;
 
+import br.com.argus.bussiness.AprovarAluno;
 import br.com.argus.dao.AlunoDAO;
 import br.com.argus.dao.DisciplinaDAO;
 import br.com.argus.dao.NotaDAO;

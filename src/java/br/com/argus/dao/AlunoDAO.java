@@ -8,6 +8,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -40,9 +41,13 @@ public class AlunoDAO {
     }
 
     public void editar(Aluno aluno) {
+        JOptionPane.showMessageDialog(null, "Aluno editado:" + aluno.getNome());
         entity.getTransaction().begin();
+        JOptionPane.showMessageDialog(null, "editar 1");
         entity.merge(aluno);
+        JOptionPane.showMessageDialog(null, "editar 2");
         entity.getTransaction().commit();
+        JOptionPane.showMessageDialog(null, "editar 3");
     }
 
     public List<Aluno> listar() {

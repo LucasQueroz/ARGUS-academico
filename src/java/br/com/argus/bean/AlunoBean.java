@@ -1,5 +1,6 @@
 package br.com.argus.bean;
 
+import br.com.argus.bussiness.AprovarAluno;
 import br.com.argus.bussiness.Matricula;
 import br.com.argus.dao.AlunoDAO;
 import br.com.argus.dao.Ano_LetivoDAO;
@@ -66,36 +67,7 @@ public class AlunoBean implements Serializable {
         }
     }
     
-    
-    
-    /*public void registrarMatricola(){
-        
-        Matricula matricula = new Matricula();
-        ParcelaDAO parcelaDAO = new ParcelaDAO();
-        
-        Parcela parcela = new Parcela();
-        parcela.setNumero_a_pagar(12);
-        parcela.setValor(matricula.valorDaParcela(this.aluno.getAno_Letivo().getCurriculo().getNome()));
-        
-        parcelaDAO.gravar(parcela);
-        aluno.setParcela(parcela);
-        
-        JOptionPane.showMessageDialog(null, "Aluno nome:" + aluno.getNome());
-        AlunoDAO alunoDAO = new AlunoDAO();
-        alunoDAO.editar(aluno);
-        
-        try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("listar_alunos.jsf");
-        } catch (IOException ex) {
-            Logger.getLogger(AlunoBean.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }*/
-    
-    
-    
     public void registrarMatricola(Aluno aluno){
-        //JOptionPane.showMessageDialog(null, "Passei 0");
-        
         Matricula matricula = new Matricula();
         ParcelaDAO parcelaDAO = new ParcelaDAO();
         
@@ -106,18 +78,11 @@ public class AlunoBean implements Serializable {
         AlunoDAO alunoDAO = new AlunoDAO();
         Aluno alunoSetar = alunoDAO.buscar(aluno.getId());
         
-        //JOptionPane.showMessageDialog(null, "Passei 1");
-        
         parcelaDAO.gravar(parcela);
         alunoSetar.setParcela(parcela);
         alunoSetar.setCurriculo(this.aluno.getCurriculo());
         
-        //JOptionPane.showMessageDialog(null, "Curriculo nome:" + this.aluno.getCurriculo().getNome());
-        
         alunoSetar.setAno_Letivo(matricula.selecionaAnoLetivo(this.aluno.getCurriculo().getNome()));
-        
-        //JOptionPane.showMessageDialog(null, "Aluno nome:" + alunoSetar.getNome());
-        //AlunoDAO alunoDAO = new AlunoDAO();
         alunoDAO.editar(alunoSetar);
         
         try {

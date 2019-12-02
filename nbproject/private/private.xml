@@ -3,11 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/administrador/register_notas.xhtml</file>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/administrador/listar_alunos.xhtml</file>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/dao/DisciplinaDAO.java</file>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/administrador/index.xhtml</file>
-            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/src/java/br/com/argus/bean/NotaBean.java</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/diretor/listar_professor.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/diretor/listar_alunos.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/diretor/index.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/diretor/listar_atendimento_pedagogico.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/diretor/listar_responsavel.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/diretor/listar_pedagogo.xhtml</file>
+            <file>file:/C:/Users/lucas%20queroz/Documents/NetBeansProjects/ARGUS%20ACAD/web/protegido/diretor/listar_disciplina.xhtml</file>
         </group>
     </open-files>
 </project-private>
